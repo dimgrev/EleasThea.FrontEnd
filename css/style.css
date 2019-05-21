@@ -164,6 +164,17 @@ body{
     clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
 }
 
+/*map-top-right-controls padding*/
+/* .mapboxgl-ctrl-top-right{
+    padding-right: 2vw;
+    padding-top: 1vh;
+} */
+
+/*Disable compass at map control icons*/
+.mapboxgl-ctrl-compass {
+    display: none !important;
+}
+
 
 .myfooter{
     background: linear-gradient(to right, rgba(40,12,0,0.7),rgba(40,12,0,0.85)), url("../images/369.jpg");

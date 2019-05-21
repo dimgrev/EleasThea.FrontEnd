@@ -21,10 +21,20 @@ $( document ).ready(function() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoia29ua3JpIiwiYSI6ImNqdnY2eWd1NjNzZHA0OXBic2Q2aXhoMDgifQ.zF2_d5xcqvmLJ190Qg6_8w';
     var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
-    center:[23.8745281,35.4891808],
-    zoom: 10
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center:[23.930797,35.545295],
+    zoom: 9.6,
+    attributionControl: false
     });
+
+    // disable map zoom when using scroll
+    map.scrollZoom.disable();
+    // map.scrollZoom.enable().onclick;
+
+    // Add zoom and rotation controls to the map.
+    // map.addControl(new mapboxgl.NavigationControl());
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'top-left');
 
     var size = 100;
 
