@@ -206,8 +206,13 @@ body{
     color:rgb(143, 37, 28);
     font-size: 13px;
     font-weight: 400;
-    /* margin: 0px 5px 0px 5px; */
+}
 
+.reservation-hint{
+    color:rgba(0,0,0,0.3);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
 }
 
 .reservation-form input, .select-PersonsNumber{
