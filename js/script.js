@@ -1,21 +1,50 @@
 $( document ).ready(function() {
-    console.log( "Hello little one! Tony Stark dies" );
-        
 
+    //Things to do when website fully loaded..
+    
+    //A message for our little friends...
+    console.log( "Hello little one! Tony Stark dies" );
+    
+    //Check scroll status and show correct navbar
+    checkAndPrintCorrectNavBar();        
+
+    //Set today's date in #reservation-date-picker...
+    var d = new Date();
+    var curr_date = String(d.getDate());
+    var curr_month = String(d.getMonth() + 1);
+    var curr_year = String(d.getFullYear());
+    debugger;
+    if (curr_month.length < 2){
+        curr_month = '0' + curr_month;
+    } 
+    if (curr_date.length < 2){
+        curr_month = '0' + curr_date;
+    }
+    $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
+
+
+
+    //Humburger
     $(".navbar").on('show.bs.collapse hide.bs.collapse', function(){
         $("#toggleHumburgerBtn").toggleClass("is-active");
     });
 
 
+    //when scrolling change navbar
     $(window).scroll(function() {
+        checkAndPrintCorrectNavBar();
+    });
+
+    //functions...
+    function checkAndPrintCorrectNavBar(){
         var $height = $(window).scrollTop();
-        if($height > 50) {
+        if($height > 0) {
             $('.scroll-variable-navbar').removeClass('scroll-variable-navbar-hidden');
         }
         else {
             $('.scroll-variable-navbar').addClass('scroll-variable-navbar-hidden');
         }
-    });
+    }
 
     // MapBox
     mapboxgl.accessToken = 'pk.eyJ1Ijoia29ua3JpIiwiYSI6ImNqdnY2eWd1NjNzZHA0OXBic2Q2aXhoMDgifQ.zF2_d5xcqvmLJ190Qg6_8w';
@@ -29,7 +58,15 @@ $( document ).ready(function() {
 
     // disable map zoom when using scroll
     map.scrollZoom.disable();
-    // map.scrollZoom.enable().onclick;
+
+    // map.scrollZoom.enable().onclick; and disable on mouse out
+    document.getElementById("map").onclick = function zme() {
+        map.scrollZoom.enable();
+    }
+    document.getElementById("map").onmouseout = function zmd() {
+        map.scrollZoom.disable();;
+    }
+    
 
     // Add zoom and rotation controls to the map.
     // map.addControl(new mapboxgl.NavigationControl());
