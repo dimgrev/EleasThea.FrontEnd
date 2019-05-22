@@ -116,7 +116,7 @@
         </div>
         <i class="fas fa-angle-double-down"></i>
     </div>
-    
+                
     <!-- Details Slide -->
     <div class="detailsSlide">
         <div class="container d-flex justify-content-end">
@@ -202,27 +202,55 @@
 
     <!-- Contact Slide -->
     <div class="contactSlide d-flex flex-row">
-        <div id='map'></div>
-        <div class="contactDetails">
-            <div class="contactDetails-Section">
-                    <i class="fas fa-map-marker-alt"></i><br>
-                    Βουκολιές (2 χλμ προς Παλαιόχωρα), 73002, Χανιά, Κρήτη, Ελλάδα
-            </div>
-            <div class="contactDetails-Section">
-                    <i class="fas fa-phone"></i><br>
-                    (+30) 28240-31222 <br>
-                    (+30) 693 83 27 110
-            </div>
-            <div class="contactDetails-Section">
-                    <i class="fas fa-at"></i><br>
-                    m.goymenaki@yahoo.gr
-            </div>
-            <div class="contactDetails-Section">
-                    <i class="fas fa-clock"></i><br>
-                    Χειμερινή περίοδο <br>
-                    Σάββατο & Κυριακή από τις 11:00 - 18:00 <br>
-                    Δευτέρα έως Παρασκευή ΚΛΕΙΣΤΑ
-            </div>
+        <div id='map' onclick="zme()" onmouseout="zmd()"></div>
+        <div class="contactDetails d-flex flex-column align-items-center justify-content-center">
+            <div class="contact-title">ΕΠΙΚΟΝΩΝΙΑ</div>
+            <div>
+                <div class="contactDetails-Section d-flex mt-3">
+                        <i class="fas fa-map-marker-alt mr-2 mt-1"></i>
+                        <div class="details-title">Τοποθεσία:</div>
+                            <div class="details-info">
+                                Βουκολιές, (2 χλμ προς Παλαιόχωρα),<br>
+                                73002, Χανιά, Κρήτη
+                            </div>
+                </div>
+                <div class="contactDetails-Section d-flex mt-3">
+                        <i class="fas fa-phone mr-2 mt-1"></i>
+                        <div class="details-title">Τηλέφωνο:</div>
+                            <div class="details-info">
+                                (+30) 28240-31222 <br>
+                                (+30) 693 83 27 110
+                            </div>
+                </div>
+                <div class="contactDetails-Section d-flex mt-3">
+                        <i class="fas fa-at mr-2 mt-1"></i>
+                        <div class="details-title">Email:</div>
+                            <div class="details-info">
+                                m.goymenaki@yahoo.gr
+                            </div>
+                </div>
+                <div class="contactDetails-Section d-flex mt-3">
+                        <!-- <i class="fas fa-clock mr-2"></i>
+                        <div class="details-title">Λειτουργία:</div>
+                            <div class="details-info">
+                                Σάββατο & Κυριακή από τις 11:00 - 18:00 <br>
+                                Δευτέρα έως Παρασκευή ΚΛΕΙΣΤΑ 
+                            </div>
+                            -->
+                        <i class="fas fa-clock mr-2 mt-1"></i>
+                        <div class="details-title">Λειτουργία:</div>
+                            <div class="details-info">
+                                Τρίτη έως Κυριακή από τις 11:00 - 23:00 <br>
+                                Δευτέρα ΚΛΕΙΣΤΑ
+                            </div>
+                </div>
+                <div class="contactDetails-Section d-flex mt-3">
+                    <i class="fas fa-envelope mr-2 mt-1"></i>
+                    <div class="details-title">Message:</div>
+                    <input class="details-msg" type="text" name="" id="" placeholder="Send a message..."></input>
+                    <i class="fab fa-telegram fa-2x details-send-btn m-2"></i>
+                </div>
+            </div> 
         </div>
     </div>
     

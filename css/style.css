@@ -266,12 +266,79 @@ border-radius: 5px;
 }
 
 /* Contact Slide */
+.contactSlide{
+    width:100%;
+}
 
 #map{
     width:60vw;
     height:60vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+/*map-top-right-controls padding*/
+/* .mapboxgl-ctrl-top-right{
+    padding-right: 2vw;
+    padding-top: 1vh;
+} */
+
+/*Disable compass at map control icons*/
+.mapboxgl-ctrl-compass {
+    display: none !important;
+}
+.contactDetails{
+    width: 50%;
+}
+.contact-title{
+    font-weight: 200;
+    font-size: 30px;
+    width: 35vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.details-title{
+    width: 95px;
+    font-size: 13px;
+    
+}
+.details-info{
+    width: 14vw;
+    font-size: 13px;
+    font-weight: 400;
+}
+.details-msg{
+    width: 10vw;
+    padding:5px 10px 5px 10px;
+    margin: 5px 0px 10px 0px;
+    background:white;
+    color:rgba(0, 0, 0, 0.7);
+    border: solid rgba(0,0,0,0.15) 1px;
+    border-radius: 15px;
+}
+.details-send-btn{
+    color: rgb(85, 98, 107);
+}
+.details-send-btn:hover {
+    color: rgb(45, 65, 80);
+}
+
+.fa-map-marker-alt{
+    width: 16px;
+    padding-left: 2px;
+    color: rgb(55, 81, 131);
+}
+.fa-phone{
+    color: rgb(69, 104, 43);
+}
+.fa-at{
+    color: rgb(143, 37, 28);
+}
+.fa-clock{
+    color: rgb(145, 145, 145);
+}
+.fa-envelope{
+    color: rgb(187, 142, 46);
 }
 
 /* Footer Slide */
