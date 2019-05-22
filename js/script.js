@@ -13,7 +13,6 @@ $( document ).ready(function() {
     var curr_date = String(d.getDate());
     var curr_month = String(d.getMonth() + 1);
     var curr_year = String(d.getFullYear());
-    debugger;
     if (curr_month.length < 2){
         curr_month = '0' + curr_month;
     } 
@@ -22,6 +21,13 @@ $( document ).ready(function() {
     }
     $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
 
+    //Call the OWL
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:1,
+            center:true
+        });
+    });
 
 
     //Humburger
