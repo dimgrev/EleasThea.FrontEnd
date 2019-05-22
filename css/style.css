@@ -274,27 +274,23 @@ body{
 }
 .contactDetails{
     width: 50%;
-    background:linear-gradient(to right,
-    rgb(255, 255, 255),
-    rgba(241, 241, 241, 0.9));
 }
 .contact-title{
-    font-weight: 100;
+    font-weight: 200;
     font-size: 30px;
     width: 35vw;
     text-align: center;
     margin-bottom: 2vh;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
 }
 .details-title{
     width: 95px;
-    font-size: 15px;
+    font-size: 13px;
     
 }
 .details-info{
     width: 14vw;
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 13px;
+    font-weight: 400;
 }
 .details-msg{
     width: 10vw;
