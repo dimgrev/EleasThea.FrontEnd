@@ -25,7 +25,8 @@ $( document ).ready(function() {
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             items:1,
-            center:true
+            center:true,
+            dots:true
         });
     });
 

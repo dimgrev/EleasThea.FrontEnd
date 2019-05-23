@@ -153,16 +153,51 @@ body{
 /* Gallery Slide */
 .gallerySlide{
     width: 100%;
-    height: 600px;
-    background: rgba(10, 19, 1, 1);
+    /* height: 60vh; */
+    background:linear-gradient(to right,
+                            rgba(40,40,40, 0.7),
+                            rgba(40,40,40,0.9)),
+                                url("../images/gallery_bg.jpg");
+
+    background-size:cover;
+    background-position: center;
+}
+
+.owl-item{
+    padding: 20px;
+}
+
+.owl-stage{
+    display: flex;
+    align-items: center;    
 }
 
 .owl-carousel img{
-height:500px;
-width: auto !important;
-margin:auto!important;
-border:5px solid rgba(255, 255, 255, 0.8);
-border-radius: 5px;
+    max-height:75vh;
+    max-width: 50vw !important;
+    width: auto !important;
+    margin:auto!important;
+    /* margin-top: 20px !important; */
+    border:5px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    vertical-align: middle !important;
+}
+
+.owl-dots{
+    text-align: center;
+    padding: 5px 0px 20px 0px;
+}
+
+.owl-dot{
+    width: 15px;
+    height:15px;
+    background: rgba(255, 255, 255, 0.4)!important;
+    border-radius: 15px;
+    margin:5px;
+}
+
+.owl-dot.active{
+    background: rgba(255, 255, 255, 0.8)!important;
 }
 
 /* Reservation Slide */
