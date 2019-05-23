@@ -154,7 +154,8 @@ body{
 .gallerySlide{
     width: 100%;
     height: 700px;
-    background: rgb(0, 0, 0);
+    background:linear-gradient(to right, rgba(18,41,0, 0.7),rgba(18,41,0, 0.9)), url("../images/gallery_bg.jpg");
+
 }
 
 .owl-carousel img{
@@ -164,7 +165,6 @@ margin:auto!important;
 border:5px solid rgba(255, 255, 255, 0.8);
 border-radius: 2px;
 height: calc(100vh - 92px);
-background:linear-gradient(to right, rgba(18,41,0, 0.7),rgba(18,41,0, 0.9)), url("../images/gallery_bg.jpg");
 background-size:cover;
 background-position: center;
 }
