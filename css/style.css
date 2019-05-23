@@ -153,10 +153,10 @@ body{
 /* Gallery Slide */
 .gallerySlide{
     width: 100%;
-    /* height: 60vh; */
+    height: calc(100vh - 92px);
     background:linear-gradient(to right,
-                            rgba(40,40,40, 0.7),
-                            rgba(40,40,40,0.9)),
+                            rgba(18,41,0, 0.7),
+                            rgba(18,41,0, 0.9)),
                                 url("../images/gallery_bg.jpg");
 
     background-size:cover;
@@ -173,8 +173,8 @@ body{
 }
 
 .owl-carousel img{
-    max-height:75vh;
-    max-width: 50vw !important;
+    max-height: calc(100vh - 170px);
+    max-width: 80vw !important;
     width: auto !important;
     margin:auto!important;
     /* margin-top: 20px !important; */
@@ -298,6 +298,38 @@ body{
     background:linear-gradient(to left,
     rgba(36,5,5,0.8),
     rgba(36,5,5,0.9));
+}
+
+/* Quality Slide */
+
+.qualitySlide{
+    width:100%;
+    height:600px;
+    background: url("../images/watermark-cut.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.qualitySlide .container{
+    height:600px;
+
+}
+
+.quality-poster{
+    width: 30%;
+}
+
+.quality-poster img{
+    width: 300px;
+    border-radius: 2px;
+}
+
+.quality-text{
+    width: 70%;
+    padding: 23px;
+    color: rgb(27, 61, 3);
+    font-size: 25px;
+    font-weight: 300;
 }
 
 /* Contact Slide */
@@ -424,6 +456,17 @@ body{
     color:rgba(255, 255, 255, 0.7);
     text-decoration: underline;
     transition-duration: 0.2s;
+}
+
+.dividerSlide{
+    height:90vh;
+    background:linear-gradient(to right,
+                            rgba(40,40,40, 0.7),
+                            rgba(40,40,40,0.9)),
+                            url("../images/gallery_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
