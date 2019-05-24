@@ -349,6 +349,12 @@ background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
+/*getDirections btn*/
+.getDirections {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+}
 
 /*map-top-right-controls padding*/
 /* .mapboxgl-ctrl-top-right{
