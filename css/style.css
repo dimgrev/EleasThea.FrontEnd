@@ -205,7 +205,21 @@ background-position: center;
 .owl-dot.active{
     background: rgba(255, 255, 255, 0.8)!important;
 }
-
+.fa-chevron-left{
+    font-size: 30px;
+    width: 97vw;
+    color: bisque;
+    position: absolute;
+    text-align: left;
+    right:0;
+}
+.fa-chevron-right{
+    font-size: 30px;
+    width: 97vw;
+    color: bisque;
+    position: absolute;
+    text-align: right;
+}
 /* Reservation Slide */
 .reservationSlide{
     width:100%;
@@ -349,6 +363,28 @@ background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
+
+/*getDirections btn*/
+
+button.getDirections::before{
+    content:url("../images/route-solid.svg");
+    width: 13px !important;
+    display: inline-block;
+    margin: 1px 7px 1px 1px!important;
+    opacity: 0.7;    
+}
+
+button.getDirections {
+    font-weight: bold;
+    font-size: 15px!important;
+    color: rgb(0, 0, 0, 0.7)!important;
+    width: auto!important;
+    padding: 5px 10px 5px 10px;
+}
+
+.mapboxgl-ctrl{
+    margin-right:1vw!important;
+}   
 
 /*map-top-right-controls padding*/
 /* .mapboxgl-ctrl-top-right{
@@ -519,6 +555,9 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 .button:active, 

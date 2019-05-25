@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+    //Testing..
+    
+
     //Things to do when website fully loaded..
     
     //A message for our little friends...
@@ -26,7 +29,13 @@ $( document ).ready(function() {
         $(".owl-carousel").owlCarousel({
             items:1,
             center:true,
-            dots:true
+            dots:true,
+            
+     loop  : true,
+     margin : 30,
+     nav    : true,
+     smartSpeed :900,
+     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
         });
     });
 
@@ -71,9 +80,43 @@ $( document ).ready(function() {
         map.scrollZoom.enable();
     }
     document.getElementById("map").onmouseout = function zmd() {
-        map.scrollZoom.disable();;
+        map.scrollZoom.disable();
     }
-    
+    //Custom Map Button Get directions
+    class MyCustomControl {
+        onAdd(map) {
+            this._map = map;
+        
+            this._btn = document.createElement("button");
+            this._btn.className = "getDirections";
+            this._btn.textContent = "Get Directions";
+            this._btn.type = "button";
+            this._btn["aria-label"] = "Get Directions";
+            this._btn.onclick = function() {
+                var win = window.open("https://goo.gl/maps/kFPBsLKj4gmZAwH99", '_blank');
+                win.focus();
+            };
+
+
+        
+            this._container = document.createElement("div");
+            this._container.className = "mapboxgl-ctrl-group mapboxgl-ctrl";
+            this._container.appendChild(this._btn); 
+        
+            return this._container;
+          }
+        
+          onRemove() {
+            this._container.parentNode.removeChild(this._container);
+            this._map = undefined;
+          }
+        }
+      
+
+      const myCustomControl = new MyCustomControl();
+      
+      map.addControl(myCustomControl, 'top-right');
+
 
     // Add zoom and rotation controls to the map.
     // map.addControl(new mapboxgl.NavigationControl());
