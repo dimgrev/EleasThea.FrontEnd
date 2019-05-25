@@ -279,11 +279,11 @@ background-position: center;
     border: solid rgba(0,0,0,0.15) 1px;
 }
 
-.reservation-form-input-maxWidth{
+.form-input-maxWidth{
     width:100%;
 }
 
-.reservation-form-input-halfWidth{
+.form-input-halfWidth{
     width:180px;
 }
 

@@ -158,17 +158,17 @@
         <div class="reservation-form d-flex flex-column align-items-center justify-content-center">
             <div class="reservation-form-container">
                     <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
-                    <input type="text" name="fullName" placeholder="Κάποιος Κάποιου" class="reservation-form-input-maxWidth" required>
+                    <input type="text" name="fullName" placeholder="Κάποιος Κάποιου" class="form-input-maxWidth" required>
                     <br>
 
                     <div class="input-explainer">Η διεύθυνση e-mail σας</div>
-                    <input type="email" name="email" placeholder="todd@ross.com" class="reservation-form-input-maxWidth" required>
+                    <input type="email" name="email" placeholder="todd@ross.com" class="form-input-maxWidth" required>
                     <br>
 
                     <div class="input-explainer">Αριθμός τηλεφώνου & αριθμός ατόμων</div>
                     <div>
-                        <input type="number" name="telephone" placeholder="69ΧΧΧΧΧΧΧΧ" class="reservation-form-input-halfWidth">
-                        <select placeholder="Άτομα" name="numberOfPeople" class="select-PersonsNumber reservation-form-input-halfWidth" required>
+                        <input type="number" name="telephone" placeholder="69ΧΧΧΧΧΧΧΧ" class="form-input-halfWidth">
+                        <select placeholder="Άτομα" name="numberOfPeople" class="select-PersonsNumber form-input-halfWidth" required>
                             <option value="1">1 Άτομο</option>
                             <option value="2">2 Άτομα</option>
                             <option value="3">3 Άτομα</option>
@@ -182,8 +182,8 @@
                     <br>
 
                     <div class="input-explainer">Ημερομηνία & Ώρα κράτησης</div>
-                    <input type="date" id="reservation-date-picker" class="reservation-form-input-halfWidth" placeholder="Ημερομηνία" required>
-                    <input type="time" min="11:00" max="18:00" value="11:00" class="reservation-form-input-halfWidth" placeholder="Ώρα" required>
+                    <input type="date" id="reservation-date-picker" class="form-input-halfWidth" placeholder="Ημερομηνία" required>
+                    <input type="time" min="11:00" max="18:00" value="11:00" class="form-input-halfWidth" placeholder="Ώρα" required>
                     <br>
 
                     <button type="submit" class="reserveBtn">Κάντε Κράτηση Online <i class="fas fa-check"></i></button>
@@ -272,16 +272,28 @@
             </div>
         </div>
     </div>
-        <div class="sendMessage">
-            <div class="">
-                <div class="details-msg"></div>
+
+    <div class="sendMessage">
+        <div class="d-flex flex-row container justify-content-between">
+            <div>
+                    <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
+                    <input type="text" name="fullName" placeholder="Κάποιος Κάποιου" class="form-input-maxWidth" required>
+                    <br>
+
+                    <div class="input-explainer">Η διεύθυνση e-mail σας</div>
+                    <input type="email" name="email" placeholder="todd@ross.com" class="form-input-maxWidth" required>
+                    <br>
+
+                    <div class="input-explainer">Αριθμός τηλεφώνου & αριθμός ατόμων</div>
+                    <input type="number" name="telephone" placeholder="69ΧΧΧΧΧΧΧΧ" class="form-input-maxWidth">
             </div>
-        </div>  
+            <div>
+
+            </div>
+        </div>
+    </div>  
     
-        <!-- 
-    <div class="dividerSlide">            
-    </div>
-     -->
+
     
     <!-- Footer -->
     <div class="myfooter d-flex flex-column justify-content-center align-items-center">
