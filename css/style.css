@@ -432,23 +432,23 @@ button.getDirections {
     align-items: center;
     justify-content: right;
 }
-.details-smsg{
-    /* text-align: left; */
-}
+/* .details-smsg{
+    /* text-align: left; 
+} */
 .details-msg{
     text-align: center;
     color:rgba(0, 0, 0, 0.7);
 }
-.details-send-btn{
+/* .details-send-btn{
     /* font-size: 28px;
     color: rgb(29, 67, 94);
     margin: 6px;
-    margin-right: 0px; */
+    margin-right: 0px; 
 }
 .details-send-btn:hover {
     /* cursor: pointer;
-    color: rgb(45, 65, 80); */
-}
+    color: rgb(45, 65, 80); 
+} */
 .fa-icons{
     margin: 10px;
     margin-top: 11px;
