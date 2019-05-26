@@ -415,9 +415,9 @@ button.getDirections {
 .details-info{
     font-size: 14px;
     font-weight: 300;
-    color:rgba(43, 4, 4, 0.808);
+    color:rgba(54, 24, 6, 0.70);
     margin: 15px 10px 10px 5px;
-    text-shadow: 0px 1px #46464644;
+    font-family: sans-serif;
 }
 .fa-icons{
     margin: 10px;
@@ -426,22 +426,22 @@ button.getDirections {
     font-size: 21px;
 }
 .fa-map-marker-alt{
-    color:  rgba(0, 76, 78, 0.849);
+    color:  rgba(36, 92, 94, 0.75);
 }
 .fa-phone{
-    color:  rgba(27, 94, 31, 0.808);
+    color:  rgba(40, 112, 45, 0.75);
 }
 .fa-clock{
-    color:  rgb(47, 70, 82);
+    color:  rgba(78, 124, 145, 0.75);
 }
 .fa-at{
-    color:  rgba(179, 26, 12, 0.753);
+    color: rgba(177, 108, 18, 0.75);
 }
 .fa-face{
-    color:	rgba(1, 88, 155, 0.897);
+    color:	rgba(47, 107, 153, 0.75);
 }
 .fa-inst{
-    color:  rgba(136, 14, 55, 0.877);
+    color:  rgba(139, 30, 67, 0.75);
 }
 .sendMessage{
     height:20vh;
