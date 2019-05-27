@@ -151,52 +151,43 @@ body{
 }
 
 /* Gallery Slide ALT */
-
-
-/* Gallery Slide
-.gallerySlide{    
-    width: 100vw;
-    height:100vh;
+.gallerySlideAlt{
+    width: 100%;
+    height:100%;
     background:linear-gradient(to right, rgba(26, 26, 26, 0.7),rgba(26, 26, 26, 0.9)), url("../images/gallery_bg.jpg");
-    visibility: hidden;
+    position: fixed;
+    top:0px;
+    z-index: 1100;
+    visibility: hidden; /*By Default */
 }
 
 .gallery-visible{
-    position: fixed;
-    top:0px;
-    visibility: visible;
-    z-index: 1100;
-} */
-
-/* .owl-carousel img{
-height:550px;
-width: auto !important;
-margin:auto!important;
-border:5px solid rgba(255, 255, 255, 0.8);
-border-radius: 2px;
-height: calc(100vh - 92px);
-background-size:cover;
-background-position: center;
-} */
-
-/* .owl-item{
-    padding: 20px;
+    visibility:visible!important;
 }
+
+.owl-item{
+    padding:20px 0px 20px 0px !important;
+}
+
+.owl-item img{
+    max-height:70vh!important;
+    height:auto!important;
+    width:auto!important;
+    max-width: 90vw!important;
+    margin:auto!important;
+    border:5px solid white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+/* 
+.gallerySlideAlt .owl-carousel{
+
+}
+*/
 
 .owl-stage{
-    display: flex;
-    align-items: center;    
-}
-
-.owl-carousel img{
-    max-height: calc(100vh - 170px);
-    max-width: 80vw !important;
-    width: auto !important;
-    margin:auto!important;
-     margin-top: 20px !important;
-    border:5px solid rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
-    vertical-align: middle !important;
+    display:flex;
+    align-items: center;
 }
 
 .owl-dots{
@@ -215,21 +206,21 @@ background-position: center;
 .owl-dot.active{
     background: rgba(255, 255, 255, 0.8)!important;
 }
-.fa-chevron-left{
-    font-size: 30px;
-    width: 97vw;
-    color: bisque;
-    position: absolute;
-    text-align: left;
-    right:0;
+
+.fa-chevron-right, .fa-chevron-left{
+    color:rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    padding: 25px;
+    background: rgba(0,0,0,0.2);
 }
-.fa-chevron-right{
-    font-size: 30px;
-    width: 97vw;
-    color: bisque;
-    position: absolute;
-    text-align: right;
-} */
+
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:calc(50vh - 50px);
+    width:100%;
+}
 
 /* Reservation Slide */
 .reservationSlide{

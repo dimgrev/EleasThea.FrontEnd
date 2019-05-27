@@ -29,13 +29,11 @@ $( document ).ready(function() {
         $(".owl-carousel").owlCarousel({
             items:1,
             center:true,
-            dots:true,
-            
-     loop  : true,
-     margin : 30,
-     nav    : true,
-     smartSpeed :900,
-     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+            dots:true,            
+            loop  : false,
+            margin : 30,
+            nav    : true,
+            navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
         });
     });
 
