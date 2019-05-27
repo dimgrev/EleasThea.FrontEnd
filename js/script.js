@@ -21,15 +21,14 @@ $( document ).ready(function() {
     $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
 
     //Call the OWL
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            items:1,
-            center:true,
-            dots:true,            
-            nav    : true,
-            navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
-        });
+    $(".owl-carousel").owlCarousel({
+        items:1,
+        center:true,
+        dots:true,            
+        nav    : true,
+        navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
     });
+    
 
     //Gallery open/close btns
     $(".close-gallery-btn").on("touchstart click", function(){
