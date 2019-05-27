@@ -219,9 +219,7 @@
     <div class="contactSlide d-flex flex-row">
         <div id='map' onclick="zme()" onmouseout="zmd()"></div>
         <div class="contactDetails d-flex flex-column align-items-center justify-content-center">
-            
-            <div class="contactContainer">
-                <div class="contactDetails-container">
+                <div class="contactDetails-container d-flex flex-column">
                     <div class="contactDetails-Section">
                         <i class="fas fa-map-marker-alt fa-icons"></i>
                             <div class="details-info">
@@ -270,30 +268,37 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 
-    <div class="sendMessage">
-        <div class="d-flex flex-row container justify-content-between">
-            <div>
-                    <div class="input-explainer">Ονοματεπώνυμο</div>        
-                    <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
-                    <br>
-
-                    <div class="input-explainer">Θέμα</div>        
-                    <input type="text" name="fullName" placeholder="Θέμα" class="form-input-maxWidth" required>
-                    <br>
-
-                    <div class="input-explainer">Η διεύθυνση e-mail σας</div>
-                    <input type="email" name="email" placeholder="todd@ross.com" class="form-input-maxWidth" required>
-                    <br>
-
-                    <div class="input-explainer">Μήνυμα</div>
-                    <input type="text" name="message" placeholder="Γράψτε ένα μήνυμα.." class="form-input-maxWidth">
+    <div class="sendMessage-slide d-flex flex-row align-items-center justify-content-center">
+        <div class="sendMessage-poster d-flex flex-column align-items-center justify-content-center">
+                <div class="sendMessage-tittle">
+                    Στείλτε ένα μήνυμα
+                </div>
+                <div class="sendMessage-text">
+                    Θα χαρούμε πολύ να μάθουμε την αποψή σας για το μαγαζί και το προσωπικό μας και ανυπομονούμε να σας εξυπηρετήσουμε καλύτερα στο άμεσο μέλλον.
+                </div>
             </div>
-            <div>
+            <div class="sendMessage-info d-flex flex-column">
+                    <div class="input-explainer-msg">Ονοματεπώνυμο</div>        
+                    <input type="text" name="fullName" placeholder="John Doe" class="form-input-msg" required>
+                    <br>
 
+                    <div class="input-explainer-msg">Η διεύθυνση e-mail σας</div>
+                    <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-msg" required>
+                    <br>
+
+                    <div class="input-explainer-msg">Θέμα Μηνύματος</div>        
+                    <input type="text" name="fullName" placeholder="Θέμα" class="form-input-msg" required>
+                    <br>
             </div>
+            <div class="sendMessage-container d-flex flex-column justify-content-center">
+
+                    <div class="input-explainer-msg">Μήνυμα</div>
+                    <textarea type="text" name="message" placeholder="Γράψτε ένα μήνυμα.." class="form-input-msg messagetxt"></textarea>
+
+                    <button type="submit" class="sendMessageBtn">Στείλτε το μήνυμα <i class="fas fa-paper-plane"></i></button>
+            </div>   
         </div>
     </div>  
     
