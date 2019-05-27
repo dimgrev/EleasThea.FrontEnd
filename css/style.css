@@ -109,10 +109,11 @@ body{
 
 .title{
     color: rgba(255, 255, 255, 0.99);
-    font-size: 50px;
+    font-size: 45px;
     width: 50vw;
     text-align: center;
     font-weight: 100;
+    margin-bottom: 5%;
     text-shadow:2px 2px 4px rgba(0,0,0,0.5);
 
 }
