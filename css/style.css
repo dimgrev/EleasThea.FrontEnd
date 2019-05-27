@@ -144,8 +144,8 @@ body{
 .detailsSlideAlt{
     width:100%;
     min-height:400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -171,6 +171,27 @@ body{
     padding-top:50px;
     padding-bottom: 50px;
     font-weight: 100;
+}
+
+.detailsSlideAlt .owl-dots{
+    text-align: center;
+    padding: 5px 0px 20px 0px;
+}
+
+.detailsSlideAlt .owl-dot{
+    width: 15px;
+    height:15px;
+    background: rgba(16, 31, 28, 0.15)!important;
+    border-radius: 15px;
+    margin:5px;
+}
+
+.detailsSlideAlt .owl-nav{
+    display: none;
+}
+
+.detailsSlideAlt .owl-dot.active{
+    background: rgba(16, 31, 28, 0.3)!important;
 }
 
 /* Gallery Slide ALT */
