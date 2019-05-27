@@ -226,14 +226,15 @@ body{
 }
 
 .fa-times{
-    position: fixed;
+    position: absolute;
     top:0px;
+    z-index: 1200;
 }
 
 .owl-nav{
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     top:calc(50vh - 50px);
     width:100%;
 }
