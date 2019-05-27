@@ -26,26 +26,28 @@ $( document ).ready(function() {
             items:1,
             center:true,
             dots:true,            
-            loop  : false,
-            margin : 30,
             nav    : true,
             navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
         });
     });
 
+    //Gallery open/close btns
     $(".close-gallery-btn").on("touchstart click", function(){
         $('.gallerySlideAlt').removeClass('gallery-visible');
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
 
-    })
+    });
 
     $(".showGalleryBtn").on("touchstart click", function(){
         $('.gallerySlideAlt').addClass('gallery-visible');
-    });
-
-    // $(".reserveBtn").click(function(){
-    //     $('.gallerySlideAlt').addClass('gallery-visible');
-    // });
-
+        $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+    });   
     
 
     //Humburger

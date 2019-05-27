@@ -97,8 +97,8 @@ body{
 .homeScreenSlide{
     width: 100%;
     height:100vh;
-    background:linear-gradient(to right, rgba(0,69,75,0.2),rgba(0,69,75,0.4)),
-                                 url("../images/365.jpg");
+    background:linear-gradient(to right, rgb(53, 1, 12,0.2),rgba(53, 1, 12,0.2)),
+                                 url("../images/view.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -141,6 +141,21 @@ body{
     /* background-attachment: fixed;    */    
 }
 
+.detailsSlideAlt{
+    width:100%;
+    height:600px;
+    padding: 25px;
+}
+
+.details-para{
+    color: rgba(0,0,0,1);
+    font-size: 22px;    
+    font-weight: 300;
+    text-align: justify;
+    width:33%;
+    padding: 20px;
+}
+
 .details-text{
     width: 55%;
     color: rgba(255,255,255,1);
@@ -152,8 +167,8 @@ body{
 
 /* Gallery Slide ALT */
 .gallerySlideAlt{
-    width: 100%;
-    height:100%;
+    width: 100vw;
+    height:100vh;
     background:linear-gradient(to right, rgba(26, 26, 26, 0.7),rgba(26, 26, 26, 0.9)), url("../images/gallery_bg.jpg");
     position: fixed;
     top:0px;
@@ -161,6 +176,7 @@ body{
     transition-duration: 1s;
     left:100%; 
 }
+
 
 .gallery-visible{
     /* visibility:visible!important; */
@@ -170,6 +186,7 @@ body{
 
 .owl-item{
     padding:20px 0px 20px 0px !important;
+    z-index: 50;
 }
 
 .owl-item img{
@@ -191,6 +208,7 @@ body{
 .owl-stage{
     display:flex;
     align-items: center;
+    z-index: 1150!important;
 }
 
 .owl-dots{
@@ -234,8 +252,6 @@ body{
 .owl-nav{
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top:calc(50vh - 50px);
     width:100%;
 }
 
