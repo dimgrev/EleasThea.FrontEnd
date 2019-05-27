@@ -174,7 +174,8 @@ body{
 /* Gallery Slide ALT */
 .gallerySlideAlt{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background:linear-gradient(to right, rgba(26, 26, 26, 0.7),rgba(26, 26, 26, 0.9)), url("../images/gallery_bg.jpg");
     position: fixed;
     top:0px;
@@ -182,7 +183,7 @@ body{
     transition-duration: 1s;
     left:100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
 }
 
 
