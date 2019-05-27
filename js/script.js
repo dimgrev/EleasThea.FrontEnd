@@ -1,10 +1,6 @@
 $( document ).ready(function() {
 
-    //Testing..
-    
-
-    //Things to do when website fully loaded..
-    
+    //Things to do when website fully loaded..    
     //A message for our little friends...
     console.log( "Hello little one! Tony Stark dies" );
     
@@ -37,6 +33,20 @@ $( document ).ready(function() {
         });
     });
 
+    $(".close-gallery-btn").on("touchstart click", function(){
+        $('.gallerySlideAlt').removeClass('gallery-visible');
+
+    })
+
+    $(".showGalleryBtn").on("touchstart click", function(){
+        $('.gallerySlideAlt').addClass('gallery-visible');
+    });
+
+    // $(".reserveBtn").click(function(){
+    //     $('.gallerySlideAlt').addClass('gallery-visible');
+    // });
+
+    
 
     //Humburger
     $(".navbar").on('show.bs.collapse hide.bs.collapse', function(){
@@ -197,3 +207,7 @@ $( document ).ready(function() {
     });
     
 });
+
+function myFunction(){
+    alert("yezz");
+}

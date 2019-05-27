@@ -80,7 +80,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="scroll-on-top-nav-item nav-item nav-link" href="#">MENΟΥ</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#">GALLERY</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link showGalleryBtn" onclick="test()">GALLERY</a>
                     <a class="scroll-on-top-nav-item nav-item nav-link" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a>
                     <a class="scroll-on-top-nav-item nav-item nav-link" id="scroll-on-top-makeAReservationBtn" href="#">ΚΡΑΤΗΣΗ</a>
                 </div>            
@@ -100,7 +100,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="scroll-variable-nav-item nav-item nav-link" href="#">MENΟΥ</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link" href="#">GALLERY</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link showGalleryBtn">GALLERY</a>
                     <a class="scroll-variable-nav-item nav-item nav-link" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a>
                     <a class="scroll-variable-nav-item nav-item nav-link" id="scroll-variable-makeAReservationBtn" href="#">ΚΡΑΤΗΣΗ</a>
                 </div>            
@@ -131,7 +131,8 @@
     </div>   
 
     <!-- Gallery Slide ALT -->
-    <div class="gallerySlideAlt gallery-visible d-flex align-items-center"> <!-- gallery visible or not -->
+    <div class="gallerySlideAlt d-flex align-items-center"> <!-- gallery visible or not gallery-visible -->
+        <i class="fas fa-times close-gallery-btn"></i>
         <div class="owl-carousel">
             <div>
                 <img src="images/gallery_images/20190429_114850.jpg" alt="">
