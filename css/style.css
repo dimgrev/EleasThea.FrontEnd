@@ -212,6 +212,13 @@ body{
     font-size: 50px;
     padding: 25px;
     background: rgba(0,0,0,0.2);
+    transition-duration: 0.2s;
+}
+
+.fa-chevron-right:hover, .fa-chevron-left:hover{
+    color:rgba(255, 255, 255, 0.5);    
+    background: rgba(0,0,0,0.5);
+    transition-duration: 0.2s;
 }
 
 .owl-nav{
