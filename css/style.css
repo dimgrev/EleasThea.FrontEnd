@@ -17,7 +17,7 @@ body{
 
 .scroll-on-top-navbar-logo{
     width:140px;
-    opacity: 0.8;   
+    opacity: 1;   
 }
 
 .scroll-on-top-nav-item{
@@ -111,11 +111,10 @@ body{
     color: rgba(255, 255, 255, 0.99);
     font-size: 45px;
     width: 50vw;
-    text-align: center;
+    text-align: right;
     font-weight: 100;
     margin-bottom: 5%;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
-
+    text-shadow:2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .fa-angle-double-down{
@@ -126,6 +125,16 @@ body{
 
     color: rgba(255, 255, 255, 0.6);
     font-size: 60px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+.fa-chevron-down{
+    position: absolute;  
+    bottom: 30px;
+
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 40px;
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
