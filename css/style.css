@@ -116,6 +116,7 @@ body{
     text-shadow:2px 2px 4px rgba(0,0,0,0.5);
 
 }
+
 .fa-angle-double-down{
     position: absolute;
 
@@ -143,11 +144,12 @@ body{
 .detailsSlideAlt{
     width:100%;
     min-height:400px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background: url("../images/quotes-bg.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: center;
+    background-size: cover;
 }
 
 .detailsSlideAlt .owl-stage{
@@ -157,7 +159,7 @@ body{
 
 .details-para{
     padding: 23px;
-    color: rgb(30,52,48);
+    color: rgb(16, 31, 28);
     font-size: 25px;
     font-weight: 300;
 }
