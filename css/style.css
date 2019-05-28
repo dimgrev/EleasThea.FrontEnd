@@ -141,28 +141,18 @@ body{
 
 /* Details Slide */
 
-/* .detailsSlide{
-    width:100%;
-    background:linear-gradient(to right,
-                               rgba(21,48,0,0.4),
-                               rgba(21,48,0,0.8)),
-                                 url("../images/background3.jpg");
-    background-size: cover;
-    background-position: center;
-} */
-
 .detailsSlideAlt{
     width:100%;
     min-height:400px;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.65), rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    -moz-box-shadow:    inset 0 10px 20px 12px #ffffff, 0px 0px 15px 0px rgba(255, 255, 255, 0.2);
-    -webkit-box-shadow: inset 0 10px 20px 12px #ffffff, 0px 0px 15px 0px rgba(255, 255, 255, 0.2);
-    box-shadow:         inset 0 10px 20px 12px #ffffff, 0px 0px 15px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow:    inset 0 10px 20px 12px #ffffff; /* 0px 0px 15px 0px rgba(255, 255, 255, 0.2); */
+    -webkit-box-shadow: inset 0 10px 20px 12px #ffffff;
+    box-shadow:         inset 0 10px 20px 12px #ffffff;
 }
 
 .detailsSlideAlt .owl-stage{
@@ -172,7 +162,7 @@ body{
 
 .details-para{
     padding: 23px;
-    color: rgb(16, 31, 28);
+    color: rgb(23, 36, 18);
     font-size: 25px;
     font-weight: 300;
 }
@@ -194,7 +184,7 @@ body{
 .detailsSlideAlt .owl-dot{
     width: 15px;
     height:15px;
-    background: rgba(16, 31, 28, 0.15)!important;
+    background: rgba(23, 36, 18, 0.15)!important;
     border-radius: 15px;
     margin:5px;
 }
@@ -204,7 +194,7 @@ body{
 }
 
 .detailsSlideAlt .owl-dot.active{
-    background: rgba(16, 31, 28, 0.3)!important;
+    background: rgba(23, 36, 18, 0.3)!important;
 }
 
 /* Gallery Slide ALT */
@@ -344,7 +334,6 @@ body{
 
 .reservation-form{
     width:50vw;
-    /* background: gray; */
 }
 
 .reservation-form-container{
@@ -365,10 +354,10 @@ body{
     margin-top: 5px;
 }
 
-.reservation-form input, .select-PersonsNumber{
+input, textarea, .select-PersonsNumber{
     padding:10px 15px 10px 15px;
     margin:10px 0px 10px 0px;
-    background:white;
+    background:rgba(255, 255, 255, 0.7);
     color:rgba(0,0,0,0.4);
     border: solid rgba(0,0,0,0.15) 1px;
 }
@@ -526,79 +515,26 @@ button.getDirections {
     color:  rgba(139, 30, 67, 0.75);
 }
 
-/* Send Message Slide */
+/* SendMessage Slide */
+.sendMessageSlide{
+    width: 100%;
+    height:500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../images/pen-cut.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
 
-.sendMessage-slide{
-    width:100%;
-    height:250px;
+.sndMsg-personalInfo, .sndMsg-messageTxtBox{
+    padding: 20px;
+    width:50%;
 }
-.sendMessage-poster{
-    width:44vw;
-    height:100%;
-    background:linear-gradient(to right,
-    rgba(201, 167, 141, 0.171),
-    rgba(255, 255, 255, 0.103)
-                                 );
-}
-.sendMessage-tittle{
-    color: rgba(54, 24, 6, 0.70);
-    font-weight: 100;
-    font-size: 40px;
-    width: 35vw;
-    text-align: center;
-    font-weight: 100;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.2);
-}
-.sendMessage-text{
-    color: rgba(54, 24, 6, 0.75);
-    font-weight: 100;
-    font-size: 18px;
-    width: 40vw;
-    text-align: center;
-    font-weight: 100;
-    padding:5px;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.2);
-}
-.input-explainer-msg{
-    color:rgba(54, 24, 6, 0.75);
-    font-size: 13px;
-    font-weight: 400;
-    margin: 10px 10px 0px 25px;
 
-}
-.sendMessage-info{
-    width: 26vw;
-}
-.form-input-msg{
-    padding:3px 10px 3px 8px;
-    margin: 2px 10px 0px 25px;
-    background:white;
-    color:rgba(0,0,0,0.4);
-    border: solid rgba(0,0,0,0.15) 1px;
-}
-.sendMessage-container{
-    width: 29vw;
-    height: 100%;
-}
-.messagetxt{
-    height: 100%;
-    max-height: 95px;
-}
-.sendMessageBtn{
-    min-width: 100px;
-    max-width: 393px;
-    background:linear-gradient(to right,
-    rgba(54, 24, 6, 0.75),
-    rgba(54, 24, 6, 0.85));
-    border: none;
-    padding: 5px 10px 5px 10px;
-    margin: 25px 10px 0px 25px;
-    color:white;
-}
-.sendMessageBtn:hover{
-    background:linear-gradient(to left,
-    rgba(54, 24, 6, 0.75),
-    rgba(54, 24, 6, 0.85));
+.sndMsg-messageTxtBox textarea{
+    width: 100%;
+    height:155px;
+    resize: none;
 }
 
 /* Footer Slide */
@@ -694,7 +630,15 @@ input[type=number] {
 .input:focus, 
  input:focus,
 .input:hover, 
- input:hover{
+ input:hover,
+.textarea:active, 
+textarea:active,
+.textarea:focus, 
+textarea:focus,
+.textarea:hover, 
+textarea:hover{
     /* border:none !important; */
     outline:none !important;
 }
+
+
