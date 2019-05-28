@@ -7,9 +7,6 @@ body{
 
 /* Nav Section */
 
-.hamburger-inner .hamburger-box .hamburger--arrow .hamburger{
-    background:red !important;
-}
 
 .scroll-on-top-navbar{
     background:rgba(255, 255, 255, 0);

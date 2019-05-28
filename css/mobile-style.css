@@ -1,0 +1,8 @@
+
+.scroll-variable-navbar .hamburger-inner, .scroll-variable-navbar .hamburger-inner::before, .scroll-variable-navbar .hamburger-inner::after{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.scroll-on-top-navbar .hamburger-inner, .scroll-on-top-navbar .hamburger-inner::before, .scroll-on-top-navbar .hamburger-inner::after{
+    background-color: rgba(255,255,255,0.5);
+}
