@@ -3,6 +3,26 @@ $( document ).ready(function() {
     //Things to do when website fully loaded..    
     //A message for our little friends...
     console.log( "Hello little one! Tony Stark dies" );
+
+    //display if needed the cookie bar...  
+    if (localStorage.getItem('eleas-thea-hasDismissedCookieBar') != 'true') {
+        //display cookie bar
+        $(".cookie-bar").css("visibility","visible");
+    }
+
+    //add hasRevisited website...
+    $(".close-cookie-bar-btn").click(function(){
+        localStorage.setItem('eleas-thea-hasDismissedCookieBar', 'true');
+        
+        $(".cookie-bar").animate({
+            bottom:"-200px",
+        }, "slow");     
+        
+        $(".cookie-bar").animate({
+            visibility:"hidden",
+        }, "slow"); 
+    });
+
     
     //Check scroll status and show correct navbar
     checkAndPrintCorrectNavBar();        
@@ -208,7 +228,3 @@ $( document ).ready(function() {
     });
     
 });
-
-function myFunction(){
-    alert("yezz");
-}
