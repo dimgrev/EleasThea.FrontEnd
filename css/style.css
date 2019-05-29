@@ -14,7 +14,7 @@ body{
 
 .scroll-on-top-navbar-logo{
     width:140px;
-    opacity: 1;   
+    opacity: 0.75;   
 }
 
 .scroll-on-top-nav-item{
@@ -113,22 +113,9 @@ body{
     margin-bottom: 5%;
     text-shadow:2px 2px 4px rgba(0,0,0,0.2);
 }
-
-.fa-angle-double-down{
-    position: absolute;
-
-   
-    bottom: 60px;
-
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 60px;
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-
 .fa-chevron-down{
     position: absolute;  
-    bottom: 30px;
+    bottom: 5vh;
 
     color: rgba(255, 255, 255, 0.2);
     font-size: 40px;
@@ -319,6 +306,7 @@ body{
     /* background:linear-gradient(to right,
                                 rgba(36,5,5,0.05),
                                 rgba(36,5,5,0.3)); */
+    flex-direction: row;
 }
 
 .reservation-poster{
@@ -359,7 +347,7 @@ body{
 }
 
 .reservation-form-container{
-    min-width:200px;
+    max-width:367px;
     background:white;
 }
 
@@ -392,7 +380,7 @@ input, textarea, .select-PersonsNumber{
     width:180px;
 }
 
-.reservation-form input::placeholder{ 
+input::placeholder, textarea::placeholder{ 
     color:rgba(0,0,0,0.3);
 }
 
@@ -428,6 +416,7 @@ input, textarea, .select-PersonsNumber{
 
 .quality-poster{
     width: 30%;
+    flex-direction: column;
 }
 
 .quality-poster img{
@@ -446,6 +435,7 @@ input, textarea, .select-PersonsNumber{
 /* Contact Slide */
 .contactSlide{
     width:100%;
+    flex-direction: row;
 }
 
 #map{
@@ -470,11 +460,11 @@ button.getDirections {
     font-size: 15px!important;
     color: rgb(0, 0, 0, 0.7)!important;
     width: auto!important;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px !important;
 }
 
 .mapboxgl-ctrl{
-    margin-right:1vw!important;
+    margin-right:10px!important;
 }   
 
 /*map-top-right-controls padding*/
@@ -546,6 +536,7 @@ button.getDirections {
     background: url("../images/pen-cut.jpg");
     background-repeat: no-repeat;
     background-position: left bottom;
+    flex-direction: row;
 }
 
 .sndMsg-personalInfo, .sndMsg-messageTxtBox{
@@ -562,7 +553,7 @@ button.getDirections {
 /* Footer Slide */
 
 .myfooter{
-    background: linear-gradient(to right, rgba(40,12,0,0.6),rgba(40,12,0,0.95)), url("../images/369.jpg");
+    background: linear-gradient(to right, rgba(40,12,0,0.75),rgba(40,12,0,0.90)), url("../images/369.jpg");
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
