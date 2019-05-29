@@ -117,9 +117,9 @@ $( document ).ready(function() {
         
             this._btn = document.createElement("button");
             this._btn.className = "getDirections";
-            this._btn.textContent = "Get Directions";
+            this._btn.textContent = "View in Google Maps";
             this._btn.type = "button";
-            this._btn["aria-label"] = "Get Directions";
+            this._btn["aria-label"] = "View in Google Maps";
             this._btn.onclick = function() {
                 var win = window.open("https://goo.gl/maps/kFPBsLKj4gmZAwH99", '_blank');
                 win.focus();

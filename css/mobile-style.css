@@ -6,3 +6,162 @@
 .scroll-on-top-navbar .hamburger-inner, .scroll-on-top-navbar .hamburger-inner::before, .scroll-on-top-navbar .hamburger-inner::after{
     background-color: rgba(255,255,255,0.5);
 }
+
+
+@media screen and (max-width: 991px) {
+    /* Home Screen Slide */
+
+    .homeScreenSlide{
+        height:83vh;        
+        background-size: cover;
+        background-position: 27% 0%; 
+        background-attachment: initial;
+    }
+
+    .title{
+        font-size: 35px;
+        width: 55vw;
+        font-weight: 100;
+        text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+        margin-right: 15px;
+    }
+
+    .fa-chevron-down{
+        /* position absolute */
+        bottom: 15vh;
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 40px;
+        -webkit-animation: mover 1s infinite  alternate;
+        animation: mover 1s infinite  alternate;
+    }
+
+    /* Details Slide */
+
+    .detailsSlideAlt{
+        min-height:400px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-size: cover;
+      
+    }
+
+    .details-para{
+        padding: 20px;
+        color: rgb(23, 36, 18);
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    /* Rservation Slide */
+    .reservationSlide{
+        flex-direction: column;
+        height:800px;
+    }
+
+    .reservation-poster{
+        width: 100vw;
+        height: 300px;
+        -webkit-clip-path: initial;
+        clip-path: initial;
+    }
+
+    .reservation-title{
+        font-size: 35px;
+        width:100vw;
+    }
+
+    .reservation-text{
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 100;
+        font-size: 18px;
+        width: 90vw;
+        text-align: center;
+        font-weight: 100;
+        padding:20px;
+    }
+
+    .reservation-form{
+        width:100vw;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    /* Quality Slide */
+    .qualitySlide{
+        width:100%;
+        height:fit-content!important;
+        background: linear-gradient(to right, rgba(255,255,255,0.99), rgba(255,255,255,0.9), rgba(255,255,255,0.75)), url("../images/salata2.jpg");
+        background-size:cover;
+
+        -moz-box-shadow:    inset 0 10px 40px 20px #ffffff; /* 0px 0px 15px 0px rgba(255, 255, 255, 0.2); */
+        -webkit-box-shadow: inset 0 10px 40px 20px #ffffff;
+        box-shadow:         inset 0 10px 40px 20px #ffffff;
+
+        background-position: left;
+    }
+
+    .quality-text{
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 300;
+        width:75%;
+        text-align: right;
+        height: fit-content;
+        background:grey;
+    }
+
+    .quality-poster img{
+    }
+
+    .quality-poster{
+        
+        display: none!important;
+    }
+
+    /* Contact Slide */
+    .contactSlide{
+        flex-direction: column;        
+    }
+
+    #map{
+        width:100%;
+        height:300px;
+        -webkit-clip-path: initial;
+        clip-path: initial;
+    }
+
+    .contactDetails{
+        width: 100vw;
+        height: 400px;
+    }
+    
+    /* Send Message Style */
+    .sendMessageSlide{
+        padding: 20px;
+        padding: 20px;
+        flex-direction: column;
+        background-size: 50%;
+        height: 650px;
+        
+    }
+
+    .sendMessageSlide .container{
+        flex-direction: column;
+        max-width: 367px!important;
+        
+    }
+
+    .sndMsg-personalInfo, .sndMsg-messageTxtBox{
+        width:100%;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .form-input-halfWidth{
+        width:140px;
+    }
+}
+
+
+
