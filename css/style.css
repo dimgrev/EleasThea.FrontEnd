@@ -314,6 +314,19 @@ body{
     justify-content: space-between;
     width:100%;
 }
+/* Menu Slide*/
+.Menu-poster{
+    width:50vw;
+    height:100%;
+    background:linear-gradient(to right,
+                                rgba(19, 36, 5, 0.5),
+                                rgba(19, 36, 5,0.8)),
+                                  url("../images/Menu2.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
 
 /* Reservation Slide */
 .reservationSlide{
