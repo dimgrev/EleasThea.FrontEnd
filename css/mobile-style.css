@@ -100,21 +100,22 @@
         background-position: left;
     }
 
+    .qualitySlide .container{
+        height: fit-content!important;
+    }
+
     .quality-text{
-        padding: 5px;
-        font-size: 18px;
+        padding-top:35px!important;
+        padding-bottom:35px!important;
+        font-size: 17px;
         font-weight: 300;
         width:75%;
         text-align: right;
         height: fit-content;
-        background:grey;
-    }
-
-    .quality-poster img{
-    }
+    }   
 
     .quality-poster{
-        
+        background: red;
         display: none!important;
     }
 
