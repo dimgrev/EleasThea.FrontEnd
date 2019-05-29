@@ -7,9 +7,6 @@ body{
 
 /* Nav Section */
 
-.hamburger-inner .hamburger-box .hamburger--arrow .hamburger{
-    background:red !important;
-}
 
 .scroll-on-top-navbar{
     background:rgba(255, 255, 255, 0);
@@ -636,6 +633,32 @@ button.getDirections {
     background-attachment: fixed;
 }
 
+/* Cookie Bar */
+.cookie-bar{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    padding: 15px;
+    color:rgba(255,255,255,0.7);
+    font-size: 17px;
+    font-weight: 400;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);   
+    visibility: hidden;
+    z-index: 1300;
+}
+
+.cookie-bar .close-cookie-bar-btn{
+    color:rgba(255,255,255,0.4);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left:20px;
+}
+
+.cookie-bar .close-cookie-bar-btn:hover{
+    color:rgba(255,255,255,1);
+    cursor: pointer;    
+}
 
 /* Helpers */
 

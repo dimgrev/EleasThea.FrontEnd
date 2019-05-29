@@ -3,9 +3,28 @@ $( document ).ready(function() {
     //Things to do when website fully loaded..    
     //A message for our little friends...
     console.log( "Hello little one! Tony Stark dies" );
+
+    //display if needed the cookie bar...  
+    if (localStorage.getItem('eleas-thea-hasDismissedCookieBar') != 'true') {
+        //display cookie bar
+        $(".cookie-bar").css("visibility","visible");
+    }
+
+    //add hasRevisited website...
+    $(".close-cookie-bar-btn").click(function(){
+        localStorage.setItem('eleas-thea-hasDismissedCookieBar', 'true');
+        
+        $(".cookie-bar").animate({
+            bottom:"-200px",
+        }, "slow");     
+        
+        $(".cookie-bar").animate({
+            visibility:"hidden",
+        }, "slow"); 
+    });
+
     
-    //Check scroll status and show correct navbar
-    checkAndPrintCorrectNavBar();        
+            
 
     //Set today's date in #reservation-date-picker...
     var d = new Date();
@@ -49,27 +68,9 @@ $( document ).ready(function() {
     });   
     
 
-    //Humburger
-    $(".navbar").on('show.bs.collapse hide.bs.collapse', function(){
-        $("#toggleHumburgerBtn").toggleClass("is-active");
-    });
+    
 
-
-    //when scrolling change navbar
-    $(window).scroll(function() {
-        checkAndPrintCorrectNavBar();
-    });
-
-    //functions...
-    function checkAndPrintCorrectNavBar(){
-        var $height = $(window).scrollTop();
-        if($height > 0) {
-            $('.scroll-variable-navbar').removeClass('scroll-variable-navbar-hidden');
-        }
-        else {
-            $('.scroll-variable-navbar').addClass('scroll-variable-navbar-hidden');
-        }
-    }
+    
 
     // MapBox
     mapboxgl.accessToken = 'pk.eyJ1Ijoia29ua3JpIiwiYSI6ImNqdnY2eWd1NjNzZHA0OXBic2Q2aXhoMDgifQ.zF2_d5xcqvmLJ190Qg6_8w';
@@ -208,7 +209,3 @@ $( document ).ready(function() {
     });
     
 });
-
-function myFunction(){
-    alert("yezz");
-}
