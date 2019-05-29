@@ -67,8 +67,26 @@ $( document ).ready(function() {
         });
     });   
     
-
-    
+    //Menu Slide
+    // $(".menuClick").on("touchstart click", function(){
+    //     $('.fa-utensils, .menuClick').css({
+    //         visibility: 'hidden',
+    //         position: 'absolute'
+    //     });
+    //     $('.menu-text').css({
+    //         visibility: 'visible'
+    //     });
+    //     $('.menu-poster').addClass('menu-img-chg');
+    // });
+    $(".menuClick").on("touchstart click", function(){
+        $('.fa-utensils, .menuClick').css({
+            visibility: 'hidden',
+            position: 'absolute'});
+        $(".menu-text").css({
+            visibility: 'visible'
+        });
+        $(".menuClose").toggleClass("transparent");
+    });
 
     
 

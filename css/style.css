@@ -312,18 +312,119 @@ body{
     width:100%;
 }
 /* Menu Slide*/
-.Menu-poster{
+
+
+.menu-slide{
+    width:100%;
+    height:600px;
+}
+.menu-poster{
     width:50vw;
     height:100%;
-    background:linear-gradient(to right,
-                                rgba(19, 36, 5, 0.5),
-                                rgba(19, 36, 5,0.8)),
-                                  url("../images/Menu2.jpg");
+    
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
+.menuOpen{
+    position: absolute;    
+    height: 81.5%;
+    width: 80%;
+    background:linear-gradient(to right,rgba(18, 22, 10, 0.65),rgba(44, 17, 2, 0.8)), url("../images/Menu2.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    left: -4.5vw;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.menuClose{
+    position: absolute;    
+    height: 81.5%;
+    width: 80%;
+    background: linear-gradient(to right, rgba(36, 15, 5, 0.71),rgba(36, 15, 5, 0.48)), url(../images/Menu1.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    left: -4.5vw;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.menuClose.transparent, .menuOpen.transparent{
+    opacity: 0;
+}
+
+
+.menu-title{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 100;
+    font-size: 50px;
+    width: 35vw;
+    margin-top: 7vh;
+    text-align: center;
+    font-weight: 100;
+    z-index: 1000;
+}
+.fa-utensils{
+    color: #ffffffaf;
+    font-size: 2vw;
+    margin-top: 13vh;
+    -webkit-animation: mover 0.8s infinite  alternate;
+    animation: mover 0.8s infinite  alternate;
+}
+.menuClick{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 100;
+    font-size: 22px;
+    width: 42vw;
+    margin-top: 10vh;
+    text-align: center;
+    font-weight: 100;
+    padding:25px;
+    z-index: 1000;
+}
+.menu-text{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 100;
+    font-size: 20px;
+    width: 42vw;
+    margin-top: 23vh;
+    text-align: center;
+    font-weight: 100;
+    padding:25px;
+    visibility: hidden;
+    z-index: 1000;
+}
+.menu-Details{
+    width: 50vw;
+    background: linear-gradient(to left, rgb(109, 172, 12),rgba(255, 255, 255, 0.9));
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 6vw;
+    box-shadow: inset 0 -35px 150px 125px #ffffff;
+}
+
+/* .menu-Details{
+    transition: opacity 1s ease-out;
+}
+.menu-Details:hover{
+    opacity: 0;
+    display: block;
+} */
+.menu-Catalog{
+    display: none;
+}
+/* .menu-Details:hover > .menu-Catalog{
+    opacity: 1;
+    display: block;
+} */
+
 
 /* Reservation Slide */
 .reservationSlide{
