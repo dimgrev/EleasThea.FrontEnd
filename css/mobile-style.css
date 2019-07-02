@@ -19,11 +19,11 @@
     }
 
     .title{
-        font-size: 35px;
-        width: 55vw;
+        font-size: 26px;
+        width: 60vw;
         font-weight: 100;
-        text-shadow:2px 2px 4px rgba(0,0,0,0.3);
-        margin-right: 15px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        margin-right: 10px;
     }
 
     .fa-chevron-down{
@@ -162,6 +162,13 @@
     .form-input-halfWidth{
         width:140px;
     }
+
+    /* Footer */
+    .myfooter .copyright{
+        font-size: 14px;
+    }
+
+
 }
 
 
