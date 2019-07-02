@@ -181,6 +181,13 @@
     .form-input-halfWidth{
         width:140px;
     }
+
+    /* Footer */
+    .myfooter .copyright{
+        font-size: 14px;
+    }
+
+
 }
 
 
