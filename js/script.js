@@ -67,6 +67,16 @@ $( document ).ready(function() {
         });
     });   
 
+    //Preload Images
+    
+    // $.preloadImages = function() {
+    //     for (var i = 0; i < arguments.length; i++) {
+    //       $("<img />").attr("src", arguments[i]);
+    //     }
+    //   }
+      
+    // $.preloadImages("images/Menu1.jpg","images/Menu2.jpg","images/Menu0.jpg");
+
     //Menu Slide
     
     var hasFadedOut=true;
