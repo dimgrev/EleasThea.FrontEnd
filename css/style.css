@@ -807,6 +807,15 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
+.slick-active:active, 
+.slick-active:focus, 
+.slick-active:hover, 
+.slick-current:active, 
+.slick-current:focus, 
+.slick-current:hover, 
+.slick-slide:active, 
+.slick-slide:focus, 
+.slick-slide:hover, 
 .button:active, 
  button:active,
 .button:focus, 
@@ -828,5 +837,3 @@ textarea:hover{
     /* border:none !important; */
     outline:none !important;
 }
-
-
