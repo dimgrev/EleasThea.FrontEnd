@@ -66,28 +66,43 @@ $( document ).ready(function() {
             height: '100%'
         });
     });   
-    
-    //Menu Slide
-    // $(".menuClick").on("touchstart click", function(){
-    //     $('.fa-utensils, .menuClick').css({
-    //         visibility: 'hidden',
-    //         position: 'absolute'
-    //     });
-    //     $('.menu-text').css({
-    //         visibility: 'visible'
-    //     });
-    //     $('.menu-poster').addClass('menu-img-chg');
-    // });
-    $(".menuClick").on("touchstart click", function(){
-        $('.fa-utensils, .menuClick').css({
-            visibility: 'hidden',
-            position: 'absolute'});
-        $(".menu-text").css({
-            visibility: 'visible'
-        });
-        $(".menuClose").toggleClass("transparent");
-    });
 
+    //Menu Slide
+    
+    var hasFadedOut=true;
+    var menu=true;
+    $(".menu-poster").on("click", function(){
+        if (menu) {
+            $('.menu-clickExplainer').fadeOut(500);
+            $('.menu-clickedInfo').fadeIn(1000);
+            if (hasFadedOut) {
+                $('.menuFilled').fadeOut(500);
+                hasFadedOut=false;
+            }
+            else{
+                $('.menuFilled').fadeIn(500);
+                hasFadedOut=true;
+            }
+            $('.menuDetails').css({display: 'none'});
+            $('.menuCatalog').css({display: 'block'});
+            menu=false;
+        }
+        else{
+            $('.menu-clickExplainer').fadeIn(1000);
+            $('.menu-clickedInfo').fadeOut(500);
+            if (hasFadedOut) {
+                $('.menuFilled').fadeOut(500);
+                hasFadedOut=false;
+            }
+            else{
+                $('.menuFilled').fadeIn(500);
+                hasFadedOut=true;
+            }
+            $('.menuDetails').css({display: 'block'});
+            $('.menuCatalog').css({display: 'none'});
+            menu=true;
+        }
+    });
     
 
     // MapBox

@@ -298,8 +298,8 @@ body{
     justify-content: space-between;
     width:100%;
 }
-/* Menu Slide*/
 
+/* Menu Slide*/
 
 .menu-slide{
     width:100%;
@@ -308,70 +308,101 @@ body{
 .menu-poster{
     width:50vw;
     height:100%;
-    
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); 
+}
+.menu-poster:hover{
+    cursor: pointer;
+}
+.menuFilled{
+    height: 100%;
+    width: 50vw;
+    filter: grayscale(15%);
+    background: linear-gradient(to top right, rgba(36, 15, 5, 0.70),rgba(36, 15, 5, 0.65),rgba(36, 15, 5, 0.55),rgba(36, 15, 5, 0.60)), url(../images/Menu1.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
-.menuOpen{
-    position: absolute;    
-    height: 81.5%;
-    width: 80%;
-    background:linear-gradient(to right,rgba(18, 22, 10, 0.65),rgba(44, 17, 2, 0.8)), url("../images/Menu2.jpg");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    left: -4.5vw;
-    -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+@media screen and (min-width: 991px) {
+    .menu-clickExplainer:hover ~ .menuFilled{
+        
+        height: 100%;
+        width: 50vw;
+        filter: grayscale(15%);
+        background: linear-gradient(to top right, rgba(36, 15, 5, 0.70),rgba(36, 15, 5, 0.65),rgba(36, 15, 5, 0.55),rgba(36, 15, 5, 0.60)), url(../images/Menu0.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 }
-.menuClose{
-    position: absolute;    
-    height: 81.5%;
-    width: 80%;
-    background: linear-gradient(to right, rgba(36, 15, 5, 0.71),rgba(36, 15, 5, 0.48)), url(../images/Menu1.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    left: -4.5vw;
-    -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+.menuEmpty{
+    height: 100%;
+    width: 50vw;
+    filter: grayscale(10%);
+    background: linear-gradient(to right, rgba(36, 15, 5, 0.50),rgba(36, 15, 5, 0.40)), url(../images/Menu2.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.menuClose.transparent, .menuOpen.transparent{
-    opacity: 0;
-}
-
-
 .menu-title{
+    position: absolute;
     color: rgba(255, 255, 255, 1);
     font-weight: 100;
     font-size: 50px;
     width: 35vw;
-    margin-top: 7vh;
+    margin-top: 3vh;
     text-align: center;
     font-weight: 100;
     z-index: 1000;
 }
-.fa-utensils{
+.menu-clickedInfo{
+    display: none;
+    position: absolute;
+    width:100%;
+    height: 65%;
+    text-align: center;
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+    font-weight: 300!important;
+    font-size: 13px;
+    padding-top: 360px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+.menu-clickExplainer{
+    position: absolute;
+    width:100%;
+    height: 90px;
+    text-align: center;
+    bottom: 0px;
+    color: rgba(255,255,255,0.8);
+    z-index: 1000;
+    font-weight: 100!important;
+    font-size: 12px;
+    padding-top: 60px;
+    background: linear-gradient(to top, rgba(24, 14, 9, 0.9), rgba(36, 15, 5, 0.01));
+}
+.fa-book-open{
     color: #ffffffaf;
-    font-size: 2vw;
-    margin-top: 13vh;
-    -webkit-animation: mover 0.8s infinite  alternate;
-    animation: mover 0.8s infinite  alternate;
+    font-size: 1vw;
+    
 }
 .menuClick{
     color: rgba(255, 255, 255, 0.9);
     font-weight: 100;
-    font-size: 22px;
+    font-size: 25px;
     width: 42vw;
-    margin-top: 10vh;
+    margin-top: 25vh;
     text-align: center;
     font-weight: 100;
     padding:25px;
-    z-index: 1000;
+    padding-bottom: 0px;
+
+}
+.menuspec{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+    font-size: 13px;
+    width: 42vw;
+    text-align: center;
+    font-weight: 100;
 }
 .menu-text{
     color: rgba(255, 255, 255, 0.9);
@@ -383,11 +414,10 @@ body{
     font-weight: 100;
     padding:25px;
     visibility: hidden;
-    z-index: 1000;
 }
-.menu-Details{
+.menuDetails{
     width: 50vw;
-    background: linear-gradient(to left, rgb(109, 172, 12),rgba(255, 255, 255, 0.9));
+    background: linear-gradient(to left, rgba(212, 174, 160, 0.50),rgba(255, 255, 255, 0.9));
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -396,21 +426,30 @@ body{
     padding: 6vw;
     box-shadow: inset 0 -35px 150px 125px #ffffff;
 }
+.md1{
 
-/* .menu-Details{
-    transition: opacity 1s ease-out;
 }
-.menu-Details:hover{
-    opacity: 0;
-    display: block;
-} */
-.menu-Catalog{
+.mD2{
+    font-style: italic;
+    color:rgb(65, 59, 56);
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    padding:30px;
+    padding-top: 0px;
+}
+.mD3{
+    font-style: italic;
+    margin: auto;
+    color:rgb(97, 82, 78);
+    margin-top: 5vh;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+}
+.menuCatalog{
     display: none;
 }
-/* .menu-Details:hover > .menu-Catalog{
-    opacity: 1;
-    display: block;
-} */
 
 
 /* Reservation Slide */
@@ -562,7 +601,7 @@ input::placeholder, textarea::placeholder{
 /* getDirections btn */
 
 button.getDirections::before{
-    content:url("../images/route-solid.svg");
+    content:url("../images/map-marked-alt-solid.svg");
     width: 13px !important;
     display: inline-block;
     margin: 1px 7px 1px 1px!important;
