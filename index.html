@@ -81,10 +81,8 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top scroll-on-top-navbar">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/logos/logo_b&w.png" class="scroll-on-top-navbar-logo" alt="Eleas Thea"></a>
-            <button class="navbar-toggler hamburger hamburger--arrow" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="toggleHumburgerBtn">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="toggleHumburgerBtn">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
@@ -101,10 +99,8 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top scroll-variable-navbar scroll-variable-navbar-hidden">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/logos/logo_coloured.png" class="scroll-variable-navbar-logo" alt="Eleas Thea"></a>
-            <button class="navbar-toggler hamburger hamburger--arrow" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="toggleHumburgerBtn">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="toggleHumburgerBtn">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
@@ -329,7 +325,14 @@
 
     <!-- Contact Slide -->
     <div class="contactSlide d-flex">
-        <div id='map' onclick="zme()" onmouseout="zmd()"></div>
+        <div class="mapGroup">                
+                <div class="mapProtectorFromLidl d-flex flex-column align-items-center justify-content-center">
+                    <i class="far fa-hand-point-up"></i>
+                    Για να ενεργοποιήσετε τον χάρτη, πιέστε εδώ                        
+                </div>
+                <div id='map' onclick="zme()" onmouseout="zmd()">            
+                </div>              
+        </div>        
         <div class="contactDetails d-flex flex-column align-items-center justify-content-center">
                 <div class="contactDetails-container d-flex flex-column">
                     <div class="contactDetails-Section">
@@ -409,12 +412,25 @@
 
 
 
+    <!-- Helpers -->
+
     <!-- Cookie Bar -->
     <div class="cookie-bar d-flex flex-column justify-content-center align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
             <div>Our website uses cookies and if you continue to browse, your permission to use them will be assumed.</div>
             <i class="fas fa-times close-cookie-bar-btn"></i>
         </div>
+    </div>
+
+    <!-- Black Overlay -->
+    <div class="blackOverlay">        
+    </div>
+
+    <!-- White Overlay (AJAX Result Messages) -->
+    <div class="whiteOverlay">
+        <!-- Successful AJAX Result Div -->
+        <!-- Failed AJAX Result Div -->
+        <!-- Ok Button - Dismiss PopUp -->
     </div>
 
     

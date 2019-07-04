@@ -78,7 +78,7 @@ body{
 .scroll-variable-nav-item:hover{
     /* transition-duration: 0.2s; */
     color:rgba(105,170,6, 1) !important;
-    border-bottom: dotted rgba(105,170,6, 0.3) 5px;    
+    border-bottom: dotted rgba(195, 201, 188, 0.3) 5px;    
 }
 
 #scroll-variable-makeAReservationBtn{
@@ -286,6 +286,11 @@ body{
         background-size: cover;
         background-position: center;
     }
+
+    .mapProtectorFromLidl{
+        display: none!important;
+    }
+    
 }
 .menuEmpty{
     height: 100%;
@@ -815,6 +820,7 @@ button.getDirections {
     cursor: pointer;    
 }
 
+
 /* Helpers */
 
 @-webkit-keyframes mover {
@@ -864,4 +870,17 @@ textarea:focus,
 textarea:hover{
     /* border:none !important; */
     outline:none !important;
+}
+
+/* White Overlay */
+.whiteOverlay{
+    width: 100vw;
+    height:100vh;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0px 0px 100px 100px rgba(255,255,255,0.8);
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 1031; /* behind of the menu bar when expanded */
+    display: block;
 }
