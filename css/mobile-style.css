@@ -7,8 +7,40 @@
     background-color: rgba(255,255,255,0.5);
 }
 
+.navbar-light .navbar-toggler{
+    border-color:rgba(0,0,0,0)!important;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color: rgba(230,230,230);
+}
 
 @media screen and (max-width: 991px) {
+    /* Nav */
+    .scroll-variable-nav-item{
+        text-align: left!important;
+        margin-left:20px;
+    }
+
+    .scroll-variable-nav-item:hover{
+        /* transition-duration: 0.2s; */
+        color:rgba(105,170,6, 1) !important;
+        border-bottom: dotted rgba(105,170,6, 0) 5px;    
+    }
+
+    #scroll-variable-makeAReservationBtn{
+        color: #8d4f39!important;
+        border: double rgba(105,170,6, 0.0) 0px;
+        font-weight: 700!important;
+    }
+    
+    #scroll-variable-makeAReservationBtn:hover{
+        color:#502515!important;
+        border: double rgba(105,170,6, 0.0) 0px;
+
+    }
+
     /* Home Screen Slide */
 
     .homeScreenSlide{
