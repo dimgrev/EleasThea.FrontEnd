@@ -47,11 +47,17 @@ $( document ).ready(function() {
         nav    : true,
         navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
     });
+
+    $('.imageGallery').slick({
+        prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:'<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+    });
     
 
     //Gallery open/close btns
-    $(".close-gallery-btn").on("touchstart click", function(){
-        $('.gallerySlideAlt').removeClass('gallery-visible');
+    $(".closeGalleryBtn").on("touchstart click", function(){
+        AddTemporarySmoothness(".gallerySlide");
+        $('.gallerySlide').removeClass('gallerySlideVisible');
         $('html, body').css({
             overflow: 'auto',
             height: 'auto'
@@ -60,22 +66,22 @@ $( document ).ready(function() {
     });
 
     $(".showGalleryBtn").on("touchstart click", function(){
-        $('.gallerySlideAlt').addClass('gallery-visible');
+        AddTemporarySmoothness(".gallerySlide");
+        $('.gallerySlide').addClass('gallerySlideVisible');
         $('html, body').css({
             overflow: 'hidden',
-            height: '100%'
+            height: 'auto'
         });
+        
     });   
 
-    //Preload Images
+    function AddTemporarySmoothness(cl){
+        $(cl).addClass('animationSmoothness');
+        $(cl).on("transitionend", function(){
+            $(cl).removeClass('animationSmoothness');
+        });
+    }
     
-    // $.preloadImages = function() {
-    //     for (var i = 0; i < arguments.length; i++) {
-    //       $("<img />").attr("src", arguments[i]);
-    //     }
-    //   }
-      
-    // $.preloadImages("images/Menu1.jpg","images/Menu2.jpg","images/Menu0.jpg");
 
     //Menu Slide
     

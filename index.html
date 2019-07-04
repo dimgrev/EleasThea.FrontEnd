@@ -66,6 +66,13 @@
 
     <!-- OWL JS -->
     <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 <body>
 
@@ -150,17 +157,16 @@
     </div> 
 
     <!-- Gallery Slide ALT -->
-    <div class="gallerySlideAlt d-flex align-items-center"> <!-- gallery visible or not gallery-visible -->
-        <i class="fas fa-times close-gallery-btn"></i>
-        <div class="owl-carousel">
+    <div class="gallerySlide d-flex flex-column justify-content-center">
+        <button class="closeGalleryBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="imageGallery">
             <div>
-                <img src="images/gallery_images/20190429_114850.jpg" alt="">
+                <img src="images/gallery_images/20190429_105029.jpg" class="imgFromGal">
             </div>
             <div>
-                <img src="images/gallery_images/20190502_140301.jpg" alt="">
-            </div>
-            <div>
-                <img src="images/gallery_images/20190429_111613.jpg" alt="">
+                <img src="images/gallery_images/20190429_111613.jpg" class="imgFromGal">
             </div>
         </div>
     </div>
