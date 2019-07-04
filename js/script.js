@@ -119,6 +119,37 @@ $( document ).ready(function() {
             menu=true;
         }
     });
+
+    //display overlay when menu is expanded..
+    $('.navbar').on('show.bs.collapse', function (e) {
+        $('.blackOverlay').fadeIn(200);
+        // alert();
+    })
+
+    $('.navbar').on('hide.bs.collapse', function (e) {
+        $('.blackOverlay').fadeOut(200);
+        // alert();
+    })
+
+    $('.blackOverlay').on("touchstart click", function(){
+        // alert();
+        $('.navbar-collapse').collapse("hide");
+    })
+
+    $('.mapProtectorFromLidl').on("click", function(){
+        $(".mapProtectorFromLidl").fadeTo(200,0,function(){
+            $(".mapProtectorFromLidl").css({zIndex: '0'});
+        });
+    })
+
+    $(document).on('scroll', function(){
+        if($(".mapProtectorFromLidl").css("z-index")!='1000'){
+            $(".mapProtectorFromLidl").css({zIndex: '1000'});
+            $(".mapProtectorFromLidl").fadeTo(200,1);            
+        }
+    })
+
+
     
 
     // MapBox

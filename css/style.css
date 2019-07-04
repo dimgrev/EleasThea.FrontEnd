@@ -286,6 +286,11 @@ body{
         background-size: cover;
         background-position: center;
     }
+
+    .mapProtectorFromLidl{
+        display: none!important;
+    }
+    
 }
 .menuEmpty{
     height: 100%;
@@ -786,6 +791,7 @@ button.getDirections {
     color:rgba(255,255,255,1);
     cursor: pointer;    
 }
+
 
 /* Helpers */
 
