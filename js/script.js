@@ -35,7 +35,7 @@ $( document ).ready(function() {
         curr_month = '0' + curr_month;
     } 
     if (curr_date.length < 2){
-        curr_month = '0' + curr_date;
+        curr_date = '0' + curr_date;
     }
     $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
 
@@ -149,8 +149,20 @@ $( document ).ready(function() {
         }
     })
 
-
-    
+    $(".dismissMessageBtn").on("click", function(e){
+        $(".msgBgOverlay").fadeTo(200,0, function(){
+            $(".msgBgOverlay").css({visibility:'hidden'});
+            $(".successfulMessage").css({display:'none'}); //hide all possible outcomes...
+            $(".errorMessage").css({display:'none'});
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+            $("form")[0].reset();
+            $("form")[1].reset();
+            
+        });
+    })
 
     // MapBox
     mapboxgl.accessToken = 'pk.eyJ1Ijoia29ua3JpIiwiYSI6ImNqdnY2eWd1NjNzZHA0OXBic2Q2aXhoMDgifQ.zF2_d5xcqvmLJ190Qg6_8w';

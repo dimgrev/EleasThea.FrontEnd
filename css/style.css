@@ -845,14 +845,45 @@ textarea:hover{
 }
 
 /* White Overlay */
-.whiteOverlay{
+.msgBgOverlay{
     width: 100vw;
     height:100vh;
-    background: rgba(255,255,255,0.8);
-    box-shadow: inset 0px 0px 100px 100px rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.8);
+    /* box-shadow: inset 0px 0px 100px 100px rgba(255,255,255,0.8); */
     position: fixed;
     top:0px;
     left:0px;
     z-index: 1031; /* behind of the menu bar when expanded */
     display: block;
+    visibility: hidden;
+}
+
+.AJAXResultMessage{
+    background: rgba(255,255,255,0.85);
+    width:300px;
+    height:140px;
+    padding: 25px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.successfulMessage{
+    color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.errorMessage{
+    color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.dismissMessageBtn{
+    color: rgb(106,170,8,0.8);
+    font-weight: 700;
+    margin-top:15px;
+}
+
+.dismissMessageBtn:hover{
+    color: rgb(163, 202, 104, 0.8);
+    cursor: pointer;
 }
