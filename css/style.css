@@ -408,7 +408,35 @@ body{
 }
 .menuCatalog{
     display: none;
+    width:50vw!important;
+    text-align: center!important;
 }
+.menuct-nav{
+    display: inline-flex;
+}
+.menuct-text{
+    color:rgba(15, 36, 0, 0.8) !important;
+    font-weight: 400!important;
+    font-size: 16px!important;
+    margin: 5px 13px 5px 13px;
+}
+.menuct-text.active{
+    color: #ffffff!important;
+    background-color: rgba(105,170,6, 1) !important;
+}
+.catalog-list{
+    font-style: italic;
+    overflow: auto;
+    height:90%;
+}
+.food-elements{
+    padding: 5px;
+}
+.menuct-list{
+    font-weight: 300!important;
+    font-size: 16px!important;
+}
+
 
 
 /* Reservation Slide */
