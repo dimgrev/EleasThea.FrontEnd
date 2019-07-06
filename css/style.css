@@ -915,3 +915,18 @@ textarea:hover{
     color: rgb(163, 202, 104, 0.8);
     cursor: pointer;
 }
+
+#reservation:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -150px; /* Set the Appropriate Height */
+    height: 150px; /* Set the Appropriate Height */
+    visibility: hidden; 
+}
+
+.anchor{
+    display: block;
+    height:92px; /*same height as header*/
+    margin-top: -92px; /*same height as header*/
+    visibility: hidden;
+}

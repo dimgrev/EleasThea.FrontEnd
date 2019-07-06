@@ -120,6 +120,10 @@ $( document ).ready(function() {
         }
     });
 
+    $('.nav-link').on('click', function(e){
+        $('.navbar-collapse').collapse("hide");
+    });
+
     //display overlay when menu is expanded..
     $('.navbar').on('show.bs.collapse', function (e) {
         $('.blackOverlay').fadeIn(200);
