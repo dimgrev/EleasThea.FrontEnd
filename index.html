@@ -59,6 +59,7 @@
     <link rel="stylesheet" href="css/mobile-style.css">
     <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/sendMessages.js"></script>
 
     <!-- OWL CSS -->
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -77,7 +78,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
 
 </head>
-<body>
+<body data-role="page">
 
     
         <!-- Scroll on top - navbar -->
@@ -89,10 +90,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#">MENΟΥ</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link showGalleryBtn">GALLERY</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link" id="scroll-on-top-makeAReservationBtn" href="#">ΚΡΑΤΗΣΗ</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#menu">MENΟΥ</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link showGalleryBtn" href="#gallery">GALLERY</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link" id="scroll-on-top-makeAReservationBtn" href="#reservation">ΚΡΑΤΗΣΗ</a>
                 </div>            
             </div>
         </div>
@@ -107,10 +108,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="scroll-variable-nav-item nav-item nav-link" href="#">MENΟΥ</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link showGalleryBtn">GALLERY</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link" id="scroll-variable-makeAReservationBtn" href="#">ΚΡΑΤΗΣΗ</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link" href="#menu">MENΟΥ</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link showGalleryBtn" href="#gallery">GALLERY</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link" id="scroll-variable-makeAReservationBtn" href="#reservation">ΚΡΑΤΗΣΗ</a>
                 </div>            
             </div>
         </div>
@@ -156,7 +157,7 @@
     </div> 
 
     <!-- Gallery Slide ALT -->
-    <div class="gallerySlide d-flex flex-column justify-content-center">
+    <div class="gallerySlide d-flex flex-column justify-content-center" data-role="page" id="gallery">
         <button class="closeGalleryBtn">
             <i class="fas fa-times"></i>
         </button>
@@ -171,7 +172,8 @@
     </div>
     
     <!--Menu Slide-->
-    <div class="menu-slide d-flex justify-content-center">
+    <span class="anchor" id="menu"></span>
+    <div class="menu-slide d-flex justify-content-center" id="menu" data-offset="500">
         <div class="menu-poster">
             <div class="menuEmpty d-flex justify-content-center">
                 <div class="menu-title">
@@ -261,6 +263,7 @@
         </div>
     </div>
     <!-- Make a Reservation Slide -->
+    <span class="anchor" id="reservation"></span>
     <div class="reservationSlide d-flex">
         <div class="reservation-poster d-flex flex-column align-items-center justify-content-center">
             <div class="reservation-title">
@@ -272,6 +275,7 @@
         </div>
         <div class="reservation-form d-flex flex-column align-items-center justify-content-center">
             <div class="reservation-form-container">
+                <form onsubmit="makeReservation(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
                     <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
                     <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
                     <br>
@@ -297,8 +301,8 @@
                     <br>
 
                     <div class="input-explainer">Ημερομηνία & Ώρα κράτησης</div>
-                    <input type="date" id="reservation-date-picker" class="form-input-halfWidth" placeholder="Ημερομηνία" required>
-                    <input type="time" min="11:00" max="18:00" value="11:00" class="form-input-halfWidth" placeholder="Ώρα" required>
+                    <input type="date" id="reservation-date-picker" name="resDate" class="form-input-halfWidth" placeholder="Ημερομηνία" required>
+                    <input type="time" min="11:00" max="23:00" value="11:00" name="resTime" class="form-input-halfWidth" placeholder="Ώρα" required>
                     <br>
 
                     <button type="submit" class="reserveBtn">Κάντε Κράτηση Online <i class="fas fa-check"></i></button>
@@ -306,6 +310,7 @@
                         ή καλέστε στο <br>
                         (+30) 28240-31222 / (+30) 693 83 27 110
                     </div>
+                </form>                    
             </div>
         </div>        
     </div>
@@ -349,7 +354,8 @@
     </div>
 
     <!-- Contact Slide -->
-    <div class="contactSlide d-flex">
+    <span class="anchor" id="contact"></span>
+    <div class="contactSlide d-flex" id="contact">
         <div class="mapGroup">                
                 <div class="mapProtectorFromLidl d-flex flex-column align-items-center justify-content-center">
                     <i class="far fa-hand-point-up"></i>
@@ -414,15 +420,17 @@
 
     <div class="sendMessageSlide d-flex justify-content-between align-items-center">
         <div class="container d-flex justify-content-around">
-            <div class="sndMsg-personalInfo">
-                <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
-                <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
-                <br>
+            <form onsubmit="sendFeedback(fullName.value, email.value, telephone.value, message.value, event);" method="POST">
+                <div class="sndMsg-personalInfo">
+                    <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
+                    <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
+                    <br>
 
-                <div class="input-explainer">Η διεύθυνση e-mail σας</div>
-                <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-maxWidth" required>
-                <br>
+                    <div class="input-explainer">Η διεύθυνση e-mail σας</div>
+                    <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-maxWidth" required>
+                    <br>
 
+<<<<<<< HEAD
                 <div class="input-explainer">Αριθμός τηλεφώνου</div>
                 <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
             </div>
@@ -432,6 +440,18 @@
                 <br>
                 <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
             </div>
+=======
+                    <div class="input-explainer">Αριθμός τηλεφώνου</div>
+                    <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
+                </div>
+                <div class="sndMsg-messageTxtBox">
+                    <div class="input-explainer">Το μήνυμά σας</div>
+                    <textarea name="message" id="" placeholder="Στείλτε μας για οτιδήποτε θέλετε να ρωτήσετε σχετικά με το εστιατόριο μας" required></textarea>
+                    <br>
+                    <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
+                </div>
+            </form>            
+>>>>>>> 151e39e07d9ebb3d529f20f36648468ddc520d47
         </div>
     </div>
 
@@ -448,15 +468,35 @@
     </div>
 
     <!-- Black Overlay -->
-    <div class="blackOverlay">        
+    <div class="blackOverlay">   
     </div>
 
     <!-- White Overlay (AJAX Result Messages) -->
+<<<<<<< HEAD
     <!-- <div class="whiteOverlay"> -->
         <!-- Successful AJAX Result Div -->
         <!-- Failed AJAX Result Div -->
         <!-- Ok Button - Dismiss PopUp -->
     <!-- </div> -->
+=======
+    <div class="msgBgOverlay d-flex flex-column justify-content-center align-items-center">
+        <!-- Successful AJAX Result Div -->
+        <div class="AJAXResultMessage shadow-lg d-flex flex-column justify-content-center align-items-center text-center">
+                <!-- Successful AJAX Result Div -->
+                <div class="successfulMessage">
+                    <i class="fas fa-check"></i> Το μήνυμά σας στάλθηκε επιτυχώς!        
+                </div>
+                <!-- Failed AJAX Result Div -->
+                <div class="errorMessage">
+                    <i class="fas fa-exclamation-triangle"></i> Δυστυχώς προέκυψε κάποιο πρόβλημα.
+                </div>
+                <!-- Ok Button - Dismiss PopUp -->
+                <div class="dismissMessageBtn">
+                    Εντάξει
+                </div> 
+            </div>        
+    </div>
+>>>>>>> 151e39e07d9ebb3d529f20f36648468ddc520d47
 
     
     
