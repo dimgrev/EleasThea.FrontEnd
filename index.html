@@ -248,7 +248,7 @@
         </div>
         <div class="reservation-form d-flex flex-column align-items-center justify-content-center">
             <div class="reservation-form-container">
-                <form onsubmit="makeReservation(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);">
+                <form onsubmit="makeReservation(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
                     <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
                     <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
                     <br>
@@ -392,7 +392,7 @@
 
     <div class="sendMessageSlide d-flex justify-content-between align-items-center">
         <div class="container d-flex justify-content-around">
-            <form onsubmit="sendFeedback(fullName.value, email.value, telephone.value, message.value, event);">
+            <form onsubmit="sendFeedback(fullName.value, email.value, telephone.value, message.value, event);" method="POST">
                 <div class="sndMsg-personalInfo">
                     <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
                     <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
