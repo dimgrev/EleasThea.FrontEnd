@@ -88,21 +88,47 @@
     .menu-slide{
         flex-direction: column;
         width: 100%;
-        height:800px;
+        height:100%;
     }
     .menu-poster{
-        width: 100vw;
+        width: 100%;
         height: 300px;
         -webkit-clip-path: initial;
         clip-path: initial;
     }
+    .menu-title{
+        font-size: 3.5vw;
+        margin-top: 10px;
+    }
+    .menuDetails {
+        width: 100%;
+    }
+    .menuCatalog {
+        display: none;
+        width: 100%!important;
+        text-align: center!important;
+    }
+    .mD1 img{
+        width: 5vw;
+    }
+    .SpGallery{
+        width:100%;
+    }
     .menuFilled{
-        width: 100vw;
+
     }
     .menuEmpty{
-        width: 100vw;
+
     }
 
+    /* FbFiller */
+    .fbFiller{
+        flex-direction: column;
+    }
+    .div2{
+        width: 50%;
+        height: 800px;
+    }
     /* Rservation Slide */
     .reservationSlide{
         flex-direction: column;
