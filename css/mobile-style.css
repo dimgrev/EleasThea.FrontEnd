@@ -44,7 +44,7 @@
     /* Home Screen Slide */
 
     .homeScreenSlide{
-        height:83vh;        
+        height:100vh;        
         background-size: cover;
         background-position: 27% 0%; 
         background-attachment: initial;
@@ -59,12 +59,7 @@
     }
 
     .fa-chevron-down{
-        /* position absolute */
-        bottom: 15vh;
-        color: rgba(255, 255, 255, 0.2);
-        font-size: 40px;
-        -webkit-animation: mover 1s infinite  alternate;
-        animation: mover 1s infinite  alternate;
+        bottom: 15px!important;        
     }
 
     /* Details Slide */
@@ -368,6 +363,19 @@
         left:0px;
         z-index: 1029; /* behind of the menu bar when expanded */
         display: none;
+    }
+
+    .cookingClassesSlideInner{
+        background-image: url("../images/cookingClassBG.jpg");
+        background-color:black;
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    .cookingClassesTitle{
+        width: 300px;
+        margin-top:25px;
     }
 }
 
