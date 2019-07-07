@@ -764,6 +764,10 @@ button.getDirections {
     padding: 15px;
 }
 
+.copyright{
+    text-align: center;
+}
+
 .myfooter .developers{
     color:rgba(255, 255, 255, 0.4);
     font-size: 12px;
