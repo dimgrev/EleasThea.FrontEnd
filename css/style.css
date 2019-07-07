@@ -113,9 +113,10 @@ body{
     margin-bottom: 5%;
     text-shadow:2px 2px 4px rgba(0,0,0,0.2);
 }
+
 .fa-chevron-down{
     position: absolute;  
-    bottom: 5vh;
+    bottom: 15px;
 
     color: rgba(255, 255, 255, 0.2);
     font-size: 40px;
@@ -570,6 +571,17 @@ body{
     background:white;
 }
 
+.reservation-form-container.blackBG{
+    background:none!important;
+    color:rgb(255,255,255,0.5);
+    width: 300px;
+}
+
+.input-explainer.blackBG{
+    color:rgb(173,173,173);
+}
+
+
 .input-explainer{
     color:rgb(143, 37, 28);
     font-size: 13px;
@@ -581,6 +593,10 @@ body{
     font-size: 13px;
     font-weight: 400;
     margin-top: 5px;
+}
+
+.reservation-hint.blackBG{
+    color:rgb(173,173,173);
 }
 
 input, textarea, .select-PersonsNumber{
@@ -597,6 +613,10 @@ input, textarea, .select-PersonsNumber{
 
 .form-input-halfWidth{
     width:180px;
+}
+
+.form-input-halfWidth.blackBG{
+    width: 148px;
 }
 
 input::placeholder, textarea::placeholder{ 
@@ -617,6 +637,17 @@ input::placeholder, textarea::placeholder{
     rgba(36,5,5,0.8),
     rgba(36,5,5,0.9));
 }
+
+.reserveBtn.blackBG{
+    background: linear-gradient(to right, rgba(167, 167, 167, 0.8), rgba(45, 45, 45, 0.9));
+}
+
+.reserveBtn:hover.blackBG{
+    background: linear-gradient(to left, rgba(167, 167, 167, 0.8), rgba(45, 45, 45, 0.9));
+}
+
+
+
 
 /* Quality Slide */
 
@@ -692,6 +723,78 @@ input::placeholder, textarea::placeholder{
     border-color: rgba(255,255,255,0.6);
     color: rgba(255,255,255,0.7)!important;
 }
+
+/* Cooking Classes Slider Slide */
+
+.closeCookingClassesSlide-btn{
+    position: absolute;
+    top:0px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 25px;
+    padding: 15px;
+}
+
+.closeCookingClassesSlide-btn:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cookingClassesSlide{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left:100%;    
+    z-index: 1930;
+    overflow-y: scroll;
+}
+
+.cookingClassesSlideInner{
+    width: 100%;   
+    background-image: url("../images/cookingClassBG.jpg");
+    background-color:black;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.cookingClassesTitle{
+    width: 450px;
+    margin-top:45px;
+}
+
+.cookingClassesParag{
+    color: white;
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.cookingClassLi-El{
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+    font-weight: 300;
+    font-size: 17px;
+    margin: 15px;
+}
+
+.list-check{
+    font-size: 20px;
+    color: #a7e02f;
+    margin: 5px;
+}
+
+.fa-chevron-right{
+    font-size: 20px;
+    color: #6c4242;
+    margin: 5px;
+}
+
+hr{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 15px;
+}
+
 
 /* Contact Slide */
 .contactSlide{
@@ -969,6 +1072,15 @@ textarea:hover{
     visibility: hidden;
 }
 
+
+.loadingMessage{
+    color: rgba(0,0,0,0.5);
+}
+
+.spinner-border{
+    margin: 15px;
+}
+
 .AJAXResultMessage{
     background: rgba(255,255,255,0.85);
     width:300px;
@@ -992,6 +1104,7 @@ textarea:hover{
     color: rgb(106,170,8,0.8);
     font-weight: 700;
     margin-top:15px;
+    display: none;
 }
 
 .dismissMessageBtn:hover{
@@ -999,13 +1112,6 @@ textarea:hover{
     cursor: pointer;
 }
 
-#reservation:before { 
-    display: block; 
-    content: " "; 
-    margin-top: -150px; /* Set the Appropriate Height */
-    height: 150px; /* Set the Appropriate Height */
-    visibility: hidden; 
-}
 
 .anchor{
     display: block;

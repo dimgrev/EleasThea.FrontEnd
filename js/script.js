@@ -38,6 +38,7 @@ $( document ).ready(function() {
         curr_date = '0' + curr_date;
     }
     $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
+    $("#reservationForCookingClass-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
 
     //Call the OWL
     $(".owl-carousel").owlCarousel({
@@ -209,14 +210,29 @@ $( document ).ready(function() {
             $(".msgBgOverlay").css({visibility:'hidden'});
             $(".successfulMessage").css({display:'none'}); //hide all possible outcomes...
             $(".errorMessage").css({display:'none'});
+            $(".dismissMessageBtn").css({display:'none'});
             $('html, body').css({
                 overflow: 'auto',
                 height: 'auto'
             });
             $("form")[0].reset();
             $("form")[1].reset();
+            $("form")[2].reset();
+            
             
         });
+    })
+
+    $(".cookingClasses-learnMoreBtn").on("click", function(e){
+        $(".cookingClassesSlide").animate({
+            left:"0%",
+        }, "slow");
+    });
+
+    $(".closeCookingClassesSlide-btn").on("click", function(e){
+        $(".cookingClassesSlide").animate({
+            left:"100%",
+        }, "slow");
     })
 
     // MapBox

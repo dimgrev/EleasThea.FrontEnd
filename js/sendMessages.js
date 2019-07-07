@@ -1,6 +1,9 @@
-var backendURL = 'http://192.168.1.74/EleasThea_WebApi';
+// var backendURL = 'http://192.168.1.74/EleasThea_WebApi';
+var backendURL = 'http://83.212.107.151/eleasthea_WebApi';
 
 function makeReservation(fullName, email, telephone, numberOfPeople, resDate, resTime, event){
+    DisplayOverlay(true);
+    DisplayOverlayLoading(true);
     event.preventDefault();
     var dateTime = resDate + " " + resTime;
     var settings = {
@@ -19,28 +22,20 @@ function makeReservation(fullName, email, telephone, numberOfPeople, resDate, re
       
       $.ajax(settings).done(function (response) {
         console.log(response);
-        $(".successfulMessage").css({display:'block'});
-        $(".msgBgOverlay").css({visibility:'visible'});
-        $(".msgBgOverlay").fadeTo(200,1);
-        $('html, body').css({
-            overflow: 'hidden',
-            height: 'auto'
-        });
+        DisplayOverlayLoading(false);
+        DisplayOverlayResMessage(true);        
 
       }).fail(function(response){
         console.log(response);
-        $(".errorMessage").css({display:'block'});
-        $(".msgBgOverlay").css({visibility:'visible'});
-        $(".msgBgOverlay").fadeTo(200,1);
-        $('html, body').css({
-            overflow: 'hidden',
-            height: 'auto'
-        });
+        DisplayOverlayLoading(false);
+        DisplayOverlayResMessage(false);
       });
 }
 
 
 function sendFeedback(fullName, email, telephone, message, event){
+    DisplayOverlay(true);
+    DisplayOverlayLoading(true);
     event.preventDefault();
     var settings = {
         "async": true,
@@ -58,22 +53,43 @@ function sendFeedback(fullName, email, telephone, message, event){
       
       $.ajax(settings).done(function (response) {
         console.log(response);
-        $(".successfulMessage").css({display:'block'});
-        $(".msgBgOverlay").css({visibility:'visible'});
-        $(".msgBgOverlay").fadeTo(200,1);
-        $('html, body').css({
-            overflow: 'hidden',
-            height: 'auto'
-        });
+        DisplayOverlayLoading(false);
+        DisplayOverlayResMessage(true);        
 
       }).fail(function(response){
         console.log(response);
-        $(".errorMessage").css({display:'block'});
-        $(".msgBgOverlay").css({visibility:'visible'});
+        DisplayOverlayLoading(false);
+        DisplayOverlayResMessage(false);
+      });
+}
+
+function DisplayOverlay(wantToEnable){
+  if (wantToEnable) {
+    $(".msgBgOverlay").css({visibility:'visible'});
         $(".msgBgOverlay").fadeTo(200,1);
         $('html, body').css({
             overflow: 'hidden',
             height: 'auto'
         });
-      });
+  } else {
+    
+  }
+}
+
+function DisplayOverlayLoading(wantToEnable){
+  if (wantToEnable) {
+    $(".loadingMessage").css({display:'block'});
+  }else{
+    $(".loadingMessage").css({display:'none'});
+  }
+}
+
+function DisplayOverlayResMessage(isSuccessful){
+  if (isSuccessful) {
+    $(".successfulMessage").css({display:'block'});
+  }else{
+    $(".errorMessage").css({display:'block'});
+  }
+  $(".dismissMessageBtn").css({display:'block'});
+
 }
