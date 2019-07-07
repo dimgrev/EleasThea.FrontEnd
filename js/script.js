@@ -55,25 +55,61 @@ $( document ).ready(function() {
     
 
     //Gallery open/close btns
+    var opengallery= false;
+
     $(".closeGalleryBtn").on("touchstart click", function(){
+        closeGallery();
+    });
+    
+    function closeGallery(){
         AddTemporarySmoothness(".gallerySlide");
         $('.gallerySlide').removeClass('gallerySlideVisible');
         $('html, body').css({
             overflow: 'auto',
             height: 'auto'
         });
-
-    });
+        window.location.hash="#";
+        opengallery = false;
+    }
+    var ul = window.location.href;
 
     $(".showGalleryBtn").on("touchstart click", function(){
+        
         AddTemporarySmoothness(".gallerySlide");
         $('.gallerySlide').addClass('gallerySlideVisible');
         $('html, body').css({
             overflow: 'hidden',
             height: 'auto'
         });
+        $(document).on('keydown', function(event){
+            if (event.key == "ArrowRight" && opengallery == true){
+                $(".slick-next").click();
+            }
+            else if (event.key == "ArrowLeft" && opengallery == true){
+                $(".slick-prev").click();
+            }
+        });
+        window.location.hash="gallery";
+        opengallery = true;
+    });
+    $(window).on('popstate', function(e){
+        if(opengallery){            
+                closeGallery();
+        }
+    });
+
+    $(document).on('keydown', function(event) {
+    if (event.key == "Escape" && opengallery == true) {
+        AddTemporarySmoothness(".gallerySlide");
+        $('.gallerySlide').removeClass('gallerySlideVisible');
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
         
-    });   
+        opengallery = false;
+        }
+    });
 
     function AddTemporarySmoothness(cl){
         $(cl).addClass('animationSmoothness');
@@ -85,40 +121,55 @@ $( document ).ready(function() {
 
     //Menu Slide
     
-    var hasFadedOut=true;
-    var menu=true;
-    $(".menu-poster").on("click", function(){
-        if (menu) {
-            $('.menu-clickExplainer').fadeOut(500);
-            $('.menu-clickedInfo').fadeIn(1000);
-            if (hasFadedOut) {
-                $('.menuFilled').fadeOut(500);
-                hasFadedOut=false;
+    var hasFadedOut=false;
+    var menu=false;
+    $(".menu-clickExplainer").on("click", function(){
+        if (!menu) {
+            // $('.menu-clickExplainer').fadeOut(500);
+            if (!hasFadedOut) {
+                $('.menuHalfOpen').fadeOut(100);
+                $('.menuFilled').fadeOut(200);
+                $('.menu-clickExplainer').html("Για να κλείσετε το μενού, κάντε κλικ εδώ");
+                hasFadedOut=true;
             }
             else{
-                $('.menuFilled').fadeIn(500);
-                hasFadedOut=true;
+                $('.menuHalfOpen').fadeIn(100);
+                $('.menuFilled').fadeIn(200);
+                hasFadedOut=false;
             }
             $('.menuDetails').css({display: 'none'});
             $('.menuCatalog').css({display: 'block'});
-            menu=false;
+            menu=true;
         }
         else{
-            $('.menu-clickExplainer').fadeIn(1000);
-            $('.menu-clickedInfo').fadeOut(500);
-            if (hasFadedOut) {
-                $('.menuFilled').fadeOut(500);
-                hasFadedOut=false;
+            // $('.menu-clickExplainer').fadeIn(1000);
+            if (!hasFadedOut) {
+                $('.menuFilled').css({display: 'block'});
+                $('.menuHalfOpen').css({display: 'blcok'});
+                hasFadedOut=true;
             }
             else{
-                $('.menuFilled').fadeIn(500);
-                hasFadedOut=true;
+                $('.menuFilled').css({display: 'block'});
+                $('.menuHalfOpen').css({display: 'block'});
+                $('.menu-clickExplainer').html("Για να δείτε το μενού, κάντε κλικ εδώ");
+                hasFadedOut=false;
             }
             $('.menuDetails').css({display: 'block'});
             $('.menuCatalog').css({display: 'none'});
-            menu=true;
+            menu=false;
         }
     });
+    $(".menu-clickExplainer").mouseenter(function(){
+        if(!hasFadedOut){
+            $('.menuFilled').css({display: 'none'});
+        }
+    });
+    $(".menu-clickExplainer").mouseleave(function(){
+        if(!hasFadedOut){
+            $('.menuFilled').css({display: 'block'});
+        }
+    });
+    
 
     $('.nav-link').on('click', function(e){
         $('.navbar-collapse').collapse("hide");

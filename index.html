@@ -74,6 +74,9 @@
     <!-- Slick JS -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!--Facebook JS-->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+
 </head>
 <body data-role="page">
 
@@ -176,13 +179,11 @@
                 <div class="menu-title">
                     Οι Σπεσιαλιτέ μας
                 </div>
-                <div class="menu-clickedInfo">
-
-                </div>
                 <div class="menu-clickExplainer">
                     Για να δείτε το μενού, κάντε κλικ εδώ
                 </div>
-                <!-- <div class="menuClick">Κάντε κλίκ εδώ <i class="fas fa-book-open"></i></div> <div class="menuspec">Για να περιηγηθείτε στον κατάλογο <br></div>     -->
+                <div class="menuHalfOpen">
+                </div>
                 <div class="menuFilled">
                 </div>  
             </div>
@@ -191,7 +192,7 @@
         <div class="menuDetails">
                 <div class="mD1"><img src="images/mnlogo.png"></div>
                 
-                <div class="mD3">
+                <div class="mD2">
                 "Εδώ θα βρείτε μία ποικιλία από
                 ξεχωριστές γεύσεις κάθε μέρα. Με διαλεκτά
                 συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα
@@ -200,7 +201,7 @@
                 
         </div>
         <div class="menuCatalog">
-            <div>
+            <div class="ctnav">
                 <ul class="nav nav-pills mb-3 menuct-nav" id="pills-tab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link menuct-text active" id="pills-special-tab" data-toggle="pill" href="#pills-special" role="tab" aria-controls="pills-special" aria-selected="true">Σπεσιαλιτέ</a>
@@ -218,7 +219,23 @@
             </div>
             <div class="tab-content catalog-list" id="pills-tabContent">
             <div class="tab-pane fade show active menuct-list" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">
-               mpla mpla mpla
+                <div class="imageGallery SpGallery">
+                    <div>
+                        <img src="images/SpPhotos/SpPhoto1.jpg" class="SpPhotos">
+                    </div>
+                    <div>
+                        <img src="images/SpPhotos/SpPhoto2.jpg" class="SpPhotos">
+                    </div>
+                    <div>
+                        <img src="images/SpPhotos/SpPhoto3.jpg" class="SpPhotos">
+                    </div>
+                    <div>
+                        <img src="images/SpPhotos/SpPhoto4.jpg" class="SpPhotos">
+                    </div>
+                    <div>
+                        <img src="images/SpPhotos/SpPhoto5.jpg" class="SpPhotos">
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade menuct-list" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="food-elements">Τζατζίκι</div> <div class="food-elements"> Μελιτζανοσαλάτα</div> <div class="food-elements"> Ντάκος</div> <div class="food-elements"> Μυζήθρα</div> <div class="food-elements"> Φέτα</div> <div class="food-elements"> Μαλακό Τυρί</div> <div class="food-elements"> Στάκα</div> <div class="food-elements"> Σαγανάκι</div> <div class="food-elements"> Κολοκυθοκεφτέδες</div> <div class="food-elements"> Κοτόπιτα</div> <div class="food-elements"> Σπέσιαλ Κρεατόπιτα</div> <div class="food-elements"> Ντολμαδάκια</div> <div class="food-elements"> Ανθοί</div> <div class="food-elements"> Σφακιανές πίτες</div> <div class="food-elements"> Καλιτσούνια με σπανάκι</div> <div class="food-elements"> Καλιτσούνια με μυζήθρα</div> <div class="food-elements"> Λουκάνικα</div> <div class="food-elements"> Φάβα</div> <div class="food-elements"> Πατάτες τηγανιτές</div>
@@ -234,8 +251,16 @@
     </div>
 
     <!-- Filler 2# -->
-    <div class="qualitySlide">
+    <div class="fbFiller d-flex justify-content-center  align-items-center">
+        <div class="div1 justify-content-center align-items-center">
 
+        </div>
+        <div class="div2 justify-content-center align-items-center">
+                <div class="fb-page" data-href="https://www.facebook.com/eleasthea/" data-tabs="timeline, events, messages" data-width="" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/eleasthea/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/eleasthea/">Eleas thea</a></blockquote></div>
+        </div>
+        <div class="div3 justify-content-center align-items-center">
+
+        </div>
     </div>
     <!-- Make a Reservation Slide -->
     <span class="anchor" id="reservation"></span>
@@ -405,6 +430,17 @@
                     <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-maxWidth" required>
                     <br>
 
+<<<<<<< HEAD
+                <div class="input-explainer">Αριθμός τηλεφώνου</div>
+                <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
+            </div>
+            <div class="sndMsg-messageTxtBox">
+                <div class="input-explainer">Το μήνυμά σας</div>
+                <textarea name="" id="" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις"></textarea>
+                <br>
+                <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
+            </div>
+=======
                     <div class="input-explainer">Αριθμός τηλεφώνου</div>
                     <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
                 </div>
@@ -415,6 +451,7 @@
                     <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
                 </div>
             </form>            
+>>>>>>> 151e39e07d9ebb3d529f20f36648468ddc520d47
         </div>
     </div>
 
@@ -435,6 +472,13 @@
     </div>
 
     <!-- White Overlay (AJAX Result Messages) -->
+<<<<<<< HEAD
+    <!-- <div class="whiteOverlay"> -->
+        <!-- Successful AJAX Result Div -->
+        <!-- Failed AJAX Result Div -->
+        <!-- Ok Button - Dismiss PopUp -->
+    <!-- </div> -->
+=======
     <div class="msgBgOverlay d-flex flex-column justify-content-center align-items-center">
         <!-- Successful AJAX Result Div -->
         <div class="AJAXResultMessage shadow-lg d-flex flex-column justify-content-center align-items-center text-center">
@@ -452,6 +496,7 @@
                 </div> 
             </div>        
     </div>
+>>>>>>> 151e39e07d9ebb3d529f20f36648468ddc520d47
 
     
     
