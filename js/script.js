@@ -40,6 +40,14 @@ $( document ).ready(function() {
     $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
     $("#reservationForCookingClass-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
 
+    $("#reservation-date-picker").attr({
+        "min": curr_year + '-' + curr_month + '-' + curr_date
+    });
+
+    $("#reservationForCookingClass-date-picker").attr({
+        "min": curr_year + '-' + curr_month + '-' + curr_date
+    });
+
     //Call the OWL
     $(".owl-carousel").owlCarousel({
         items:1,
@@ -218,7 +226,8 @@ $( document ).ready(function() {
             $("form")[0].reset();
             $("form")[1].reset();
             $("form")[2].reset();
-            
+            $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
+            $("#reservationForCookingClass-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
             
         });
     })
