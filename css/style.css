@@ -131,7 +131,7 @@ body{
     min-height:400px;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: linear-gradient(to bottom right, rgba(255,255,255,0.65), rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.65), rgba(255,255,255,0.25), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -439,6 +439,7 @@ body{
     height: 100%;
     font-weight: 300!important;
     font-size: 1.2vw!important;
+    float: right;
 }
 .SpGallery{
     width: 711px;
@@ -454,7 +455,7 @@ body{
     box-shadow: 6px 6px 20px -3px rgba(92,92,92,1);
 }
 .SpGallery .slick-list{
-    width: 50vw;
+    width: 49vw;
     height: 540px;
     margin: auto;
 }
@@ -496,10 +497,9 @@ body{
 .fbFiller{
     width:100%;
     height:600px;
-    background: url("../images/watermark-cut-transp.png");
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgba(36, 15, 5, 0.15),rgba(36, 15, 5, 0.1),rgba(36, 15, 5, 0.1),rgba(36, 15, 5, 0.1)), url(../images/watermark-cut-transp.png);    background-repeat: no-repeat;
     background-position: left bottom;
-    box-shadow: inset 5px 5px 5px 5px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 0px 90px 45px rgb(255, 255, 255);
 }
 .tripdiv, .tripdiv2, .tripdiv3, .div2, .div3{
     width: 33.3vw;
@@ -513,11 +513,11 @@ body{
 }
 .denkanwtipotatipotamethzwhmou1{
     position: relative;
-    width: 50%;
+    width: 33%;
     height: 100%;
 }
 .denkanwtipotatipotamethzwhmou3{
-    width: 50%;
+    width: 33%;
     height: 100%;
     float: right;
 }
