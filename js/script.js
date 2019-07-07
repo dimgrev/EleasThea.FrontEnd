@@ -103,14 +103,12 @@ $( document ).ready(function() {
     }
     var ul = window.location.href;
 
-    $(".showGalleryBtn").on("touchstart", function(){
+    $(".showGalleryBtn").on("click", function(){
+        $(".gallerySlide").animate({
+            left:"0px",
+        }, "slow");    
         
-        AddTemporarySmoothness(".gallerySlide");
-        $('.gallerySlide').addClass('gallerySlideVisible');
-        $('html, body').css({
-            overflow: 'hidden',
-            height: 'auto'
-        });
+       
         $(document).on('keydown', function(event){
             if (event.key == "ArrowRight" && opengallery == true){
                 $(".slick-next").click();
@@ -122,6 +120,7 @@ $( document ).ready(function() {
         window.location.hash="gallery";
         opengallery = true;
     });
+    
     $(window).on('popstate', function(e){
         if(opengallery){            
                 closeGallery();

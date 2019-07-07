@@ -157,9 +157,7 @@
 
     <!-- Gallery Slide ALT -->
     <div class="gallerySlide d-flex flex-column justify-content-center" data-role="page" id="gallery">
-        <button class="closeGalleryBtn">
-            <i class="fas fa-times"></i>
-        </button>
+        <i class="fas fa-times closeCookingClassesSlide-btn"></i>
         <div class="imageGallery">
             <div>
                 <img src="images/gallery_images/20190429_105029.jpg" class="imgFromGal">
@@ -408,9 +406,9 @@
 
                 <hr/>
 
-                <div class="cookingClassLi-El"><i class="fas fa-chevron-right"></i> Less than 3 persons: 100€.</div>
-                <div class="cookingClassLi-El"><i class="fas fa-chevron-right"></i> For 3 to 8 persons: 80€.</div>
-                <div class="cookingClassLi-El"><i class="fas fa-chevron-right"></i> More than 8 persons: 60€.</div>
+                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> Less than 3 persons: 100€.</div>
+                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> For 3 to 8 persons: 80€.</div>
+                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> More than 8 persons: 60€.</div>
 
                 <hr/>
                 <form onsubmit="makeReservation_CookingClass(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
@@ -534,14 +532,15 @@
                     <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-maxWidth" required>
                     <br>
 
-                <div class="input-explainer">Αριθμός τηλεφώνου</div>
-                <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
-            </div>
-            <div class="sndMsg-messageTxtBox">
-                <div class="input-explainer">Το μήνυμά σας</div>
-                <textarea name="" id="" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις"></textarea>
-                <br>
-                <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
+                    <div class="input-explainer">Αριθμός τηλεφώνου</div>
+                    <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
+                </div>
+                <div class="sndMsg-messageTxtBox">
+                    <div class="input-explainer">Το μήνυμά σας</div>
+                    <textarea name="" id="" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις"></textarea>
+                    <br>
+                    <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
+                </div>
             </div>
         </div>
     </form>
