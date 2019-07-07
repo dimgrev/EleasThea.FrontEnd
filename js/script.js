@@ -83,31 +83,30 @@ $( document ).ready(function() {
         },1500);
     },3000);
 
-
-    //Gallery open/close btns
-    var opengallery= false;
-
-    $(".closeGalleryBtn").on("touchstart click", function(){
-        closeGallery();
-    });
     
-    function closeGallery(){
-        AddTemporarySmoothness(".gallerySlide");
-        $('.gallerySlide').removeClass('gallerySlideVisible');
-        $('html, body').css({
-            overflow: 'auto',
-            height: 'auto'
-        });
-        window.location.hash="#";
-        opengallery = false;
+    var galleryIsOpen = false;
+    if (window.location.hash == "gallery") {
+        galleryIsOpen = true;
+        openGallery();
     }
-    var ul = window.location.href;
 
-    $(".showGalleryBtn").on("click", function(){
+    function closeGallery(){
+        setTimeout(function(){
+            galleryIsOpen = false;
+        },1000);
+        window.location.hash="";
+    }
+
+    function openGallery(){
+        window.location.hash="gallery";
+        setTimeout(function(){
+            galleryIsOpen = true;
+        },1000);
+
+
         $(".gallerySlide").animate({
-            left:"0px",
-        }, "slow");    
-        
+            left:"0%",
+        }, "slow");
        
         $(document).on('keydown', function(event){
             if (event.key == "ArrowRight" && opengallery == true){
@@ -117,13 +116,20 @@ $( document ).ready(function() {
                 $(".slick-prev").click();
             }
         });
-        window.location.hash="gallery";
-        opengallery = true;
+    }
+
+    $(".showGalleryBtn").on("click", function(){
+       openGallery();
+    });
+
+    $(".closeGalleryBtn").on("touchstart click", function(){
+        closeGallery();
     });
     
     $(window).on('popstate', function(e){
-        if(opengallery){            
-                closeGallery();
+        if (galleryIsOpen) {
+            alert();
+            closeGallery();
         }
     });
 
@@ -138,14 +144,7 @@ $( document ).ready(function() {
         
         opengallery = false;
         }
-    });
-
-    function AddTemporarySmoothness(cl){
-        $(cl).addClass('animationSmoothness');
-        $(cl).on("transitionend", function(){
-            $(cl).removeClass('animationSmoothness');
-        });
-    }
+    });  
     
 
     //Menu Slide
@@ -201,7 +200,7 @@ $( document ).ready(function() {
     
 
     $('.nav-link').on('click', function(e){
-        // $('.navbar-collapse').collapse("hide");
+        $('.navbar-collapse').collapse("hide");
     });
 
     //display overlay when menu is expanded..
@@ -260,6 +259,9 @@ $( document ).ready(function() {
 
     $(".closeCookingClassesSlide-btn").on("click", function(e){
         $(".cookingClassesSlide").animate({
+            left:"100%",
+        }, "slow");
+        $(".gallerySlide").animate({
             left:"100%",
         }, "slow");
     })
