@@ -333,7 +333,7 @@ body{
     color: rgba(255,255,255,0.8);
     z-index: 1000;
     font-weight: 100!important;
-    font-size: 12px;
+    font-size: 15px;
     padding-top: 60px;
     background: linear-gradient(to top, rgba(24, 14, 9, 0.9), rgba(36, 15, 5, 0.01));
 }
@@ -450,8 +450,9 @@ body{
     box-shadow: 6px 6px 20px -3px rgba(92,92,92,1);
 }
 .SpGallery .slick-list{
-    width: 40vw;
-    height: 300px;    margin: auto;
+    width: 50vw;
+    height: 540px;
+    margin: auto;
 }
 .SpGallery .slick-track{
     height: 100%;
