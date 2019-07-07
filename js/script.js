@@ -53,6 +53,27 @@ $( document ).ready(function() {
         nextArrow:'<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
     });
     
+    //Fb Filler
+
+    //call the trip advisor owl eyes...
+    setInterval(function(){
+        setTimeout(function(){
+            $('.tripdiv2').show();
+        },300);
+        setTimeout(function(){
+            $('.tripdiv2').hide();
+        },1500);
+    },3000);
+
+    setInterval(function(){
+        setTimeout(function(){
+            $('.tripdiv3').show();
+        },600);
+        setTimeout(function(){
+            $('.tripdiv3').hide();
+        },1500);
+    },3000);
+
 
     //Gallery open/close btns
     var opengallery= false;
@@ -73,7 +94,7 @@ $( document ).ready(function() {
     }
     var ul = window.location.href;
 
-    $(".showGalleryBtn").on("touchstart click", function(){
+    $(".showGalleryBtn").on("touchstart", function(){
         
         AddTemporarySmoothness(".gallerySlide");
         $('.gallerySlide').addClass('gallerySlideVisible');
@@ -137,42 +158,42 @@ $( document ).ready(function() {
                 $('.menuFilled').fadeIn(200);
                 hasFadedOut=false;
             }
-            $('.menuDetails').css({display: 'none'});
-            $('.menuCatalog').css({display: 'block'});
+            $('.menuDetails').hide();
+            $('.menuCatalog').show();
             menu=true;
         }
         else{
             // $('.menu-clickExplainer').fadeIn(1000);
             if (!hasFadedOut) {
-                $('.menuFilled').css({display: 'block'});
-                $('.menuHalfOpen').css({display: 'blcok'});
+                $('.menuFilled').show();
+                $('.menuHalfOpen').show();
                 hasFadedOut=true;
             }
             else{
-                $('.menuFilled').css({display: 'block'});
-                $('.menuHalfOpen').css({display: 'block'});
+                $('.menuFilled').show();
+                $('.menuHalfOpen').show();
                 $('.menu-clickExplainer').html("Για να δείτε το μενού, κάντε κλικ εδώ");
                 hasFadedOut=false;
             }
-            $('.menuDetails').css({display: 'block'});
-            $('.menuCatalog').css({display: 'none'});
+            $('.menuDetails').show();
+            $('.menuCatalog').hide();
             menu=false;
         }
     });
     $(".menu-clickExplainer").mouseenter(function(){
         if(!hasFadedOut){
-            $('.menuFilled').css({display: 'none'});
+            $('.menuFilled').hide();
         }
     });
     $(".menu-clickExplainer").mouseleave(function(){
         if(!hasFadedOut){
-            $('.menuFilled').css({display: 'block'});
+            $('.menuFilled').show();
         }
     });
     
 
     $('.nav-link').on('click', function(e){
-        $('.navbar-collapse').collapse("hide");
+        // $('.navbar-collapse').collapse("hide");
     });
 
     //display overlay when menu is expanded..

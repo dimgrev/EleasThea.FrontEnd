@@ -306,7 +306,7 @@ body{
     position: absolute;
     color: rgba(255, 255, 255, 1);
     font-weight: 100;
-    font-size: 50px;
+    font-size: 4vw;
     width: 35vw;
     margin-top: 3vh;
     text-align: center;
@@ -407,19 +407,22 @@ body{
     text-align: center!important;
 }
 .ctnav{
-    height: 10%;
-
+    
 }
 .menuct-nav{
     display: inline-flex;
+    width: 100%;
 }
-
+.menuct-nav .nav-item{
+    width: 25%;
+}
+.mb-3, .my-3{
+    margin-bottom:0em!important;
+}
 .menuct-text{
     color: rgba(15, 36, 0, 0.8) !important;
     font-weight: 400!important;
-    font-size: 1.2vw!important;
-    margin: 0px 1.4em 0px 1.4em;
-    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 20px!important;
 }
 .menuct-text:hover{
     background-color: rgb(195, 139, 119, 0.3) !important;
@@ -431,6 +434,16 @@ body{
     background-color: rgba(89, 143, 8, 0.7) !important;
     border-radius: 2px;
 }
+.menuct-list{
+    height: 100%;
+    font-weight: 300!important;
+    font-size: 1.2vw!important;
+}
+.SpGallery{
+    width: 711px;
+    display: table-cell!important;
+    vertical-align: middle!important;
+}
 .SpPhotos{
     max-height: 30vh!important;
     max-width: 30vw!important;
@@ -439,20 +452,15 @@ body{
     border-radius: 3px;
     box-shadow: 6px 6px 20px -3px rgba(92,92,92,1);
 }
-.SpGallery{
-    height: 520px;
-    width: 711px;
-    display: table-cell!important;
-    vertical-align: middle!important;
-}
 .SpGallery .slick-list{
     width: 40vw;
-    height: 40vh;
-    margin: auto;
-    padding-top: 1.2em;
+    height: 300px;    margin: auto;
 }
 .SpGallery .slick-track{
     height: 100%;
+}
+.SpGallery .slick-slide{
+    display: flex!important;
 }
 .SpGallery .slick-next, .slick-prev{
     position: absolute;
@@ -461,7 +469,7 @@ body{
     color:rgba(255, 255, 255, 0.4);
     padding: 1em 1.4em 1em 1.4em;
     font-weight: 100;
-    z-index: 0;
+    z-index: 1;
 }
 .SpGallery .slick-next{
     bottom: calc(50% - 1em);
@@ -475,46 +483,91 @@ body{
 .catalog-list{
     font-style: italic;
     overflow: auto;
-    height: calc(90% - 1em);
+    height: 90%;
 }
 .food-elements{
+    font-size: 17px;
     padding: 0.2vw;
 }
-.menuct-list{
-    height: 100%;
-    font-weight: 300!important;
-    font-size: 1.2vw!important;
-}
+
 /* Facebook Filler */
 .fbFiller{
     width:100%;
-    height:450px;
+    height:600px;
     background: url("../images/watermark-cut-transp.png");
     background-repeat: no-repeat;
     background-position: left bottom;
-    overflow: hidden;
     box-shadow: inset 5px 5px 5px 5px rgba(255, 255, 255, 1);
 }
-.div1, .div2, .div3{
+.tripdiv, .tripdiv2, .tripdiv3, .div2, .div3{
     width: 33.3vw;
-    height: 90%;
-    margin: 2vw 5vw 2vw 5vw;
+    height:100%;
 }
-.div1{
+.tripdiv, .tripdiv2, .tripdiv3{
+    background-size: 250px!important;
+}
+.div3{
+    background-size: 185px!important;
+}
+.denkanwtipotatipotamethzwhmou1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.denkanwtipotatipotamethzwhmou3{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.tripdiv{
+    position: absolute;
     background: url("../images/tripicon.png");
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+}
+.tripdiv2{
+    display: none;
+    background: url("../images/tripicon2.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+}
+.tripdiv3{
+    display: none;
+    background: url("../images/tripicon3.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+}
+.fb-page{
+    height: 100%!important;
+
+}
+.fb-page span{
+    height: 100%!important;
+}
+iframe{
+    height: 100%!important;
 }
 .div2{
     box-shadow: 6px 6px 20px -3px rgba(92,92,92,1);
     border: 2px solid rgba(59, 59, 59, 0.651);
     border-radius: 3px;
     overflow: auto;
+    width: auto!important;
+    min-width: 300px;
+    height: 84%;
+    width: 200px;
 }
 .div3{
     background: url("../images/fouricon.png");
     background-repeat: no-repeat;
     background-position: center;
+    float: right;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
 }
 
 
@@ -544,7 +597,7 @@ body{
 .reservation-title{
     color: rgba(255, 255, 255, 1);
     font-weight: 100;
-    font-size: 50px;
+    font-size: 4vw;
     width: 35vw;
     text-align: center;
     font-weight: 100;
@@ -756,7 +809,7 @@ button.getDirections {
     align-items: top;
 }
 .details-info{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color:rgba(54, 24, 6, 0.70);
     margin: 15px 10px 10px 5px;
@@ -995,13 +1048,6 @@ textarea:hover{
     cursor: pointer;
 }
 
-#reservation:before { 
-    display: block; 
-    content: " "; 
-    margin-top: -150px; /* Set the Appropriate Height */
-    height: 150px; /* Set the Appropriate Height */
-    visibility: hidden; 
-}
 
 .anchor{
     display: block;
