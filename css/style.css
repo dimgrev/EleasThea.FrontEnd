@@ -184,16 +184,16 @@ body{
 
 /* Gallery Slide ALT */
 .gallerySlide{
-    visibility: hidden;
+    visibility: visible;
     width: 100%;
     height:100vh;
     position: fixed;
     background:url("../images/gallery_bg.jpg");
     background-size: cover;
     background-position: center;
-    z-index: 1900;
+    z-index: 1930;
     top:0px;
-    left:100vw;
+    left:100%;
 }
 
 .gallerySlideVisible{
@@ -838,9 +838,9 @@ input::placeholder, textarea::placeholder{
     margin: 5px;
 }
 
-.fa-chevron-right{
+.list-check2{
     font-size: 20px;
-    color: #6c4242;
+    color: #4a4a4a;
     margin: 5px;
 }
 
