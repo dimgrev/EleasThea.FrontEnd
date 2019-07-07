@@ -627,7 +627,7 @@ iframe{
 .reservation-form-container.blackBG{
     background:none!important;
     color:rgb(255,255,255,0.5);
-    width: 300px;
+    width: 290px;
 }
 
 .input-explainer.blackBG{
@@ -653,7 +653,7 @@ iframe{
 }
 
 input, textarea, .select-PersonsNumber{
-    padding:10px 15px 10px 15px;
+    padding:10px 0px 10px 15px;
     margin:10px 0px 10px 0px;
     background:rgba(255, 255, 255, 0.7);
     color:rgba(0,0,0,0.4);
@@ -669,7 +669,7 @@ input, textarea, .select-PersonsNumber{
 }
 
 .form-input-halfWidth.blackBG{
-    width: 148px;
+    width: 143px;
 }
 
 input::placeholder, textarea::placeholder{ 

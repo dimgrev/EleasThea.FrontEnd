@@ -352,7 +352,7 @@
     </div>
 
     <!-- Cooking Classes Introduction Slide -->
-    <div class="cookingClassesIntroSlide d-flex">
+    <div class="cookingClassesIntroSlide d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center justify-content-center">
             <div class="cookingClassesSlide-title">
                 Μάθετε για τα Cooking Classes!
@@ -413,9 +413,10 @@
                 <div class="cookingClassLi-El"><i class="fas fa-chevron-right"></i> More than 8 persons: 60€.</div>
 
                 <hr/>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="reservation-form-container blackBG">
-                        <form onsubmit="makeReservation_CookingClass(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
+                <form onsubmit="makeReservation_CookingClass(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="reservation-form-container blackBG">
+                       
                             <div class="input-explainer blackBG">Το ονοματεπώνυμο σας</div>        
                             <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
                             <br>
@@ -445,9 +446,9 @@
                                 ή καλέστε στο <br>
                                 (+30) 28240-31222 / (+30) 693 83 27 110
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                </form>
                 <br/>
                 <br/>
                 <br/>
@@ -462,7 +463,7 @@
     <div class="contactSlide d-flex" id="contact">
         <div class="mapGroup">                
                 <div class="mapProtectorFromLidl d-flex flex-column align-items-center justify-content-center">
-                    <i class="far fa-hand-point-up"></i>
+                    <!-- <i class="fas fa-hand-point-down"></i> -->
                     Για να ενεργοποιήσετε τον χάρτη, πιέστε εδώ                        
                 </div>
                 <div id='map' onclick="zme()" onmouseout="zmd()">            
