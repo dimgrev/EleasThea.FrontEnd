@@ -131,7 +131,7 @@ body{
     min-height:400px;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: linear-gradient(to bottom right, rgba(255,255,255,0.65), rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.65), rgba(255,255,255,0.25), rgba(255,255,255,0.8)), url("../images/background3_b&w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -327,14 +327,14 @@ body{
 .menu-clickExplainer{
     position: absolute;
     width:100%;
-    height: 90px;
+    height: 150px;
     text-align: center;
     bottom: 0px;
     color: rgba(255,255,255,0.8);
     z-index: 1000;
     font-weight: 100!important;
-    font-size: 15px;
-    padding-top: 60px;
+    font-size: 16px;
+    padding-top: 112px;
     background: linear-gradient(to top, rgba(24, 14, 9, 0.9), rgba(36, 15, 5, 0.01));
 }
 .menu-clickExplainer:hover{
@@ -384,19 +384,21 @@ body{
     align-items: center;
     font-size: 23px;
     font-weight: 300;
+    display: grid;
     box-shadow: inset 0 -35px 150px 125px #ffffff;
 }
 .mD1{
-    padding-top: 4vw;
+    filter: grayscale(0.1);
 }
 .mD2{
     font-style: italic;
     margin: auto;
-    color:rgb(97, 82, 78);
-    margin: 7vw;
+    color: rgb(47, 19, 11);
+    padding: 0 7vw;
     font-weight: 300;
     font-size: 22px;
     text-align: center;
+    height: 80%;
 }
 .menuCatalog{
     display: none;
@@ -450,7 +452,7 @@ body{
     box-shadow: 6px 6px 20px -3px rgba(92,92,92,1);
 }
 .SpGallery .slick-list{
-    width: 50vw;
+    width: 49vw;
     height: 540px;
     margin: auto;
 }
@@ -481,6 +483,7 @@ body{
 .catalog-list{
     font-style: italic;
     overflow: auto;
+    margin-top: 2vh;
     height: 90%;
 }
 .food-elements{
@@ -492,28 +495,27 @@ body{
 .fbFiller{
     width:100%;
     height:600px;
-    background: url("../images/watermark-cut-transp.png");
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgba(36, 15, 5, 0.15),rgba(36, 15, 5, 0.1),rgba(36, 15, 5, 0.1),rgba(36, 15, 5, 0.1)), url(../images/watermark-cut-transp.png);    background-repeat: no-repeat;
     background-position: left bottom;
-    box-shadow: inset 5px 5px 5px 5px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 0px 90px 45px rgb(255, 255, 255);
 }
 .tripdiv, .tripdiv2, .tripdiv3, .div2, .div3{
     width: 33.3vw;
     height:100%;
 }
 .tripdiv, .tripdiv2, .tripdiv3{
-    background-size: 250px!important;
+    background-size: 200px!important;
 }
 .div3{
-    background-size: 185px!important;
+    background-size: 140px!important;
 }
 .denkanwtipotatipotamethzwhmou1{
     position: relative;
-    width: 50%;
+    width: 37%;
     height: 100%;
 }
 .denkanwtipotatipotamethzwhmou3{
-    width: 50%;
+    width: 37%;
     height: 100%;
     float: right;
 }
@@ -557,7 +559,7 @@ iframe{
     overflow: auto;
     width: auto!important;
     min-width: 300px;
-    height: 84%;
+    height: 75%;
     width: 200px;
 }
 .div3{
@@ -728,7 +730,7 @@ input::placeholder, textarea::placeholder{
     width: 70%;
     padding: 23px;
     color: rgb(27, 61, 3);
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 300;
 }
 
