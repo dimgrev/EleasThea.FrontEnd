@@ -548,6 +548,7 @@ body{
 }
 .fb-page span{
     height: 100%!important;
+    width: auto!important;
 }
 iframe{
     height: 100%!important;
@@ -558,9 +559,8 @@ iframe{
     border-radius: 3px;
     overflow: auto;
     width: auto!important;
-    min-width: 300px;
-    height: 75%;
-    width: 200px;
+    min-width: 319px;
+    height: 409px!important;
 }
 .div3{
     background: url("../images/fouricon.png");
