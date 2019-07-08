@@ -298,7 +298,7 @@
 
                     <div class="input-explainer">Αριθμός τηλεφώνου & αριθμός ατόμων</div>
                     <div>
-                        <input type="number" name="telephone" placeholder="69 -" class="form-input-halfWidth">
+                        <input type="number" name="telephone" id="reservation-tel-picker" placeholder="69 -" class="form-input-halfWidth" required>
                         <select placeholder="Άτομα" name="numberOfPeople" class="select-PersonsNumber form-input-halfWidth" required>
                             <option value="1">1 Άτομο</option>
                             <option value="2">2 Άτομα</option>
@@ -313,7 +313,7 @@
                     <br>
 
                     <div class="input-explainer">Ημερομηνία & Ώρα κράτησης</div>
-                    <input type="date" id="reservation-date-picker" name="resDate" class="form-input-halfWidth" placeholder="Ημερομηνία" required>
+                    <input type="date" id="reservation-date-picker" onchange="ValidateDateForReservation(resDate.value);" name="resDate" class="form-input-halfWidth" placeholder="Ημερομηνία" required>
                     <input type="time" min="11:00" max="23:00" value="11:00" name="resTime" class="form-input-halfWidth" placeholder="Ώρα" required>
                     <br>
 
@@ -411,7 +411,7 @@
                 <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> More than 8 persons: 60€.</div>
 
                 <hr/>
-                <form onsubmit="makeReservation_CookingClass(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
+                <form onsubmit="makeReservationForCookingLessons(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="reservation-form-container blackBG">
                        
@@ -425,7 +425,7 @@
         
                             <div class="input-explainer blackBG">Αριθμός τηλεφώνου & αριθμός ατόμων</div>
                             <div>
-                                <input type="number" name="telephone" placeholder="69 -" class="form-input-halfWidth blackBG">
+                                <input type="number" name="telephone" placeholder="69 -" class="form-input-halfWidth blackBG" required>
                                 <select placeholder="Άτομα" name="numberOfPeople" class="select-PersonsNumber form-input-halfWidth blackBG" required>
                                     <option value="Λιγότερο απο 3 άτομα">Λιγότερο απο 3 άτομα</option>
                                     <option value="3 - 8 άτομα">3 - 8 άτομα</option>
@@ -435,7 +435,7 @@
                             <br>
         
                             <div class="input-explainer blackBG">Ημερομηνία & Ώρα κράτησης</div>
-                            <input type="date" id="reservationForCookingClass-date-picker" name="resDate" class="form-input-halfWidth blackBG" placeholder="Ημερομηνία" required>
+                            <input type="date" onchange="ValidateDateForCookingLessons(resDate.value);" id="reservationForCookingClass-date-picker" name="resDate" class="form-input-halfWidth blackBG" placeholder="Ημερομηνία" required>
                             <input type="time" min="11:00" max="18:00" value="11:00" name="resTime" class="form-input-halfWidth blackBG" placeholder="Ώρα" required>
                             <br>
         
@@ -537,7 +537,7 @@
                 </div>
                 <div class="sndMsg-messageTxtBox">
                     <div class="input-explainer">Το μήνυμά σας</div>
-                    <textarea name="" id="" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις"></textarea>
+                    <textarea name="message" id="" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις" required></textarea>
                     <br>
                     <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
                 </div>
