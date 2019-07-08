@@ -37,8 +37,11 @@ $( document ).ready(function() {
     if (curr_date.length < 2){
         curr_date = '0' + curr_date;
     }
-    $("#reservation-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
-    $("#reservationForCookingClass-date-picker").val(curr_year + '-' + curr_month + '-' + curr_date);
+    var dt = curr_year + '-' + curr_month + '-' + curr_date;
+    $("#reservation-date-picker").val(dt);
+    ValidateDateForReservation(dt);
+    $("#reservationForCookingClass-date-picker").val(dt);
+    ValidateDateForCookingLessons(dt);
 
     $("#reservation-date-picker").attr({
         "min": curr_year + '-' + curr_month + '-' + curr_date
@@ -95,6 +98,9 @@ $( document ).ready(function() {
             galleryIsOpen = false;
         },1000);
         window.location.hash="";
+        $(".gallerySlide").animate({
+            left:"100%",
+        }, "slow");
     }
 
     function openGallery(){
@@ -128,7 +134,6 @@ $( document ).ready(function() {
     
     $(window).on('popstate', function(e){
         if (galleryIsOpen) {
-            alert();
             closeGallery();
         }
     });
@@ -264,6 +269,7 @@ $( document ).ready(function() {
         $(".gallerySlide").animate({
             left:"100%",
         }, "slow");
+        
     })
 
     // MapBox
