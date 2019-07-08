@@ -495,13 +495,13 @@ body{
 .fbFiller{
     width:100%;
     height:600px;
-    background: linear-gradient(to right, rgba(36, 15, 5, 0.15),rgba(36, 15, 5, 0.1),rgba(36, 15, 5, 0.1),rgba(36, 15, 5, 0.1)), url(../images/watermark-cut-transp.png);    background-repeat: no-repeat;
-    background-position: left bottom;
-    box-shadow: inset 0px 0px 90px 45px rgb(255, 255, 255);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(../images/gallery_bg2.jpg);    background-position: left bottom;
+    box-shadow: inset 0px 0px 45px 40px rgb(255, 255, 255);
 }
 .tripdiv, .tripdiv2, .tripdiv3, .div2, .div3{
     width: 33.3vw;
     height:100%;
+    z-index: 1;
 }
 .tripdiv, .tripdiv2, .tripdiv3{
     background-size: 200px!important;
