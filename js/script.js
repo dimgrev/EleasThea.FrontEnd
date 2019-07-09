@@ -115,10 +115,10 @@ $( document ).ready(function() {
         }, "slow");
        
         $(document).on('keydown', function(event){
-            if (event.key == "ArrowRight" && opengallery == true){
+            if (event.key == "ArrowRight" && galleryIsOpen == true){
                 $(".slick-next").click();
             }
-            else if (event.key == "ArrowLeft" && opengallery == true){
+            else if (event.key == "ArrowLeft" && galleryIsOpen == true){
                 $(".slick-prev").click();
             }
         });
@@ -139,15 +139,8 @@ $( document ).ready(function() {
     });
 
     $(document).on('keydown', function(event) {
-    if (event.key == "Escape" && opengallery == true) {
-        AddTemporarySmoothness(".gallerySlide");
-        $('.gallerySlide').removeClass('gallerySlideVisible');
-        $('html, body').css({
-            overflow: 'auto',
-            height: 'auto'
-        });
-        
-        opengallery = false;
+    if (event.key == "Escape" && galleryIsOpen == true) {
+        closeGallery();
         }
     });  
     
