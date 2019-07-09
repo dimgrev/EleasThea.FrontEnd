@@ -204,7 +204,11 @@ body{
 .imageGallery{
     vertical-align: middle;
 }
-
+.imageGallery .slick-slide{
+    display: flex!important;
+    justify-content: center;
+    height: 100vh!important;
+}
 .imgFromGal{
     max-height:80vh!important;
     max-width: 80vw!important;
@@ -229,12 +233,12 @@ body{
 
 .slick-next{
     right:0px;
-    bottom: 35vh;
+    bottom: 45vh;
 }
 
 .slick-prev{
     left:0px;
-    bottom: 35vh;
+    bottom: 45vh;
 }
 
 /* .closeGalleryBtn{
@@ -257,6 +261,7 @@ body{
     height:600px;
 }
 .menu-poster{
+    position: relative;
     width:50vw;
     height:100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
@@ -310,31 +315,26 @@ body{
     font-weight: 100;
     z-index: 1000;
 }
-.menu-clickedInfo{
-    display: none;
+.menu-handDown{
     position: absolute;
-    width:100%;
-    height: 65%;
-    text-align: center;
-    bottom: 0px;
-    color: rgb(0, 0, 0);
-    z-index: 1000;
-    font-weight: 300!important;
-    font-size: 13px;
-    padding-top: 360px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    color: #ffffff;
+    bottom: 200px;
+    font-size: 42px;
+    opacity: 0.2;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
 }
 .menu-clickExplainer{
     position: absolute;
     width:100%;
-    height: 150px;
+    height: 250px;
     text-align: center;
     bottom: 0px;
     color: rgba(255,255,255,0.8);
     z-index: 1000;
     font-weight: 100!important;
     font-size: 16px;
-    padding-top: 112px;
+    padding-top: 200px;
     background: linear-gradient(to top, rgba(24, 14, 9, 0.9), rgba(36, 15, 5, 0.01));
 }
 .menu-clickExplainer:hover{
@@ -558,8 +558,7 @@ iframe{
     border: 2px solid rgba(59, 59, 59, 0.651);
     border-radius: 3px;
     overflow: auto;
-    width: auto!important;
-    min-width: 320px!important;
+    width: 320px!important;
     height: 420px!important;
 }
 .div3{

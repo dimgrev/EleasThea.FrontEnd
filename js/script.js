@@ -156,11 +156,13 @@ $( document ).ready(function() {
                 $('.menuHalfOpen').fadeOut(100);
                 $('.menuFilled').fadeOut(200);
                 $('.menu-clickExplainer').html("Για να κλείσετε το μενού, κάντε κλικ εδώ");
+                $('.menu-handDown').hide();
                 hasFadedOut=true;
             }
             else{
                 $('.menuHalfOpen').fadeIn(100);
                 $('.menuFilled').fadeIn(200);
+                $('.menu-handDown').show();
                 hasFadedOut=false;
             }
             $('.menuDetails').hide();
@@ -172,11 +174,13 @@ $( document ).ready(function() {
             if (!hasFadedOut) {
                 $('.menuFilled').show();
                 $('.menuHalfOpen').show();
+                $('.menu-handDown').show();
                 hasFadedOut=true;
             }
             else{
                 $('.menuFilled').show();
                 $('.menuHalfOpen').show();
+                $('.menu-handDown').show();
                 $('.menu-clickExplainer').html("Για να δείτε το μενού, κάντε κλικ εδώ");
                 hasFadedOut=false;
             }

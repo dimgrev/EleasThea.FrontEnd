@@ -91,7 +91,11 @@
         -webkit-clip-path: initial;
         clip-path: initial;
     }
-    
+    .menu-handDown{
+        font-size: 25px;
+        bottom: 100px;
+        font-weight: 100;
+    }
     .menu-title{
         width:70vw;
         font-size: 8vw;
@@ -104,7 +108,8 @@
     }
     .menu-clickExplainer{
         font-size: 3vw;
-        padding-top: 18vh;
+        height: 160px;
+        padding-top: 21vh;
     }
     @media screen and (min-width: 470px) {
         .menu-clickExplainer{
@@ -136,6 +141,11 @@
     .mD1 img{
         width: 24vw;
     }
+    @media screen and (min-width: 470px) {
+        .mD1 img{
+            width: 155px;
+        }
+    }
     .mD2{
         font-size: 14px;
         padding: 0vw 10vw;
@@ -149,6 +159,9 @@
     .SpGallery .slick-list{
         width: 100vw;
         height: 300px;
+    }
+    .SpGallery .slick-next, .slick-prev{
+        padding: 15px 20px;
     }
     .SpPhotos{
         max-height: 30vh!important;
@@ -303,11 +316,6 @@
         font-size: 27px;
         font-weight: 100;
         padding: 25px;
-    }
-
-    .fa-hand-point-down{
-        font-size: 50px;
-        font-weight:100;
     }
 
     #map{
