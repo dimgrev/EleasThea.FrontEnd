@@ -204,10 +204,10 @@ body{
 .imageGallery{
     vertical-align: middle;
 }
-.imageGallery .slick-slide{
+.psGallery .slick-slide{
     display: flex!important;
     justify-content: center;
-    height: 100vh!important;
+    height:80vh!important;
 }
 .imgFromGal{
     max-height:80vh!important;
@@ -216,7 +216,6 @@ body{
     border: 5px solid white;
 
 }
-
 .slick-next, .slick-prev{
     position: absolute;
     background:rgba(0,0,0,0.5);
@@ -226,19 +225,16 @@ body{
     padding: 15px 25px 15px 25px;
     z-index:1950;
 }
-
 .fa-chevron-right, .fa-chevron-left{ /*  closeGalleryBtn */
     font-size: 25px!important;    
 }
-
 .slick-next{
     right:0px;
-    bottom: 45vh;
+    bottom: 35vh;
 }
-
 .slick-prev{
     left:0px;
-    bottom: 45vh;
+    bottom: 35vh;
 }
 
 /* .closeGalleryBtn{
