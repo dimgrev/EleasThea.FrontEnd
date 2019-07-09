@@ -289,6 +289,15 @@ body{
     .mapProtectorFromLidl{
         display: none!important;
     }
+
+    .reservation-form-container.blackBG{
+        width: 324px!important;
+    }
+
+    .form-input-halfWidth.blackBG{
+        width: 160px!important;
+    }
+
     
 }
 .menuEmpty{
