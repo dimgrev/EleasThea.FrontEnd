@@ -273,7 +273,7 @@ $( document ).ready(function() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoia29ua3JpIiwiYSI6ImNqdnY2eWd1NjNzZHA0OXBic2Q2aXhoMDgifQ.zF2_d5xcqvmLJ190Qg6_8w';
     var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v9',
+    style: 'mapbox://styles/mapbox/navigation-guidance-day-v4',
     center:[23.930797,35.545295],
     zoom: 9.6,
     attributionControl: false
