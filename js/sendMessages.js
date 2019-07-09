@@ -79,7 +79,7 @@ function makeReservationForCookingLessons(fullName, email, telephone, numberOfPe
         "Postman-Token": "ddf7b072-6e4c-4da1-b6d0-cd06720b24bf"
       },
       "processData": false,
-      "data": "{\n\t\"FullName\":\"" + fullName + "\",\n\t\"Email\":\"" + email + "\",\n\t\"Tel\":" + telephone + ",\n\t\"numberOfPersons\":" + numberOfPeople + ",\n\t\"dateTimeOfReservation\":\"" + dateTime + "\"\n}"
+      "data": "{\n\t\"FullName\":\"" + fullName + "\",\n\t\"Email\":\"" + email + "\",\n\t\"Tel\":" + telephone + ",\n\t\"numberOfPersons\":\"" + numberOfPeople + "\",\n\t\"dateTimeOfReservation\":\"" + dateTime + "\"\n}"
     }
     
     $.ajax(settings).done(function (response) {
