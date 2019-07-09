@@ -543,15 +543,15 @@ body{
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
 }
 .fb-page{
-    height: 100%!important;
+    /* height: 100%!important; */
 
 }
 .fb-page span{
-    height: 100%!important;
-    width: auto!important;
+    /* height: 100%!important; */
+    /* width: auto!important; */
 }
 iframe{
-    height: 100%!important;
+    /* height: 100%!important; */
 }
 .div2{
     box-shadow: 6px 6px 20px -3px rgba(92,92,92,1);
@@ -559,8 +559,8 @@ iframe{
     border-radius: 3px;
     overflow: auto;
     width: auto!important;
-    min-width: 319px;
-    height: 409px!important;
+    min-width: 320px!important;
+    height: 420px!important;
 }
 .div3{
     background: url("../images/fouricon.png");
