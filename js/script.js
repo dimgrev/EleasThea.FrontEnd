@@ -86,7 +86,8 @@ $( document ).ready(function() {
         },1500);
     },3000);
 
-    
+    //Gallery
+
     var galleryIsOpen = false;
     if (window.location.hash == "gallery") {
         galleryIsOpen = true;
@@ -96,7 +97,7 @@ $( document ).ready(function() {
     function closeGallery(){
         setTimeout(function(){
             galleryIsOpen = false;
-        },1000);
+        },400);
         window.location.hash="";
         $(".gallerySlide").animate({
             left:"100%",
@@ -107,7 +108,7 @@ $( document ).ready(function() {
         window.location.hash="gallery";
         setTimeout(function(){
             galleryIsOpen = true;
-        },1000);
+        },400);
 
 
         $(".gallerySlide").animate({
@@ -252,22 +253,43 @@ $( document ).ready(function() {
             
         });
     })
+    var cookingLessonsIsOpen = false;
 
-    $(".cookingClasses-learnMoreBtn").on("click", function(e){
+    if (window.location.hash == "cookingLessons") {
+        cookingLessonsIsOpen = true;
+        openCookingLessons();
+    }
+
+    function openCookingLessons(){
         $(".cookingClassesSlide").animate({
             left:"0%",
         }, "slow");
-    });
-
-    $(".closeCookingClassesSlide-btn").on("click", function(e){
+        setTimeout(function(){
+            cookingLessonsIsOpen = true;
+        },400);
+    }
+    function closeCookingLessons(){
         $(".cookingClassesSlide").animate({
             left:"100%",
         }, "slow");
-        $(".gallerySlide").animate({
-            left:"100%",
-        }, "slow");
-        
+        setTimeout(function(){
+            cookingLessonsIsOpen = false;
+        },400);
+    }
+
+    $(".cookingClasses-learnMoreBtn").on("click", function(e){
+        openCookingLessons();
+    });
+
+    $(".closeCookingClassesSlide-btn").on("click", function(e){
+        closeCookingLessons();
     })
+
+    $(window).on('popstate', function(e){
+        if (cookingLessonsIsOpen) {
+            closeCookingLessons();
+        }
+    });
 
     // MapBox
     mapboxgl.accessToken = 'pk.eyJ1Ijoia29ua3JpIiwiYSI6ImNqdnY2eWd1NjNzZHA0OXBic2Q2aXhoMDgifQ.zF2_d5xcqvmLJ190Qg6_8w';
