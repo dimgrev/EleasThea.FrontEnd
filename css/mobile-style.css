@@ -398,4 +398,10 @@
 }
 
 
+@media screen and (max-width: 425px) {
+    .fa-chevron-down{
+        bottom: 65px!important;
+    }
+}
+
 

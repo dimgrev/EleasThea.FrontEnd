@@ -100,6 +100,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     
+    position: relative;
     /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
 }
@@ -122,6 +123,19 @@ body{
     font-size: 40px;
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
+}
+
+.container.langSelector-box{
+    text-align: right;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.2);
+    bottom: 30px;
+    font-weight: 300;   
+}
+
+#langSelector-el:hover, #langSelector-en:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* Details Slide */
