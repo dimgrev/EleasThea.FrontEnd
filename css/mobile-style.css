@@ -111,6 +111,11 @@
         height: 160px;
         padding-bottom: 35px;
     }
+    .men-click-exp2{
+        font-size: 3vw;
+        height: 160px;
+        padding-bottom: 35px;
+    }
     @media screen and (min-width: 470px) {
         .menu-clickExplainer{
             font-size: 15px!important;

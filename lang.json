@@ -21,7 +21,7 @@
     },
     "lang_owlDetails_1":{
         "en": "Every morning we wake up with only one concern, to become better and to offer the most delicious flavors and the best service to visitors who want to enjoy the sunset behind the mountainside and overlooking olive groves.",
-        "el": "Κάθε πρωί ξυπνάμε με μία μόνο έγνοια, να γινόμαστε όλο και καλύτεροι και να προσφέρουμε τις πιο απολαυστικές γεύσεις και τις καλύτερες υπηρεσίες στους επισκέπτες, που θέλοuν να απολαύσουν το υπέροχο ηλιοβασίλεμα πίσω από την πλαγιά του βουνού και την θέα του ελαιώνα που απλώνεται στα πόδια του."
+        "el": "Κάθε πρωί ξυπνάμε με μία μόνο έγνοια, να γινόμαστε όλο και καλύτεροι και να προσφέρουμε τις πιο απολαυστικές γεύσεις και τις καλύτερες υπηρεσίες στους επισκέπτες, που θέλοuν να απολαύσουν το υπέροχο ηλιοβασίλεμα πίσω από την πλαγιά του βουνού και την θέα του ελαιώνα που απλώνεται στον ορίζοντα."
     },
     "lang_owlDetails_2":{
         "en": "An enjoyable stopover or a tasty destination country road Tavronitis _ Paleochora, in a place where blend of modern and traditional elements, you can enjoy eating, dessert or coffee. With respect to tradition and especially with love for what we do, we offer you generously purest flavors of materials produced by our family.",
@@ -35,13 +35,17 @@
         "en": "Our Specialities",
         "el": "Οι Σπεσιαλιτέ μας"
     },
+    "lang_spcialities_details2":{
+        "en": "Click here, to close the menu",
+        "el": "Για να κλείσετε το μενού, κάντε κλικ εδώ"
+    },
     "lang_spcialities_details":{
         "en": "Click here, to see our menu",
         "el": "Για να δείτε το μενού, κάντε κλικ εδώ"
     },
     "lang_spcialities_explainer":{
         "en": "Here you will find a variety of special flavors every day. With deliberate ingredients and continuous security control, we guarantee excellent quality in an exquisite celebration of flavors, aromas and textures",
-        "el": "Εδώ θα βρείτε μία ποικιλία από ξεχωριστές γεύσεις κάθε μέρα. Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή των γεύσεων, των αρωμάτων και των υφών"
+        "el": "Εδώ θα βρείτε μία ποικιλία από ξεχωριστές γεύσεις κάθε μέρα. Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή γεύσεων, αρωμάτων και υφών"
     },
     "lang_nav_spcialities":{
         "en": "Specialties",
@@ -125,7 +129,7 @@
     },
     "lang_quality_text":{
         "en": "The olive oil we use and most of the products that enrich our cuisine (meat, dairy, vegetables, etc.) is our production. <br> <br> With handpicked ingredients and thorough safety controls, we guarantee pristine quality in an exquisite feast of flavors, aromas and textures! <br> <br> In our restaurant we have for sale olive oil, wine, tsikoudia, rakomelo and others.",
-        "el": "Το ελαιόλαδο που χρησιμοποιούμε καθώς και τα περισσότερα προϊόντα που εμπλουτίζουν την κουζίνα μας (κρεατικά, τυροκομικά, λαχανικά, κ.ά.) είναι δικής μας παραγωγής. <br><br> Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή των γεύσεων, των αρωμάτων και των υφών! <br><br> Στο εστιατόριο μας διατίθενται προς πώληση ελαιόλαδο, κρασί, τσικουδιά, ρακόμελο κ.ά."
+        "el": "Το ελαιόλαδο που χρησιμοποιούμε καθώς και τα περισσότερα προϊόντα που εμπλουτίζουν την κουζίνα μας (κρεατικά, τυροκομικά, λαχανικά, κ.ά.) είναι δικής μας παραγωγής. <br><br> Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή γεύσεων, αρωμάτων και υφών! <br><br> Στο εστιατόριο μας διατίθενται προς πώληση ελαιόλαδο, κρασί, τσικουδιά, ρακόμελο κ.ά."
     },    
     "lang_messaage_name":{
         "en": "Full name",

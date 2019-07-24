@@ -150,14 +150,15 @@ $( document ).ready(function() {
     
     var hasFadedOut=false;
     var menu=false;
-    $(".menu-clickExplainer").on("click", function(){
+    $(".mn-clk").on("click", function(){
         if (!menu) {
             // $('.menu-clickExplainer').fadeOut(500);
             if (!hasFadedOut) {
                 $('.menuHalfOpen').fadeOut(100);
                 $('.menuFilled').fadeOut(200);
-                $('.menu-clickExplainer').html("Για να κλείσετε το μενού, κάντε κλικ εδώ");
                 $('.menu-handDown').hide();
+                $('.menu-clickExplainer').hide();
+                $('.men-click-exp2').show();
                 hasFadedOut=true;
             }
             else{
@@ -182,7 +183,8 @@ $( document ).ready(function() {
                 $('.menuFilled').show();
                 $('.menuHalfOpen').show();
                 $('.menu-handDown').show();
-                $('.menu-clickExplainer').html("Για να δείτε το μενού, κάντε κλικ εδώ");
+                $('.men-click-exp2').hide();
+                $('.menu-clickExplainer').show();
                 hasFadedOut=false;
             }
             $('.menuDetails').show();
