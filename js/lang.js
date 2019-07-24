@@ -29,6 +29,7 @@ $(document).ready(function(){
         $("#lang_owlDetails_2").html(data.lang_owlDetails_2[displayLang]);
         $("#lang_owlDetails_3").html(data.lang_owlDetails_3[displayLang]);
         $("#lang_spcialities_title").html(data.lang_spcialities_title[displayLang]);
+        $("#lang_spcialities_details2").html(data.lang_spcialities_details2[displayLang]);
         $("#lang_spcialities_details").html(data.lang_spcialities_details[displayLang]);
         $("#lang_spcialities_explainer").html(data.lang_spcialities_explainer[displayLang]);
         $("#lang_nav_spcialities").html(data.lang_nav_spcialities[displayLang]);
