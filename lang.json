@@ -1,0 +1,170 @@
+{
+    "lang_nav_menu":{
+        "en": "MENU",
+        "el": "ΜΕΝΟΥ"
+    },
+    "lang_nav_gallery":{
+        "en": "GALLERY",
+        "el": "ΕΙΚΟΝΕΣ"
+    },
+    "lang_nav_contact":{
+        "en": "CONTACT",
+        "el": "ΕΠΙΚΟΙΝΩΝΙΑ"
+    },
+    "lang_nav_reservation":{
+        "en": "RESERVATION",
+        "el": "ΚΡΑΤΗΣΗ"
+    },
+    "lang_home_view":{
+        "en": "When the enjoyment offer, became our life purpose",
+        "el": "Όταν η προσφορά της απόλαυσης, γίνεται σκοπός ζωής"
+    },
+    "lang_owlDetails_1":{
+        "en": "Every morning we wake up with only one concern, to become better and to offer the most delicious flavors and the best service to visitors who want to enjoy the sunset behind the mountainside and overlooking olive groves.",
+        "el": "Κάθε πρωί ξυπνάμε με μία μόνο έγνοια, να γινόμαστε όλο και καλύτεροι και να προσφέρουμε τις πιο απολαυστικές γεύσεις και τις καλύτερες υπηρεσίες στους επισκέπτες, που θέλοuν να απολαύσουν το υπέροχο ηλιοβασίλεμα πίσω από την πλαγιά του βουνού και την θέα του ελαιώνα που απλώνεται στα πόδια του."
+    },
+    "lang_owlDetails_2":{
+        "en": "An enjoyable stopover or a tasty destination country road Tavronitis _ Paleochora, in a place where blend of modern and traditional elements, you can enjoy eating, dessert or coffee. With respect to tradition and especially with love for what we do, we offer you generously purest flavors of materials produced by our family.",
+        "el": "Μια απολαυστική στάση ή ένας γευστικός προορισμός Στον επαρχιακό δρόμο Ταυρωνίτη _ Παλαιόχωρας, σε έναν χώρο όπου συνδυάζονται αρμονικά το μοντέρνο με το παραδοσιακό στοιχείο, μπορείτε να χαλαρώσετε απολαμβάνοντας το φαγητό, το γλυκό ή τον καφέ σας. Με σεβασμό στην παράδοση και κυρίως με αγάπη γι' αυτό που κάνουμε, σας προσφέρουμε απλόχερα τις πιο αγνές γεύσεις, από υλικά που παράγει η οικογένειά μας. Χωριάτικο ψωμί, ζυμωμένο στο χέρι και ψημένο με παραδοσιακό τρόπο."
+    },
+    "lang_owlDetails_3":{
+        "en": "Bread, kneaded by hand and baked in a traditional way. Wines of exceptional grape varieties. Original Cretan dishes and desserts made with the freshest ingredients, yogurt, cheese, pure organic olive oil.",
+        "el": "Κρασί από εξαιρετικές ποικιλίες σταφυλιού. Γνήσια κρητικά φαγητά και γλυκά φτιαγμένα με τα πιο αγνά υλικά, γιαούρτι, μυζήθρα, αγνό βιολογικό ελαιόλαδο _ πιστοποιημένο από τον ΔΗΩ (ΟΡΓΑΝΙΣΜΟΣ ΕΛΕΓΧΟΥ & ΠΙΣΤΟΠΟΙΗΣΗΣ ΒΙΟΛΟΓΙΚΩΝ ΠΡΟΙΟΝΤΩΝ)."
+    },
+    "lang_spcialities_title":{
+        "en": "Our Specialities",
+        "el": "Οι Σπεσιαλιτέ μας"
+    },
+    "lang_spcialities_details":{
+        "en": "Click here, to see our menu",
+        "el": "Για να δείτε το μενού, κάντε κλικ εδώ"
+    },
+    "lang_spcialities_explainer":{
+        "en": "Here you will find a variety of special flavors every day. With deliberate ingredients and continuous security control, we guarantee excellent quality in an exquisite celebration of flavors, aromas and textures",
+        "el": "Εδώ θα βρείτε μία ποικιλία από ξεχωριστές γεύσεις κάθε μέρα. Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή των γεύσεων, των αρωμάτων και των υφών"
+    },
+    "lang_nav_spcialities":{
+        "en": "Specialties",
+        "el": "Σπεσιαλιτέ"
+    },
+    "lang_nav_appertizer":{
+        "en": "Appetizer",
+        "el": "Ορεκτικά"
+    },
+    "lang_nav_main":{
+        "en": "Main",
+        "el": "Κυρίως"
+    },
+    "lang_nav_dessert":{
+        "en": "Dessert",
+        "el": "Επιδόρπιο"
+    },
+    "lang_reservation_title":{
+        "en": "Make a reservation",
+        "el": "Κάντε Κράτηση"
+    },
+    "lang_reservation_text":{
+        "en": "Contact us every day for reservations. We take over every social business event",
+        "el": "Καλέστε μας καθημερινά για να κάνετε κράτηση. Αναλαμβάνουμε κάθε είδους κοινωνικής_επαγγελματικής εκδήλωσης"
+    },
+    "lang_reservation_fullname":{
+        "en": "Full name",
+        "el": "Το ονοματεπώνυμο σας"
+    },
+    "lang_reservation_email":{
+        "en": "Email address",
+        "el": "Η διεύθυνση e-mail σας"
+    },
+    "lang_reservation_phone":{
+        "en": "Phone number & number of persons",
+        "el": "Αριθμός τηλεφώνου & αριθμός ατόμων"
+    },
+    "lang_reservation_date":{
+        "en": "Date & time of reservation",
+        "el": "Ημερομηνία & Ώρα κράτησης"
+    },
+    "lang_reservation_option_1person":{
+        "en": "1 Person",
+        "el": "1 Άτομο"
+    },
+    "lang_reservation_option_2persons":{
+        "en": "2 Persons",
+        "el": "2 Άτομα"
+    },    
+    "lang_reservation_option_3persons":{
+        "en": "3 Persons",
+        "el": "3 Άτομα"
+    },    
+    "lang_reservation_option_4persons":{
+        "en": "4 Persons",
+        "el": "4 Άτομα"
+    },    
+    "lang_reservation_option_5persons":{
+        "en": "5 Persons",
+        "el": "5 Άτομα"
+    },    
+    "lang_reservation_option_6persons":{
+        "en": "6 Persons",
+        "el": "6 Άτομα"
+    },    
+    "lang_reservation_option_7persons":{
+        "en": "7 Persons",
+        "el": "7 Άτομα"
+    },    
+    "lang_reservation_option_8persons":{
+        "en": "8 Persons",
+        "el": "8 Άτομα"
+    },    
+    "lang_reservation_btn":{
+        "en": "Make Reservation Online",
+        "el": "Κάντε Κράτηση Online"
+    },
+    "lang_reservation_hint":{
+        "en": "or call <br>(+30) 28240-31222 / (+30) 693 83 27 110",
+        "el": "ή καλέστε στο <br>(+30) 28240-31222 / (+30) 693 83 27 110"
+    },
+    "lang_quality_text":{
+        "en": "The olive oil we use and most of the products that enrich our cuisine (meat, dairy, vegetables, etc.) is our production. <br> <br> With handpicked ingredients and thorough safety controls, we guarantee pristine quality in an exquisite feast of flavors, aromas and textures! <br> <br> In our restaurant we have for sale olive oil, wine, tsikoudia, rakomelo and others.",
+        "el": "Το ελαιόλαδο που χρησιμοποιούμε καθώς και τα περισσότερα προϊόντα που εμπλουτίζουν την κουζίνα μας (κρεατικά, τυροκομικά, λαχανικά, κ.ά.) είναι δικής μας παραγωγής. <br><br> Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή των γεύσεων, των αρωμάτων και των υφών! <br><br> Στο εστιατόριο μας διατίθενται προς πώληση ελαιόλαδο, κρασί, τσικουδιά, ρακόμελο κ.ά."
+    },    
+    "lang_messaage_name":{
+        "en": "Full name",
+        "el": "Το ονοματεπώνυμο σας"
+    },
+    "lang_messaage_email":{
+        "en": "Email address",
+        "el": "Η διεύθυνση e-mail σας"
+    },
+    "lang_messaage_phone":{
+        "en": "Phone number",
+        "el": "Αριθμός τηλεφώνου"
+    },
+    "lang_messaage_urmessage":{
+        "en": "Your message",
+        "el": "Το μήνυμά σας"
+    },
+    "lang_messaage_description":{
+        "en": "Send us your comments, your impressions or posible observations",
+        "el": "Στείλτε μας τα σχόλια σας, τις εντυπώσεις ή πιθανές παρατηρήσεις"
+    },
+    "lang_messaage_btn":{
+        "en": "Send message",
+        "el": "Στείλτε μήνυμα"
+    },
+    "lang_ajax_ok":{
+        "en": "OK",
+        "el": "Εντάξει"
+    },
+    "lang_ajax_error":{
+        "en": "An error occured, try again later.",
+        "el": "Δυστυχώς προέκυψε κάποιο πρόβλημα."
+    },
+    "lang_ajax_success":{
+        "en": "Your message was sent!",
+        "el": "Το μήνυμά σας στάλθηκε επιτυχώς!"
+    },
+    "lang_ajax_wait":{
+        "en": "Please give us a momment...",
+        "el": "Παρακαλώ περιμένετε..."
+    }
+}

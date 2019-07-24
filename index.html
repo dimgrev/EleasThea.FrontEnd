@@ -60,6 +60,7 @@
     <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/sendMessages.js"></script>
+    <script src="js/lang.js"></script>
 
     <!-- OWL CSS -->
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
@@ -90,10 +91,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#menu">MENΟΥ</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link showGalleryBtn" href="#gallery">GALLERY</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-                    <a class="scroll-on-top-nav-item nav-item nav-link" id="scroll-on-top-makeAReservationBtn" href="#reservation">ΚΡΑΤΗΣΗ</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#menu" id="lang_nav_menu">MENΟΥ</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link showGalleryBtn" href="#gallery" id="lang_nav_gallery">GALLERY</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link" href="#contact" id="lang_nav_contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                    <a class="scroll-on-top-nav-item nav-item nav-link" id="scroll-on-top-makeAReservationBtn" href="#reservation"><span id="lang_nav_reservation">ΚΡΑΤΗΣΗ</span></a>
                 </div>            
             </div>
         </div>
@@ -108,10 +109,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="scroll-variable-nav-item nav-item nav-link" href="#menu">MENΟΥ</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link showGalleryBtn" href="#gallery">GALLERY</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-                    <a class="scroll-variable-nav-item nav-item nav-link" id="scroll-variable-makeAReservationBtn" href="#reservation">ΚΡΑΤΗΣΗ</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link" href="#menu" id="lang_nav_menu2">MENΟΥ</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link showGalleryBtn" href="#gallery" id="lang_nav_gallery2">GALLERY</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link" href="#contact" id="lang_nav_contact2">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                    <a class="scroll-variable-nav-item nav-item nav-link" id="scroll-variable-makeAReservationBtn" href="#reservation" ><span id="lang_nav_reservation2">ΚΡΑΤΗΣΗ</span></a>
                 </div>            
             </div>
         </div>
@@ -121,23 +122,26 @@
     <div class="homeScreenSlide d-flex align-items-center justify-content-center">  <!-- data-parallax="scroll" data-image-src="images/365.jpg" data-android-fix="false" -->
         
         <div class="container">
-            <div class="title float-right">
+            <div class="title float-right" id="lang_home_view">
                 Όταν η προσφορά της απόλαυσης, γίνεται σκοπός ζωής
-            </div>
+            </div>            
         </div>        
         <i class="fas fa-chevron-down"></i>
+        <div class="container langSelector-box">
+                <i class="fas fa-globe"></i> <span id="langSelector-en">English</span> | <span id="langSelector-el">Ελληνικά</span>
+        </div>        
     </div>
                 
     <!-- Details Slide -->
     <div class="owl-carousel detailsSlideAlt">
-            <div class="details-para container d-flex justify-content-end align-items-center text-right">
+            <div class="details-para container d-flex justify-content-end align-items-center text-right" id="lang_owlDetails_1">
                     Κάθε πρωί ξυπνάμε με μία μόνο έγνοια, να γινόμαστε όλο και καλύτεροι
                     και να προσφέρουμε τις πιο απολαυστικές γεύσεις και τις καλύτερες
                     υπηρεσίες στους επισκέπτες, που θέλοuν να απολαύσουν το υπέροχο
                     ηλιοβασίλεμα πίσω από την πλαγιά του βουνού και την θέα του ελαιώνα που
                     απλώνεται στον ορίζοντα.
             </div>
-            <div class="details-para container d-flex justify-content-end align-items-center text-justify">
+            <div class="details-para container d-flex justify-content-end align-items-center text-justify" id="lang_owlDetails_2">
                     Μια απολαυστική στάση ή ένας γευστικός προορισμός Στον επαρχιακό
                     δρόμο Ταυρωνίτη - Παλαιόχωρας, σε έναν χώρο όπου συνδυάζονται αρμονικά
                     το μοντέρνο με το παραδοσιακό στοιχείο, μπορείτε να χαλαρώσετε
@@ -147,7 +151,7 @@
                     μας. Χωριάτικο ψωμί, ζυμωμένο στο χέρι και ψημένο με παραδοσιακό
                     τρόπο.
             </div>
-            <div class="details-para container d-flex justify-content-end align-items-center text-left">
+            <div class="details-para container d-flex justify-content-end align-items-center text-left" id="lang_owlDetails_3">
                     Κρασί από εξαιρετικές ποικιλίες σταφυλιού. Γνήσια κρητικά φαγητά
                     και γλυκά φτιαγμένα με τα πιο αγνά υλικά, γιαούρτι, μυζήθρα, αγνό
                     βιολογικό ελαιόλαδο - πιστοποιημένο από τον ΔΗΩ (ΟΡΓΑΝΙΣΜΟΣ ΕΛΕΓΧΟΥ
@@ -182,7 +186,7 @@
     <div class="menu-slide d-flex justify-content-center" id="menu" data-offset="500">
         <div class="menu-poster d-flex justify-content-center">
             <div class="menuEmpty d-flex justify-content-center">
-                <div class="menu-title">
+                <div class="menu-title" id="lang_spcialities_title">
                     Οι Σπεσιαλιτέ μας
                 </div>
                 <div class="menuHalfOpen">
@@ -191,7 +195,7 @@
                 </div>
             </div>
             <i class="far fa-hand-point-down menu-handDown"></i>
-            <div class="menu-clickExplainer">
+            <div class="menu-clickExplainer" id="lang_spcialities_details">
                     Για να δείτε το μενού, κάντε κλικ εδώ
             </div>
         </div>
@@ -200,7 +204,7 @@
         <div class="menuDetails">
                 <div class="mD1"><img src="images/mnlogo.png"></div>
                 
-                <div class="mD2">
+                <div class="mD2" id="lang_spcialities_explainer">
                 "Εδώ θα βρείτε μία ποικιλία από
                 ξεχωριστές γεύσεις κάθε μέρα. Με διαλεκτά
                 συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα
@@ -212,16 +216,16 @@
             <div class="ctnav">
                 <ul class="nav nav-pills mb-3 menuct-nav" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link menuct-text active" id="pills-special-tab" data-toggle="pill" href="#pills-special" role="tab" aria-controls="pills-special" aria-selected="true">Σπεσιαλιτέ</a>
+                    <a class="nav-link menuct-text active" id="pills-special-tab" data-toggle="pill" href="#pills-special" role="tab" aria-controls="pills-special" aria-selected="true"><span id="lang_nav_spcialities">Σπεσιαλιτέ</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menuct-text" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">Ορεκτικά</a>
+                    <a class="nav-link menuct-text" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false"><span id="lang_nav_appertizer">Ορεκτικά</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menuct-text" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Κυρίως</a>
+                    <a class="nav-link menuct-text" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><span id="lang_nav_main">Κυρίως</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menuct-text" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Επιδόρπια</a>
+                    <a class="nav-link menuct-text" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" ><span id="lang_nav_dessert">Επιδόρπια</span></a>
                 </li>
                 </ul>
             </div>
@@ -292,47 +296,47 @@
     <span class="anchor" id="reservation"></span>
     <div class="reservationSlide d-flex">
         <div class="reservation-poster d-flex flex-column align-items-center justify-content-center">
-            <div class="reservation-title">
+            <div class="reservation-title" id="lang_reservation_title">
                 Κάντε Κράτηση
             </div>
-            <div class="reservation-text">
+            <div class="reservation-text" id="lang_reservation_text">
                 Καλέστε μας καθημερινά για να κάνετε κράτηση. Αναλαμβάνουμε κάθε είδους κοινωνικής-επαγγελματικής εκδήλωσης
             </div>
         </div>
         <div class="reservation-form d-flex flex-column align-items-center justify-content-center">
             <div class="reservation-form-container">
                 <form onsubmit="makeReservation(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
-                    <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
+                    <div class="input-explainer" id="lang_reservation_fullname">Το ονοματεπώνυμο σας</div>        
                     <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
                     <br>
 
-                    <div class="input-explainer">Η διεύθυνση e-mail σας</div>
+                    <div class="input-explainer" id="lang_reservation_email">Η διεύθυνση e-mail σας</div>
                     <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-maxWidth" required>
                     <br>
 
-                    <div class="input-explainer">Αριθμός τηλεφώνου & αριθμός ατόμων</div>
+                    <div class="input-explainer" id="lang_reservation_phone">Αριθμός τηλεφώνου & αριθμός ατόμων</div>
                     <div>
                         <input type="number" name="telephone" id="reservation-tel-picker" placeholder="69 -" class="form-input-halfWidth" required>
                         <select placeholder="Άτομα" name="numberOfPeople" class="select-PersonsNumber form-input-halfWidth" required>
-                            <option value="1">1 Άτομο</option>
-                            <option value="2">2 Άτομα</option>
-                            <option value="3">3 Άτομα</option>
-                            <option value="4">4 Άτομα</option>
-                            <option value="5">5 Άτομα</option>
-                            <option value="6">6 Άτομα</option>
-                            <option value="7">7 Άτομα</option>
-                            <option value="8">8 Άτομα</option>
+                            <option value="1" id="lang_reservation_option_1person">1 </option>
+                            <option value="2" id="lang_reservation_option_2persons">2 </option>
+                            <option value="3" id="lang_reservation_option_3persons">3 </option>
+                            <option value="4" id="lang_reservation_option_4persons">4 </option>
+                            <option value="5" id="lang_reservation_option_5persons">5 </option>
+                            <option value="6" id="lang_reservation_option_6persons">6 </option>
+                            <option value="7" id="lang_reservation_option_7persons">7 </option>
+                            <option value="8" id="lang_reservation_option_8persons">8 </option>
                         </select>
                     </div>
                     <br>
 
-                    <div class="input-explainer">Ημερομηνία & Ώρα κράτησης</div>
+                    <div class="input-explainer" id="lang_reservation_date">Ημερομηνία & Ώρα κράτησης</div>
                     <input type="date" id="reservation-date-picker" onchange="ValidateDateForReservation(resDate.value);" name="resDate" class="form-input-halfWidth" placeholder="Ημερομηνία" required>
                     <input type="time" min="11:00" max="23:00" value="11:00" name="resTime" class="form-input-halfWidth" placeholder="Ώρα" required>
                     <br>
 
-                    <button type="submit" class="reserveBtn">Κάντε Κράτηση Online <i class="fas fa-check"></i></button>
-                    <div class="reservation-hint">
+                    <button type="submit" class="reserveBtn" id=""><span id="lang_reservation_btn">Κάντε Κράτηση Online</span> <i class="fas fa-check"></i></button>
+                    <div class="reservation-hint" id="lang_reservation_hint">
                         ή καλέστε στο <br>
                         (+30) 28240-31222 / (+30) 693 83 27 110
                     </div>
@@ -345,7 +349,7 @@
     <!-- Quality Slide -->
     <div class="qualitySlide">
         <div class="d-flex flex-row container justify-content-between">
-            <div class="quality-text d-flex flex-column align-items-center justify-content-center">
+            <div class="quality-text d-flex flex-column align-items-center justify-content-center" id="lang_quality_text">
                 Το ελαιόλαδο που χρησιμοποιούμε καθώς και τα περισσότερα προϊόντα που
                 εμπλουτίζουν την κουζίνα μας (κρεατικά, τυροκομικά, λαχανικά, κ.ά.)
                 είναι δικής μας παραγωγής.
@@ -474,8 +478,7 @@
     <span class="anchor" id="contact"></span>
     <div class="contactSlide d-flex" id="contact">
         <div class="mapGroup">                
-                <div class="mapProtectorFromLidl d-flex flex-column align-items-center justify-content-center">
-                    <!-- <i class="fas fa-hand-point-down"></i> -->
+                <div class="mapProtectorFromLidl d-flex flex-column align-items-center justify-content-center" id="">
                     Για να ενεργοποιήσετε τον χάρτη, πιέστε εδώ                        
                 </div>
                 <div id='map' onclick="zme()" onmouseout="zmd()">            
@@ -538,22 +541,22 @@
         <div class="sendMessageSlide d-flex justify-content-between align-items-center">
             <div class="container d-flex justify-content-around">        
                 <div class="sndMsg-personalInfo">
-                    <div class="input-explainer">Το ονοματεπώνυμο σας</div>        
+                    <div class="input-explainer" id="lang_messaage_name">Το ονοματεπώνυμο σας</div>        
                     <input type="text" name="fullName" placeholder="John Doe" class="form-input-maxWidth" required>
                     <br>
 
-                    <div class="input-explainer">Η διεύθυνση e-mail σας</div>
+                    <div class="input-explainer" id="lang_messaage_email">Η διεύθυνση e-mail σας</div>
                     <input type="email" name="email" placeholder="johndoe@example.com" class="form-input-maxWidth" required>
                     <br>
 
-                    <div class="input-explainer">Αριθμός τηλεφώνου</div>
+                    <div class="input-explainer" id="lang_messaage_phone">Αριθμός τηλεφώνου</div>
                     <input type="number" name="telephone" placeholder="69 -" class="form-input-maxWidth">
                 </div>
                 <div class="sndMsg-messageTxtBox">
-                    <div class="input-explainer">Το μήνυμά σας</div>
-                    <textarea name="message" id="" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις" required></textarea>
+                    <div class="input-explainer" id="lang_messaage_urmessage">Το μήνυμά σας</div>
+                    <textarea name="message" id="lang_messaage_description" placeholder="Στείλτε μας τα σχόλια σας, τις εντυπώσεις σας ή πιθανές παρατησρήσεις" required></textarea>
                     <br>
-                    <button type="submit" class="reserveBtn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
+                    <button type="submit" class="reserveBtn" id="lang_messaage_btn">Στείλτε μήνυμα <i class="fas fa-check"></i></button>
                 </div>
             </div>
         </div>
@@ -586,18 +589,18 @@
                 <div class="spinner-border text-secondary" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
-                <br/> Παρακαλώ περιμένετε...
+                <br/> <span id="lang_ajax_wait">Παρακαλώ περιμένετε... </span>
             </div>
             <!-- Successful AJAX Result Div -->
             <div class="successfulMessage">
-                <i class="fas fa-check"></i> Το μήνυμά σας στάλθηκε επιτυχώς!        
+                <i class="fas fa-check"></i> <span id="lang_ajax_success">Το μήνυμά σας στάλθηκε επιτυχώς!</span>
             </div>
             <!-- Failed AJAX Result Div -->
             <div class="errorMessage">
-                <i class="fas fa-exclamation-triangle"></i> Δυστυχώς προέκυψε κάποιο πρόβλημα.
+                <i class="fas fa-exclamation-triangle"></i> <span id="lang_ajax_error">Δυστυχώς προέκυψε κάποιο πρόβλημα.</span>
             </div>
             <!-- Ok Button - Dismiss PopUp -->
-            <div class="dismissMessageBtn">
+            <div class="dismissMessageBtn" id="lang_ajax_ok">
                 Εντάξει
             </div> 
         </div>        
