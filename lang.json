@@ -166,5 +166,13 @@
     "lang_ajax_wait":{
         "en": "Please give us a momment...",
         "el": "Παρακαλώ περιμένετε..."
+    },
+    "lang_contact_location":{
+        "en": "Voukolies, (2 Km towards Paleochora),<br>73002, Chania, Crete",
+        "el": "Βουκολιές, (2 χλμ προς Παλαιόχωρα),<br>73002, Χανιά, Κρήτη"
+    },
+    "lang_contact_schedule":{
+        "en": "Tuesday to Sunday, 11:00 - 23:00 <br>Monday Closed",
+        "el": "Τρίτη έως Κυριακή από τις 11:00 - 23:00 <br>Δευτέρα ΚΛΕΙΣΤΑ"
     }
 }

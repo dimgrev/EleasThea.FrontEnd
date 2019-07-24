@@ -66,6 +66,9 @@ $(document).ready(function(){
         $("#lang_ajax_success").html(data.lang_ajax_success[displayLang]);
         $("#lang_ajax_error").html(data.lang_ajax_error[displayLang]);
         $("#lang_ajax_ok").html(data.lang_ajax_ok[displayLang]);
+
+        $("#lang_contact_location").html(data.lang_contact_location[displayLang]);
+        $("#lang_contact_schedule").html(data.lang_contact_schedule[displayLang]);
     });
 
     //listen to change language events...
