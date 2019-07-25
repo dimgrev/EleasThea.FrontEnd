@@ -1,5 +1,5 @@
 // var backendURL = 'http://192.168.1.74/EleasThea_WebApi';
-var backendURL = 'http://83.212.107.151/eleasthea_WebApi';
+var backendURL = 'http://83.212.107.151/eleasthea_api';
 
 function makeReservation(fullName, email, telephone, numberOfPeople, resDate, resTime, event){
     event.preventDefault();
