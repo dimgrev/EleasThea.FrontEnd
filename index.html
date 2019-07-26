@@ -508,9 +508,8 @@
 
                 <hr/>
 
-                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> Less than 3 persons: 100€.</div>
-                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> For 3 to 8 persons: 80€.</div>
-                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> More than 8 persons: 60€.</div>
+                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> Up to 3 persons: 60€.</div>
+                <div class="cookingClassLi-El"><i class="fas fa-chevron-right list-check2"></i> More than 3 persons: 40€.</div>                
 
                 <hr/>
                 <form onsubmit="makeReservationForCookingLessons(fullName.value, email.value, telephone.value, numberOfPeople.value, resDate.value, resTime.value, event);" method="POST">
@@ -529,9 +528,8 @@
                             <div>
                                 <input type="number" name="telephone" placeholder="69 -" class="form-input-halfWidth blackBG" required>
                                 <select placeholder="Άτομα" name="numberOfPeople" class="select-PersonsNumber form-input-halfWidth blackBG" required>
-                                    <option value="Λιγότερο απο 3 άτομα">Less than 3 persons</option>
-                                    <option value="3 - 8 άτομα">3 - 8 persons</option>
-                                    <option value="Περισσότερα απο 8 άτομα">More than 8 persons</option>                           
+                                    <option value="Μέχρι 3 άτομα">Up to 3 persons</option>
+                                    <option value="Περισσότερα απο 3 άτομα">More than 3 persons</option>
                                 </select>
                             </div>
                             <br>
