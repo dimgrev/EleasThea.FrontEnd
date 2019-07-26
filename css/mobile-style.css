@@ -121,6 +121,11 @@
             font-size: 15px!important;
         }
     }
+    @media screen and (min-width: 470px) {
+        .men-click-exp2{
+            font-size: 15px!important;
+        }
+    }
     .menuDetails {
         width: 100%;
         height: 350px;
