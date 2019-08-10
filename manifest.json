@@ -1,7 +1,7 @@
 {
     "name": "Eleas Thea",
     "short_name": "Eleas Thea",
-    "start_url": "",
+    "start_url": "/index.html",
     "background_color": "#ffffff",
     "description": "Traditional Greek Restaurant with a breathtaking view",
     "display": "standalone",
