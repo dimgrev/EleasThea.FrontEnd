@@ -493,7 +493,7 @@ body{
 .SpGallery .slick-slide{
     display: flex!important;
 }
-.SpGallery .slick-next, .slick-prev{
+.SpGallery .slick-next,.SpGallery .slick-prev{
     position: absolute;
     background:rgba(0,0,0,0.5);
     border: none;

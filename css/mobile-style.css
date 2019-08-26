@@ -92,7 +92,7 @@
         clip-path: initial;
     }
     .menu-handDown{
-        font-size: 25px;
+        font-size: 40px;
         bottom: 100px;
         font-weight: 100;
     }
@@ -168,12 +168,21 @@
         height: auto;
 
     }
+    .SpGallery .fa-chevron-right,.SpGallery .fa-chevron-left {
+        font-size: 3em!important;
+    }
     .SpGallery .slick-list{
         width: 100vw;
         height: 300px;
     }
-    .SpGallery .slick-next, .slick-prev{
+    .SpGallery .slick-next,.SpGallery .slick-prev{
         padding: 15px 20px;
+    }
+    .SpGallery .slick-next{
+        bottom: calc(50% - 4em);
+    }
+    .SpGallery .slick-prev{
+        bottom: calc(50% - 4em);
     }
     .SpPhotos{
         max-height: 30vh!important;
