@@ -666,6 +666,15 @@ iframe{
     overflow: auto;
     width: 320px!important;
     height: 420px!important;
+    background-color: #69776560;
+    text-align: center;
+}
+.fbNotLoadExplainer{
+    padding: 15%;
+    padding-top: 15%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 19px;
 }
 .div3{
     background: url("../images/fouricon.png");
