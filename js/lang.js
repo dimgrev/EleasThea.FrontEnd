@@ -9,8 +9,20 @@ $(document).ready(function(){
         var displayLang = localStorage.getItem('eleas-thea-displayLang');
         if(!(displayLang == 'en' || displayLang == 'el')){
             localStorage.setItem('eleas-thea-displayLang', 'el');
+            displayLang = 'el';
         } 
-
+        if (screen.width <= 990){
+            if(displayLang == 'en'){
+                $(".enfood-elements").css("display","block");
+                $(".food-elements").css("display","none");
+            }else if(displayLang == 'el'){
+                $(".enfood-elements").css("display","none");
+                $(".food-elements").css("display","block");
+            }else{
+                $(".enfood-elements").css("display","block");
+                $(".food-elements").css("display","block");
+            }
+        }
         //printing preset language into DOM...
         //nav
 

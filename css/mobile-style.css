@@ -198,6 +198,49 @@
         background-size: cover;
         background-position: center;
     }
+    .appetizer-col-el{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .main-col-el{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .dessert-col-el{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .appetizer-col-en{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .main-col-en{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .dessert-col-en{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .food-elements{
+        font-size: 17px;
+        padding: 0px 0% 0px 5%;
+        text-align: left;
+        display: block;
+    }
+    .enfood-elements{
+        font-size: 17px;
+        padding: 0px 0% 0px 5%;
+        color: rgb(69, 110, 7);
+        text-align: left;
+        display: block;
+    }
 
     /* FbFiller */
     .fbFiller{

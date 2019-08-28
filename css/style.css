@@ -5,6 +5,30 @@ body{
     font-family: 'Roboto Slab', serif;
 }
 
+/*Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+/*Div's Scroll Bar*/
+/* width */
+div ::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+div ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 15px;
+}
+/* Handle */
+div ::-webkit-scrollbar-thumb {
+    background: rgb(114, 114, 114);
+    border-radius: 15px;
+}
+/* Handle on hover */
+div ::-webkit-scrollbar-thumb:hover {
+    background: #464646; 
+}
 /* Nav Section */
 
 
@@ -515,39 +539,59 @@ body{
     overflow: auto;
     margin-top: 2vh;
     height: calc(100% - 46px - 2vh);
-    min-height: 85%;
+    min-height: 87%;
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 0px;
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 3px;
+    background-color: #628255;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
 }
-
-/* width */
-div ::-webkit-scrollbar {
-    width: 10px;
+.appetizer-col-el{
+    width: 50%;
+    height: 100%;
+    float: left;
 }
-
-/* Track */
-div ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 3px grey;
-    border-radius: 15px;
+.main-col-el{
+    width: 50%;
+    height: 100%;
+    float: left;
 }
-
-/* Handle */
-div ::-webkit-scrollbar-thumb {
-    background: rgb(114, 114, 114);
-    border-radius: 15px;
-}
-
-/* Handle on hover */
-div ::-webkit-scrollbar-thumb:hover {
-    background: #464646; 
+.dessert-col-el{
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 .food-elements{
     font-size: 17px;
-    padding: 0.2vw;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 2% 0px 12%;
+    text-align: left;
+    display: block;
+}
+.appetizer-col-en{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.main-col-en{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.dessert-col-en{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.enfood-elements{
+    font-size: 17px;
+    padding: 0px 12% 0px 2%;
+    color: rgb(69, 110, 7);
+    text-align: left;
+    display: block;
 }
 
 /* Facebook Filler */
