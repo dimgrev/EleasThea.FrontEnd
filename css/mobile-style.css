@@ -283,7 +283,7 @@
     /* Cooking Classes */
     .cookingClassesIntroSlide{
         padding:25px 0px 25px 0px;
-        width: 100vw;
+        /* width: 100vw; */
         height:auto!important;        
     }
 
