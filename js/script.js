@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+    // Page Loader
+    $(window).on("load",function(){
+        setTimeout(function(){
+            $(".loader-wrapper").fadeOut("slow");
+        }, 1000);
+    }); 
+
     //Things to do when website fully loaded..    
     //A message for our little friends...
     console.log( "Hello little one! Tony Stark dies" );
@@ -22,9 +29,6 @@ $( document ).ready(function() {
             visibility:"hidden",
         }, "slow"); 
     });
-
-    
-            
 
     //Set today's date in #reservation-date-picker...
     var d = new Date();
