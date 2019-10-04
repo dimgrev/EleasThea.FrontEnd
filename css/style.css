@@ -12,7 +12,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #242f3f;
+    background-color: rgba(255, 255, 255, 0.95);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +25,14 @@ body{
     width: 30px;
     height: 30px;
     position: relative;
-    border: 4px solid #Fff;
+    border: 4px solid rgba(105,170,6, 1);
     animation: loader 2s infinite ease;
 }
 .loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(105,170,6, 1);
     animation: loader-inner 2s infinite ease-in;
 }
 @keyframes loader {
