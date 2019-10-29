@@ -690,6 +690,7 @@ div ::-webkit-scrollbar-thumb:hover {
     filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
 }
 .tripdiv3{
+    
     display: none;
     background: url("../images/tripicon3.png");
     position: absolute;
@@ -727,6 +728,7 @@ iframe{
     font-size: 19px;
 }
 .div3{
+    background-size: 140px!important;
     background: url("../images/fouricon.png");
     background-repeat: no-repeat;
     background-position: center;
