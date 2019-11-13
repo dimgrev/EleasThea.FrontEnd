@@ -1338,14 +1338,3 @@ textarea:hover{
     margin-top: -92px; /*same height as header*/
     visibility: hidden;
 }
-.RestGuru{
-    position: absolute;
-    left: 5vw;
-    opacity: 0.8;
-}
-.circ_cont{
-    border: 4px solid #8f251c!important;
-}
-#rest_circ5 span:first-of-type{
-    background-color: #8f251c!important;
-}

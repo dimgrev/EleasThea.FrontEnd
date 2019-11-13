@@ -436,14 +436,6 @@
     .myfooter .copyright{
         font-size: 14px;
     }
-    .myfooter{
-        height: 500px;
-    }
-    .RestGuru{
-        position: static;
-        left: auto;
-        opacity: 0.8;
-    }
 
     /* Helpers */
     /* Black Overlay */
@@ -471,7 +463,6 @@
         width: 300px;
         margin-top:25px;
     }
-
 }
 
 
@@ -480,6 +471,5 @@
         bottom: 65px!important;
     }
 }
-
 
 
