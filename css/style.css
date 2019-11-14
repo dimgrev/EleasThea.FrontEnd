@@ -874,6 +874,17 @@ input::placeholder, textarea::placeholder{
     background-repeat: no-repeat;
     background-position: left bottom;
 }
+.restGuruAward{
+    visibility: visible;
+    position: absolute;
+    z-index: 1000;
+    transform:rotate(25deg);
+    right:20px;
+    top: 120px;
+}
+.restGuruM{
+    visibility: hidden;
+}
 
 .qualitySlide .container{
     height:600px;
@@ -883,6 +894,7 @@ input::placeholder, textarea::placeholder{
 .quality-poster{
     width: 30%;
     flex-direction: column;
+    position: relative;
 }
 
 .quality-poster img{

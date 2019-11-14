@@ -338,6 +338,15 @@
         display: none!important;
     }
 
+    .restGuruAward{
+        visibility: hidden;
+    }
+    .restGuruM{
+        visibility: visible;
+        opacity: 0.8;
+        filter: grayscale(10%);
+    }
+
     /* Cooking Classes */
     .cookingClassesIntroSlide{
         padding:25px 0px 25px 0px;
