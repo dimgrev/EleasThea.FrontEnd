@@ -1,5 +1,4 @@
-// var backendURL = 'http://192.168.1.74/EleasThea_WebApi';
-var backendURL = 'http://83.212.107.151/eleasthea_api';
+var backendURL = 'https://api.eleasthea.gr';
 
 function makeReservation(fullName, email, telephone, numberOfPeople, resDate, resTime, event){
     event.preventDefault();
@@ -9,15 +8,14 @@ function makeReservation(fullName, email, telephone, numberOfPeople, resDate, re
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": backendURL + "/api/MakeReservation",
+        "url": backendURL + "/api/Reservation/Table",
         "method": "POST",
         "headers": {
           "Content-Type": "application/json",
           "cache-control": "no-cache",
-          "Postman-Token": "ddf7b072-6e4c-4da1-b6d0-cd06720b24bf"
         },
         "processData": false,
-        "data": "{\n\t\"FullName\":\"" + fullName + "\",\n\t\"Email\":\"" + email + "\",\n\t\"Tel\":" + telephone + ",\n\t\"numberOfPersons\":" + numberOfPeople + ",\n\t\"dateTimeOfReservation\":\"" + dateTime + "\"\n}"
+        "data": "{\n\t\"fullName\":\"" + fullName + "\",\n\t\"email\":\"" + email + "\",\n\t\"tel\":" + telephone + ",\n\t\"numberOfPersons\":" + numberOfPeople + ",\n\t\"dateTimeOfReservation\":\"" + dateTime + "\"\n}"
       }
       
       $.ajax(settings).done(function (response) {
@@ -40,15 +38,14 @@ function sendFeedback(fullName, email, telephone, message, event){
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": backendURL + "/api/SendFeedback",
+        "url": backendURL + "/api/Feedback",
         "method": "POST",
         "headers": {
           "Content-Type": "application/json",
           "cache-control": "no-cache",
-          "Postman-Token": "ddf7b072-6e4c-4da1-b6d0-cd06720b24bf"
         },
         "processData": false,
-        "data": "{\n\t\"FullName\":\"" + fullName + "\",\n\t\"Email\":\"" + email + "\",\n\t\"Tel\":" + telephone + ",\n\t\"message\":\"" + message + "\"\n}"
+        "data": "{\n\t\"fullName\":\"" + fullName + "\",\n\t\"email\":\"" + email + "\",\n\t\"tel\":" + telephone + ",\n\t\"message\":\"" + message + "\"\n}"
       }
       
       $.ajax(settings).done(function (response) {
@@ -71,15 +68,14 @@ function makeReservationForCookingLessons(fullName, email, telephone, numberOfPe
   var settings = {
       "async": true,
       "crossDomain": true,
-      "url": backendURL + "/api/MakeReservationForCookingClasses",
+      "url": backendURL + "/api/Reservation/CookingLessons",
       "method": "POST",
       "headers": {
         "Content-Type": "application/json",
         "cache-control": "no-cache",
-        "Postman-Token": "ddf7b072-6e4c-4da1-b6d0-cd06720b24bf"
       },
       "processData": false,
-      "data": "{\n\t\"FullName\":\"" + fullName + "\",\n\t\"Email\":\"" + email + "\",\n\t\"Tel\":" + telephone + ",\n\t\"numberOfPersons\":\"" + numberOfPeople + "\",\n\t\"dateTimeOfReservation\":\"" + dateTime + "\"\n}"
+      "data": "{\n\t\"fullName\":\"" + fullName + "\",\n\t\"email\":\"" + email + "\",\n\t\"tel\":" + telephone + ",\n\t\"numberOfPersons\":\"" + numberOfPeople + "\",\n\t\"dateTimeOfReservation\":\"" + dateTime + "\"\n}"
     }
     
     $.ajax(settings).done(function (response) {
