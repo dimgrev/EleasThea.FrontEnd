@@ -1,186 +1,247 @@
 {
     "lang_nav_menu":{
         "en": "MENU",
+        "fr": "MENU",
         "el": "ΜΕΝΟΥ"
     },
     "lang_nav_gallery":{
         "en": "GALLERY",
+        "fr": "GALERIE",
         "el": "ΕΙΚΟΝΕΣ"
     },
     "lang_nav_contact":{
         "en": "CONTACT",
+        "fr": "CONTACT",
         "el": "ΕΠΙΚΟΙΝΩΝΙΑ"
     },
     "lang_nav_reservation":{
         "en": "RESERVATION",
+        "fr": "RESERVATION",
         "el": "ΚΡΑΤΗΣΗ"
     },
     "lang_home_view":{
         "en": "When the enjoyment offer, became our life purpose",
+        "fr": "Quand la joie d’offrir est notre raison d’être",
         "el": "Όταν η προσφορά της απόλαυσης, γίνεται σκοπός ζωής"
     },
     "lang_owlDetails_1":{
         "en": "Every morning we wake up with only one concern, to become better and to offer the most delicious flavors and the best service to visitors who want to enjoy the sunset behind the mountainside and overlooking olive groves.",
+        "fr": "Chaque matin nous nous levons avec une pensée en tête ; celle de nous améliorer encore plus et de proposer des saveurs délicieuses ainsi que le meilleur service possible à nos clients qui viennent également afin de profiter de la vue superbe vers nos montagnes ainsi que nos plantations d’oliviers.",
         "el": "Κάθε πρωί ξυπνάμε με μία μόνο έγνοια, να γινόμαστε όλο και καλύτεροι και να προσφέρουμε τις πιο απολαυστικές γεύσεις και τις καλύτερες υπηρεσίες στους επισκέπτες, που θέλοuν να απολαύσουν το υπέροχο ηλιοβασίλεμα πίσω από την πλαγιά του βουνού και την θέα του ελαιώνα που απλώνεται στον ορίζοντα."
     },
     "lang_owlDetails_2":{
         "en": "An enjoyable stopover or a tasty destination country road Tavronitis _ Paleochora, in a place where blend of modern and traditional elements, you can enjoy eating, dessert or coffee. With respect to tradition and especially with love for what we do, we offer you generously purest flavors of materials produced by our family.",
+        "fr": "Nous proposons sur la route campagnarde et pittoresque de Tavronitis - Paleochora un arrêt agréable et empli de saveurs, dans un lieu alliant les traditions et le monde moderne où vous pouvez déguster des repas, un dessert, ou simplement profiter d’un bon café. Pour garder un respect et un amour des traditions qui nous est cher, nous vous offrons des goûts issus directement de nos propres productions ",
         "el": "Μια απολαυστική στάση ή ένας γευστικός προορισμός Στον επαρχιακό δρόμο Ταυρωνίτη _ Παλαιόχωρας, σε έναν χώρο όπου συνδυάζονται αρμονικά το μοντέρνο με το παραδοσιακό στοιχείο, μπορείτε να χαλαρώσετε απολαμβάνοντας το φαγητό, το γλυκό ή τον καφέ σας. Με σεβασμό στην παράδοση και κυρίως με αγάπη γι' αυτό που κάνουμε, σας προσφέρουμε απλόχερα τις πιο αγνές γεύσεις, από υλικά που παράγει η οικογένειά μας. Χωριάτικο ψωμί, ζυμωμένο στο χέρι και ψημένο με παραδοσιακό τρόπο."
     },
     "lang_owlDetails_3":{
         "en": "Bread, kneaded by hand and baked in a traditional way. Wines of exceptional grape varieties. Original Cretan dishes and desserts made with the freshest ingredients, yogurt, cheese, pure organic olive oil.",
+        "fr": "Les pains sont pétris à la main et cuits traditionnellement. Les vins proposés englobent des variétés exceptionnelles de cépages. Et bien évidemment nos plats traditionnels crétois, nos desserts proviennent de produits et d’ingrédients des plus frais comme nos yaourts, nos fromages, notre huile d’olives pure et bio",
         "el": "Κρασί από εξαιρετικές ποικιλίες σταφυλιού. Γνήσια κρητικά φαγητά και γλυκά φτιαγμένα με τα πιο αγνά υλικά, γιαούρτι, μυζήθρα, αγνό βιολογικό ελαιόλαδο _ πιστοποιημένο από τον ΔΗΩ (ΟΡΓΑΝΙΣΜΟΣ ΕΛΕΓΧΟΥ & ΠΙΣΤΟΠΟΙΗΣΗΣ ΒΙΟΛΟΓΙΚΩΝ ΠΡΟΙΟΝΤΩΝ)."
     },
     "lang_spcialities_title":{
         "en": "Our Specialities",
+        "fr": "Nos spécialités",
         "el": "Οι Σπεσιαλιτέ μας"
     },
     "lang_spcialities_details2":{
         "en": "Click here, to close the menu",
+        "fr": "Cliquez ici afin de fermer le menu",
         "el": "Για να κλείσετε το μενού, κάντε κλικ εδώ"
     },
     "lang_spcialities_details":{
         "en": "Click here, to see our menu",
+        "fr": "Cliquez ici afin de voir le menu",
         "el": "Για να δείτε το μενού, κάντε κλικ εδώ"
     },
     "lang_spcialities_explainer":{
         "en": "Here you will find a variety of special flavors every day. With deliberate ingredients and continuous security control, we guarantee excellent quality in an exquisite celebration of flavors, aromas and textures",
+        "fr": "Chez nous vous trouverez des diversités de saveurs spécifiques au jour le jour, avec des ingrédients contrôlés régulièrement ; ce qui nous permet de vous proposer une excellente qualité de nos plats dans un festival de saveurs, d’effluves ainsi que de texture",
         "el": "Εδώ θα βρείτε μία ποικιλία από ξεχωριστές γεύσεις κάθε μέρα. Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή γεύσεων, αρωμάτων και υφών"
     },
     "lang_nav_spcialities":{
         "en": "Specialties",
+        "fr": "Spécialités",
         "el": "Σπεσιαλιτέ"
     },
-    "lang_nav_appertizer":{
+    "lang_nav_appetizer":{
         "en": "Appetizer",
+        "fr": "Apéritifs",
         "el": "Ορεκτικά"
     },
     "lang_nav_main":{
         "en": "Main",
+        "fr": "Plat Principal",
         "el": "Κυρίως"
     },
     "lang_nav_dessert":{
         "en": "Dessert",
+        "fr": "Dessert",
         "el": "Επιδόρπιο"
+    },
+    "lang_appetizer_menu":{
+        "en": "Tzatziki <br> Aubergine salad <br> Dakos <br> Cream goat cheese <br> Cheese <br> Soft cheese <br> Staka <br> Fried cheese ( Saganaki ) <br> Zucchini balls <br> Chicken pie <br> Meat pie <br> Stuffed vine leaves <br> Stuffed zucchini flowers <br> Sfakianes pites <br> Kalitsounia with spinach <br> Kalitsounia with cream goat cheese <br> Sausages <br> Split peas <br> French fries <br>",
+        "fr": "Tzatziki <br> Salade d’Aubergines <br> Dakos <br> Fromage de chèvre <br> Fromage Fromage mou <br> Staka <br> Fromage frit ( Saganaki) <br> Boulettes de courgettes <br> Tarte au poulet <br> Tarte à la viande <br> Feuilles de vigne farcies <br> Fleurs de courgettes farcies <br> Sfakianes pites <br> Canapés aux épinards <br> Canapés au fromage de chèvre <br> Saucisses <br> Pois cassés <br> Frites <br>",
+        "el": "Τζατζίκι <br> Μελιτζανοσαλάτα <br> Ντάκος <br> Μυζήθρα <br> Φέτα <br> Μαλακό Τυρί <br> Στάκα <br> Σαγανάκι <br> Κολοκυθοκεφτέδες <br> Κοτόπιτα <br> Σπέσιαλ Κρεατόπιτα <br> Ντολμαδάκια <br> Ανθοί <br> Σφακιανές πίτες <br> Καλιτσούνια με σπανάκι <br> Καλιτσούνια με μυζήθρα <br> Λουκάνικα <br> Φάβα <br> Πατάτες τηγανιτές <br>"
+    },
+    "lang_main_menu":{
+        "en": "Roasted lamb with wine sauce <br> Lamb with tomato sauce matched with potatoes or pasta <br> Special beef matched with vegetables <br> Rabbit with tomato sauce <br> Chicken matched with potatoes or pasta <br> Chicken with soft goat cheese and mushrooms <br> Meatballs with tomato sauce <br> Special traditional plate: a blending of wheat and goat milk cooked with mushrooms <br> Spaghetti with tomato sauce <br> Goat belly with tomato sauce <br> Chestnuts with tomato sauce <br> Fried hake with garlic salad <br> Kochi pork antikristo <br> Antikristo dish <br> Antikristo 1kg <br> Lamb chops <br> Lamb chops 1kg <br> Pork steak <br> Pork skewer <br> Cutlet <br> Chicken fillet <br> Variety of meats (big or small) <br>",
+        "fr": "Agneau grillé à la sauce viande <br> Agneau à la sauce tomates avec pommes de terre ou pâtes <br> Boeuf servi avec un assortiment de légumes <br> Lapin à la sauce tomates <br> Assortiment de poulet avec pommes de terre ou pâtes <br> Poulet avec fromage de chèvre et champignons <br> Boulettes de viande avec sauce tomates <br> Plat traditionnel: mélange de blé et lait de chèvre cuits avec champignons <br> Spaghettis à la sauce tomates <br> Tripes de chèvre sauce tomates <br> Châtaignes sauce tomates <br> Merlu frit avec salad d’ail <br> Porc Antikristo ( à la braise) <br> Assortiment Antikristo <br> Assortiment Antikristo 1 kg <br> Côtelettes d’agneau <br> Côtelettes d’agneau 1 kg <br> Steak de porc <br> Brochette de porc <br> Escalope <br> Filet de poulet <br> Variétés diverses de viands ( petites ou grandes portions) <br>",
+        "el": "Αρνί τσιγαριαστό <br> Αρνί κοκκινιστό με πατάτες ή μακαρόνια <br> Σπέσιαλ μοσχαράκι στο πήλινο <br> Κουνέλι κοκκινιστό με πατάτες <br> Κοτόπουλο κοκκινιστό με πατάτες ή μακαρόνια <br> Κοτόπουλο με ξυνομυζήθρα πιπεριές και μανιτάρια <br> Σουτζουκάκια <br> Ξυνόχοντρος με μανιτάρια <br> Μακαρόνια με σάλτσα <br> Κοιλιδάκι κοκκινιστό <br> Κάστανα κοκκινιστά <br> Μπακαλιάρος σκορδαλιά <br> Κότσι χοιρινό αντικριστό <br> Αντικρισό μερίδα <br> Αντικριστό κιλό <br> Παϊδάκια μερίδα <br> Παϊδάκια κιλό <br> Χοιρινή <br> Σουβλάκι χοιρινό <br> Μπιφτέκι <br> Κοτόπουλο φιλέτο <br> Ποικιλία Κρεατικών (μεγάλη & μικρή) <br>"
+    },
+    "lang_dessert_menu":{
+        "en": "Ice cream vanilla <br> Ice cream chocolate <br> Orange pie <br> Coconut cake <br> Chocolate pie <br> Walnut cake <br>",
+        "fr": "Glace à la vanille <br> Glace au chocolat <br> Tarte à l’orange <br> Gâteau à la noix de coco <br> Tarte au chocolat <br> Gâteau aux noix <br>",
+        "el": "Παγωτό βανίλια <br> Παγωτό σοκολάτα <br> Πορτοκαλόπιτα <br> Ινδοκάρυδο <br> Σοκολατόπιτα <br> Καρυδόπιτα <br>"
     },
     "lang_reservation_title":{
         "en": "Make a reservation",
+        "fr": "Réserver une table",
         "el": "Κάντε Κράτηση"
     },
     "lang_reservation_text":{
         "en": "Contact us every day for reservations. We take over every social business event",
+        "fr": "Vous pouvez nous contacter journellement, et nous proposons également des réservations pour toute réunion familiale ou de travail",
         "el": "Καλέστε μας καθημερινά για να κάνετε κράτηση. Αναλαμβάνουμε κάθε είδους κοινωνικής επαγγελματικής εκδήλωσης"
     },
     "lang_reservation_fullname":{
         "en": "Full name",
+        "fr": "Nom et prénom",
         "el": "Το ονοματεπώνυμο σας"
     },
     "lang_reservation_email":{
         "en": "Email address",
+        "fr": "Adresse E-mél",
         "el": "Η διεύθυνση e-mail σας"
     },
     "lang_reservation_phone":{
         "en": "Phone number & number of persons",
+        "fr": "Numéro de téléphone et nombre de personnes",
         "el": "Αριθμός τηλεφώνου & αριθμός ατόμων"
     },
     "lang_reservation_date":{
         "en": "Date & time of reservation",
+        "fr": "Date et heure de votre réservation",
         "el": "Ημερομηνία & Ώρα κράτησης"
     },
     "lang_reservation_option_1person":{
         "en": "1 Person",
+        "fr": "1 Personne",
         "el": "1 Άτομο"
     },
     "lang_reservation_option_2persons":{
         "en": "2 Persons",
+        "fr": "2 Personnes",
         "el": "2 Άτομα"
     },    
     "lang_reservation_option_3persons":{
         "en": "3 Persons",
+        "fr": "3 Personnes",
         "el": "3 Άτομα"
     },    
     "lang_reservation_option_4persons":{
         "en": "4 Persons",
+        "fr": "4 Personnes",
         "el": "4 Άτομα"
     },    
     "lang_reservation_option_5persons":{
         "en": "5 Persons",
+        "fr": "5 Personnes",
         "el": "5 Άτομα"
     },    
     "lang_reservation_option_6persons":{
         "en": "6 Persons",
+        "fr": "6 Personnes",
         "el": "6 Άτομα"
     },    
     "lang_reservation_option_7persons":{
         "en": "7 Persons",
+        "fr": "7 Personnes",
         "el": "7 Άτομα"
     },    
     "lang_reservation_option_8persons":{
         "en": "8 Persons",
+        "fr": "8 Personnes",
         "el": "8 Άτομα"
     },    
     "lang_reservation_btn":{
         "en": "Make Reservation Online",
+        "fr": "Faites votre reservation en ligne",
         "el": "Κάντε Κράτηση Online"
     },
     "lang_reservation_hint":{
         "en": "or call <br>(+30) 28240-31222 / (+30) 693 83 27 110",
+        "fr": "ou appelez le <br>(+30) 28240-31222 ou le (+30) 693 83 27 110",
         "el": "ή καλέστε στο <br>(+30) 28240-31222 / (+30) 693 83 27 110"
     },
     "lang_quality_text":{
         "en": "The olive oil we use and most of the products that enrich our cuisine (meat, dairy, vegetables, etc.) is our production. <br> <br> With handpicked ingredients and thorough safety controls, we guarantee pristine quality in an exquisite feast of flavors, aromas and textures! <br> <br> In our restaurant we have for sale olive oil, wine, tsikoudia, rakomelo and others.",
+        "fr": "L’huile d’olives que nous utilisons et proposons ainsi que la plupart des produits que vous découvrirez dans nos plats ( viandes, laitages, légumes…) sont notre propre production. <br> <br> Tout est fait manuellement ( cueillette…) afin d’assurer des produits sains et contrôlés ; nous garantissons ainsi l’excellence des goûts, des aromes ainsi que des textures ! <br><br> Nous proposons également ces produits à la vente : huile d’olives, vins divers, tsikoudia,rakomelo, et bien d’autres produits… ",
         "el": "Το ελαιόλαδο που χρησιμοποιούμε καθώς και τα περισσότερα προϊόντα που εμπλουτίζουν την κουζίνα μας (κρεατικά, τυροκομικά, λαχανικά, κ.ά.) είναι δικής μας παραγωγής. <br><br> Με διαλεκτά συστατικά και συνεχή έλεγχο της ασφάλειας, εγγυόμαστε την άριστη ποιότητα σε μια εξαίσια γιορτή γεύσεων, αρωμάτων και υφών! <br><br> Στο εστιατόριο μας διατίθενται προς πώληση ελαιόλαδο, κρασί, τσικουδιά, ρακόμελο κ.ά."
     },    
     "lang_messaage_name":{
         "en": "Full name",
+        "fr": "Nom et prénom",
         "el": "Το ονοματεπώνυμο σας"
     },
     "lang_messaage_email":{
         "en": "Email address",
+        "fr": "Adresse e-mél",
         "el": "Η διεύθυνση e-mail σας"
     },
     "lang_messaage_phone":{
         "en": "Phone number",
+        "fr": "Numéro de téléphone",
         "el": "Αριθμός τηλεφώνου"
     },
     "lang_messaage_urmessage":{
         "en": "Your message",
+        "fr": "Votre message",
         "el": "Το μήνυμά σας"
     },
     "lang_messaage_description":{
         "en": "Send us your comments, your impressions or posible observations",
+        "fr": "N’hésitez nullement à nous signifier vos commentaires, vos impressions, ou des points spécifiques",
         "el": "Στείλτε μας τα σχόλια σας, τις εντυπώσεις ή πιθανές παρατηρήσεις"
     },
     "lang_messaage_btn":{
         "en": "Send message",
+        "fr": "Envoyez le message",
         "el": "Στείλτε μήνυμα"
     },
     "lang_ajax_ok":{
         "en": "OK",
+        "fr": "O.K",
         "el": "Εντάξει"
     },
     "lang_ajax_error":{
         "en": "An error occured, try again later.",
+        "fr": "Erreur, veuillez réessayer",
         "el": "Δυστυχώς προέκυψε κάποιο πρόβλημα."
     },
     "lang_ajax_success":{
         "en": "Your message was sent!",
+        "fr": "Votre message est passé!",
         "el": "Το μήνυμά σας στάλθηκε επιτυχώς!"
     },
     "lang_ajax_wait":{
         "en": "Please give us a momment...",
+        "fr": "Veuillez s’il vous plait attendre deux minutes",
         "el": "Παρακαλώ περιμένετε..."
     },
     "lang_contact_location":{
         "en": "Voukolies, (2 Km towards Paleochora),<br>73002, Chania, Crete",
+        "fr": "Voukolies, ( 2 kms en direction de Paleochora),<br>73002, La Canée, Crète",
         "el": "Βουκολιές, (2 χλμ προς Παλαιόχωρα),<br>73002, Χανιά, Κρήτη"
     },
     "lang_contact_schedule":{
         "en": "Saturday 11:00 - 18:00 <br>Sunday 11:00 - 18:00",
+        "fr": "Les samedi de 11.00 à 18.00 <br> Les dimanche de 11.00 à 18.00",
         "el": "Σάββατο 11:00 - 18:00 <br>Κυριακή 11:00 - 18:00"
     },
     "lang_contact_schedule_summer":{
         "en": "Tuesday to Sunday, 11:00 - 23:00 <br>Monday Closed",
+        "fr": "Du mardi au dimanche ouverture de 11.00 à 23.00 <br> lundi est le jour chômé.",
         "el": "Τρίτη έως Κυριακή από τις 11:00 - 23:00 <br>Δευτέρα ΚΛΕΙΣΤΑ"
     }
 }

@@ -205,7 +205,7 @@ div ::-webkit-scrollbar-thumb:hover {
     font-weight: 300;   
 }
 
-#langSelector-el:hover, #langSelector-en:hover{
+#langSelector-el:hover, #langSelector-en:hover, #langSelector-fr:hover{
     cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -597,49 +597,6 @@ div ::-webkit-scrollbar-thumb:hover {
     display: inline-block;
     vertical-align: middle;
 }
-.appetizer-col-el{
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-.main-col-el{
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-.dessert-col-el{
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-.food-elements{
-    font-size: 17px;
-    padding: 0px 2% 0px 12%;
-    text-align: left;
-    display: block;
-}
-.appetizer-col-en{
-    width: 50%;
-    height: 100%;
-    float: right;
-}
-.main-col-en{
-    width: 50%;
-    height: 100%;
-    float: right;
-}
-.dessert-col-en{
-    width: 50%;
-    height: 100%;
-    float: right;
-}
-.enfood-elements{
-    font-size: 17px;
-    padding: 0px 12% 0px 2%;
-    color: rgb(69, 110, 7);
-    text-align: left;
-    display: block;
-}
 
 /* Facebook Filler */
 .fbFiller{
@@ -916,7 +873,8 @@ input::placeholder, textarea::placeholder{
     height:450px;
     background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("../images/cooking_classes/bake-bakery-baking-b&w-half.jpg");
     background-position: center;
-    background-size: cover;    
+    background-size: cover;
+    /* background-attachment: fixed; */
     color: white;
 }
 
@@ -1150,6 +1108,7 @@ button.getDirections {
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
+    /* background-position: 0px 158px; */
     color:rgba(255, 255, 255, 0.8);    
 }
 

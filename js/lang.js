@@ -7,22 +7,11 @@ $(document).ready(function(){
         //if there is not a preset language
         //set preset language γκρικ...
         var displayLang = localStorage.getItem('eleas-thea-displayLang');
-        if(!(displayLang == 'en' || displayLang == 'el')){
+        if(!(displayLang == 'en' || displayLang == 'el' || displayLang == 'fr')){
             localStorage.setItem('eleas-thea-displayLang', 'el');
             displayLang = 'el';
         } 
-        if (screen.width <= 990){
-            if(displayLang == 'en'){
-                $(".enfood-elements").css("display","block");
-                $(".food-elements").css("display","none");
-            }else if(displayLang == 'el'){
-                $(".enfood-elements").css("display","none");
-                $(".food-elements").css("display","block");
-            }else{
-                $(".enfood-elements").css("display","block");
-                $(".food-elements").css("display","block");
-            }
-        }
+        
         //printing preset language into DOM...
         //nav
 
@@ -45,7 +34,10 @@ $(document).ready(function(){
         $("#lang_spcialities_details").html(data.lang_spcialities_details[displayLang]);
         $("#lang_spcialities_explainer").html(data.lang_spcialities_explainer[displayLang]);
         $("#lang_nav_spcialities").html(data.lang_nav_spcialities[displayLang]);
-        $("#lang_nav_appertizer").html(data.lang_nav_appertizer[displayLang]);
+        $("#lang_nav_appetizer").html(data.lang_nav_appetizer[displayLang]);
+        $(".lang_appetizer_menu").html(data.lang_appetizer_menu[displayLang]);
+        $(".lang_main_menu").html(data.lang_main_menu[displayLang]);
+        $(".lang_dessert_menu").html(data.lang_dessert_menu[displayLang]);
         $("#lang_nav_main").html(data.lang_nav_main[displayLang]);
         $("#lang_nav_dessert").html(data.lang_nav_dessert[displayLang]);
         $("#lang_reservation_title").html(data.lang_reservation_title[displayLang]);
@@ -92,6 +84,10 @@ $(document).ready(function(){
 
     $("#langSelector-el").on("click", function(){
         localStorage.setItem('eleas-thea-displayLang', 'el');
+        location.reload();
+    })
+    $("#langSelector-fr").on("click", function(){
+        localStorage.setItem('eleas-thea-displayLang', 'fr');
         location.reload();
     })
 })
