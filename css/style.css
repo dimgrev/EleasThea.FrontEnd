@@ -525,7 +525,7 @@ div ::-webkit-scrollbar-thumb:hover {
     font-size: 20px!important;
 }
 .menuct-text:hover{
-    background-color: rgb(195, 139, 119, 0.5) !important;
+    background-color: rgba(195, 139, 119, 0.5) !important;
     border-radius: 1px;
     transition-duration: 0.3s;
 }
@@ -746,7 +746,7 @@ iframe{
 
 .reservation-form-container.blackBG{
     background:none!important;
-    color:rgb(255,255,255,0.5);
+    color:rgba(255,255,255,0.5);
     width: 290px;
 }
 
@@ -1009,7 +1009,7 @@ button.getDirections::before{
 button.getDirections {
     font-weight: bold;
     font-size: 15px!important;
-    color: rgb(0, 0, 0, 0.7)!important;
+    color: rgba(0, 0, 0, 0.7)!important;
     width: auto!important;
     padding: 5px 10px 5px 10px !important;
 }
@@ -1289,14 +1289,14 @@ textarea:hover{
 }
 
 .dismissMessageBtn{
-    color: rgb(106,170,8,0.8);
+    color: rgba(106,170,8,0.8);
     font-weight: 700;
     margin-top:15px;
     display: none;
 }
 
 .dismissMessageBtn:hover{
-    color: rgb(163, 202, 104, 0.8);
+    color: rgba(163, 202, 104, 0.8);
     cursor: pointer;
 }
 
