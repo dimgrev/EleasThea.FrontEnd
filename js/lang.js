@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    
+$(document).ready(function () {
+
     //Get Language JSON file...
     $.getJSON('lang.json', function (data) {
 
@@ -7,11 +7,11 @@ $(document).ready(function(){
         //if there is not a preset language
         //set preset language γκρικ...
         var displayLang = localStorage.getItem('eleas-thea-displayLang');
-        if(!(displayLang == 'en' || displayLang == 'el' || displayLang == 'fr')){
+        if (!(displayLang == 'en' || displayLang == 'el' || displayLang == 'fr' || displayLang == 'it')) {
             localStorage.setItem('eleas-thea-displayLang', 'el');
             displayLang = 'el';
-        } 
-        
+        }
+
         //printing preset language into DOM...
         //nav
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
         $("#lang_nav_gallery2").html(data.lang_nav_gallery[displayLang]);
         $("#lang_nav_contact2").html(data.lang_nav_contact[displayLang]);
         $("#lang_nav_reservation2").html(data.lang_nav_reservation[displayLang]);
-        
+
         $("#lang_home_view").html(data.lang_home_view[displayLang]);
         $("#lang_owlDetails_1").html(data.lang_owlDetails_1[displayLang]);
         $("#lang_owlDetails_2").html(data.lang_owlDetails_2[displayLang]);
@@ -55,7 +55,7 @@ $(document).ready(function(){
         $("#lang_reservation_option_6persons").html(data.lang_reservation_option_6persons[displayLang]);
         $("#lang_reservation_option_7persons").html(data.lang_reservation_option_7persons[displayLang]);
         $("#lang_reservation_option_8persons").html(data.lang_reservation_option_8persons[displayLang]);
-        
+
 
         $("#lang_reservation_btn").html(data.lang_reservation_btn[displayLang]);
         $("#lang_reservation_hint").html(data.lang_reservation_hint[displayLang]);
@@ -77,17 +77,21 @@ $(document).ready(function(){
     });
 
     //listen to change language events...
-    $("#langSelector-en").on("click", function(){
+    $("#langSelector-en").on("click", function () {
         localStorage.setItem('eleas-thea-displayLang', 'en');
         location.reload();
     });
 
-    $("#langSelector-el").on("click", function(){
+    $("#langSelector-el").on("click", function () {
         localStorage.setItem('eleas-thea-displayLang', 'el');
         location.reload();
     })
-    $("#langSelector-fr").on("click", function(){
+    $("#langSelector-fr").on("click", function () {
         localStorage.setItem('eleas-thea-displayLang', 'fr');
+        location.reload();
+    })
+    $("#langSelector-it").on("click", function () {
+        localStorage.setItem('eleas-thea-displayLang', 'it');
         location.reload();
     })
 })

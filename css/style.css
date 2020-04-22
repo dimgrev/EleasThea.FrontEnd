@@ -200,14 +200,14 @@ div ::-webkit-scrollbar-thumb:hover {
 .container.langSelector-box{
     text-align: right;
     position: absolute;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
     bottom: 30px;
     font-weight: 300;   
 }
 
-#langSelector-el:hover, #langSelector-en:hover, #langSelector-fr:hover{
+#langSelector-el:hover, #langSelector-en:hover, #langSelector-fr:hover, #langSelector-it:hover {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Details Slide */
