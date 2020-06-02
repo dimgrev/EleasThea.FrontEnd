@@ -1,2 +1,2 @@
 ﻿# EleasThea.FrontEnd
-This is the front end repository of the solution.
+This is the Front End repository of the solution.
