@@ -1,0 +1,446 @@
+
+.scroll-variable-navbar .hamburger-inner, .scroll-variable-navbar .hamburger-inner::before, .scroll-variable-navbar .hamburger-inner::after{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.scroll-on-top-navbar .hamburger-inner, .scroll-on-top-navbar .hamburger-inner::before, .scroll-on-top-navbar .hamburger-inner::after{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.navbar-light .navbar-toggler{
+    border-color:rgba(0,0,0,0)!important;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color: rgba(230,230,230);
+}
+
+@media screen and (max-width: 991px) {
+    /* Nav */
+    .scroll-variable-nav-item{
+        text-align: left!important;
+        margin-left:20px;
+    }
+
+    .scroll-variable-nav-item:hover{
+        /* transition-duration: 0.2s; */
+        color:rgba(105,170,6, 1) !important;
+        border-bottom: dotted rgba(105,170,6, 0) 5px;    
+    }
+
+    #scroll-variable-makeAReservationBtn{
+        color: #8d4f39!important;
+        border: double rgba(105,170,6, 0.0) 0px;
+        font-weight: 700!important;
+    }
+    
+    #scroll-variable-makeAReservationBtn:hover{
+        color:#502515!important;
+        border: double rgba(105,170,6, 0.0) 0px;
+
+    }
+
+    /* Home Screen Slide */
+
+    .homeScreenSlide{
+        height:100vh;        
+        background-size: cover;
+        background-position: 27% 0%; 
+        background-attachment: initial;
+    }
+
+    .title{
+        font-size: 26px;
+        width: 60vw;
+        font-weight: 100;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        margin-right: 10px;
+    }
+
+    .fa-chevron-down{
+        bottom: 15px!important;        
+    }
+
+    /* Details Slide */
+
+    .detailsSlideAlt{
+        min-height:400px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-size: cover;
+      
+    }
+
+    .details-para{
+        padding: 20px;
+        color: rgb(23, 36, 18);
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    /*Menu Slide*/
+    .menu-slide{
+        flex-direction: column;
+        width: 100%;
+        height:100%;
+    }
+    .menu-poster{
+        width: 100%;
+        height: 300px;
+        -webkit-clip-path: initial;
+        clip-path: initial;
+    }
+    .menu-handDown{
+        font-size: 40px;
+        bottom: 100px;
+        font-weight: 100;
+    }
+    .menu-title{
+        width:70vw;
+        font-size: 8vw;
+        margin-top: 10px;
+    }
+    @media screen and (min-width: 470px) {
+        .menu-title{
+            font-size: 36px!important;
+        }
+    }
+    .menu-clickExplainer{
+        font-size: 3.2vw;
+        height: 160px;
+        padding-bottom: 35px;
+        text-shadow: 0px 0px 1.5px #ffffff;
+    }
+    .men-click-exp2{
+        font-size: 3.2vw;
+        height: 160px;
+        padding-bottom: 35px;
+        text-shadow: 0px 0px 1.5px #ffffff;
+    }
+    @media screen and (min-width: 470px) {
+        .menu-clickExplainer{
+            font-size: 15px!important;
+        }
+    }
+    @media screen and (min-width: 470px) {
+        .men-click-exp2{
+            font-size: 15px!important;
+        }
+    }
+    .menuDetails {
+        width: 100%;
+        height: 350px;
+    }
+    .menuCatalog {
+        display: none;
+        height: 350px;
+        width: 100%!important;
+        text-align: center!important;
+    }
+    .menuct-nav{
+        display: inline-flex;
+    }
+    .menuct-text{
+        font-size: 3.5vw!important;
+
+    }
+    @media screen and (min-width: 470px) {
+        .menuct-text{
+            font-size: 20px!important;
+        }
+    }
+    .lang_appetizer_menu,.lang_main_menu,.lang_dessert_menu{
+        font-size: 17px!important;
+        padding: 0px 0% 0px 5%;
+        text-align: left;
+    }
+    .mD1 img{
+        width: 24vw;
+    }
+    @media screen and (min-width: 470px) {
+        .mD1 img{
+            width: 155px;
+        }
+    }
+    .mD2{
+        font-size: 14px;
+        padding: 0vw 10vw;
+        margin-top: 0px;
+    }
+    .SpGallery{
+        width:100vw;
+        height: auto;
+
+    }
+    .SpGallery .fa-chevron-right,.SpGallery .fa-chevron-left {
+        font-size: 3em!important;
+    }
+    .SpGallery .slick-list{
+        width: 100vw;
+        height: 300px;
+    }
+    .SpGallery .slick-next,.SpGallery .slick-prev{
+        padding: 15px 20px;
+    }
+    .SpGallery .slick-next{
+        bottom: calc(50% - 4em);
+    }
+    .SpGallery .slick-prev{
+        bottom: calc(50% - 4em);
+    }
+    .SpPhotos{
+        max-height: 30vh!important;
+        max-width: 60vw!important;
+    }
+    .menuFilled{
+        background: linear-gradient(to top, rgba(36, 15, 5, 0),rgba(36, 15, 5, 0.2),rgba(36, 15, 5, 0.4),rgba(36, 15, 5, 0.6)), url(../images/Menu1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .menuEmpty{
+        background: linear-gradient(to top, rgba(36, 15, 5, 0),rgba(36, 15, 5, 0.4)), url(../images/Menu2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* FbFiller */
+    .fbFiller{
+        flex-direction: column;
+        height: auto;
+    }
+    .fbFillerCol1{
+        width:100vw;
+        height:200px;
+    }
+    .tripdiv, .tripdiv2, .tripdiv3, .div3{
+        width: 100%;
+        height: 100%;
+    }
+    .tripdiv, .tripdiv2, .tripdiv3{
+        background-size: 125px;
+    }
+    .div2{
+        /* width: 319px!important;
+        height: 409px!important; */
+    }
+    .fbFillerCol3{
+        width:100vw;
+        height: 200px;
+    }
+    .div3{
+        background-size: 115px;
+    }
+
+
+    /* Rservation Slide */
+    .reservationSlide{
+        flex-direction: column;
+        height:800px;
+    }
+
+    .reservation-poster{
+        width: 100vw;
+        height: 300px;
+        -webkit-clip-path: initial;
+        clip-path: initial;
+    }
+
+    .reservation-title{
+        font-size: 35px;
+        width:100vw;
+    }
+
+    .reservation-text{
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 100;
+        font-size: 18px;
+        width: 90vw;
+        text-align: center;
+        font-weight: 100;
+        padding:20px;
+    }
+
+    .reservation-form{
+        width:100vw;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    /* Quality Slide */
+    .qualitySlide{
+        width:100%;
+        height:fit-content!important;
+        background: linear-gradient(to right, rgba(255,255,255,0.99), rgba(255,255,255,0.9), rgba(255,255,255,0.75)), url("../images/salata2.jpg");
+        background-size:cover;
+
+        -moz-box-shadow:    inset 0 10px 40px 20px #ffffff; /* 0px 0px 15px 0px rgba(255, 255, 255, 0.2); */
+        -webkit-box-shadow: inset 0 10px 40px 20px #ffffff;
+        box-shadow:         inset 0 10px 40px 20px #ffffff;
+
+        background-position: left;
+    }
+
+    .qualitySlide .container{
+        height: fit-content!important;
+    }
+
+    .quality-text{
+        padding-top:35px!important;
+        padding-bottom:35px!important;
+        font-size: 17px;
+        font-weight: 300;
+        width:95%;
+        text-align: right;
+        height: fit-content;
+    }   
+
+    .quality-poster{
+        background: red;
+        display: none!important;
+    }
+
+    .restGuruAward{
+        visibility: hidden;
+    }
+    .restGuruM{
+        visibility: visible;
+        opacity: 0.8;
+        filter: grayscale(10%);
+    }
+
+    /* Cooking Classes */
+    .cookingClassesIntroSlide{
+        padding:25px 0px 25px 0px;
+        /* width: 100vw; */
+        height:auto!important;        
+    }
+
+    .cookingClassesSlide-title{
+        font-size: 35px;
+    }
+
+    .cookingClassesSlide-text{
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 100;
+        font-size: 18px;
+        width: 90vw;
+        text-align: left;
+        font-weight: 100;
+        padding:20px;
+    }
+    
+
+    /* Contact Slide */
+    .contactSlide{
+        flex-direction: column;        
+    }
+
+    .mapGroup{
+        position: relative;
+        display: block;
+    }
+
+    .mapProtectorFromLidl{
+        display: block;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 0px;
+        background:rgba(255,255,255,0.7);
+        /* box-shadow: inset 0px 0px 50px 50px rgba(255, 255, 255, 0.7); */
+        z-index: 1000;
+        text-align: center;
+        color: rgb(0,0,0,0.4);
+        font-size: 25px;
+        font-weight: 100;
+        padding: 25px;
+    }
+
+    #map{
+        width:100%;
+        height:300px;
+        -webkit-clip-path: initial;
+        clip-path: initial;
+        position: absolute;
+    }
+
+    .contactDetails{
+        width: 100vw;
+        height: 400px;
+        margin-top: 300px;
+    }
+    @media screen and (max-width: 470px) {
+        .details-info{
+            font-size: 3.6vw;
+        }
+    }
+    
+    /* Send Message Style */
+    .sendMessageSlide{
+        padding: 20px;
+        padding: 20px;
+        flex-direction: column;
+        background-size: 50%;
+        height: 650px;
+        
+    }
+
+    .sendMessageSlide .container{
+        flex-direction: column;
+        max-width: 367px!important;
+        
+    }
+
+    .sndMsg-personalInfo, .sndMsg-messageTxtBox{
+        width:100%;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .form-input-halfWidth{
+        width:140px;
+    }
+
+    /* Footer */
+    .myfooter .copyright{
+        font-size: 14px;
+    }
+
+    /* Helpers */
+    /* Black Overlay */
+    .blackOverlay{
+        width: 100vw;
+        height:100vh;
+        background: rgba(0,0,0,0.8);
+        /* box-shadow: inset 0px 0px 100px 100px rgba(0,0,0,0.4); */
+        position: fixed;
+        top:0px;
+        left:0px;
+        z-index: 1029; /* behind of the menu bar when expanded */
+        display: none;
+    }
+
+    .cookingClassesSlideInner{
+        background-image: url("../images/cookingClassBG.jpg");
+        background-color:black;
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    .cookingClassesTitle{
+        width: 300px;
+        margin-top:25px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .fa-chevron-down{
+        bottom: 65px!important;
+    }
+}
+
+
