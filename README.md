@@ -1,6 +1,2 @@
-﻿# EleasThea
-# EleasThea-WebApplication
-testing ci cd
-test2
-just being bored...
-just being bored me 2...
+﻿# EleasThea.FrontEnd
+This is the Front End repository of the solution.
